@@ -1,0 +1,43 @@
+﻿<Application x:Class="MusicPlayerMVVM.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:views="clr-namespace:MusicPlayerMVVM.Views"
+             xmlns:viewmodels="clr-namespace:MusicPlayerMVVM.ViewModels">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewmodels:HomeViewModel}">
+                <views:HomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:HipHopViewModel}">
+                <views:HipHopView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:RockViewModel}">
+                <views:RockView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:PopViewModel}">
+                <views:PopView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:KlassikViewModel}">
+                <views:KlassikView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:JazzViewModel}">
+                <views:JazzView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodels:CustomViewModel}">
+                <views:CustomView/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
