@@ -17,6 +17,15 @@ namespace MusicPlayerMVVM.Data
     public class MusicDbContext : DbContext
     {
         /// <summary>
+        /// Initialisiert den Kontext und stellt sicher, dass die Datenbank und alle Tabellen 
+        /// auf dem Server existieren. 
+        /// </summary>
+        public MusicDbContext()
+        {
+            Database.EnsureCreated();
+        }
+
+        /// <summary>
         /// Ruft die Entitätsmenge für HipHop-Titel ab oder legt diese fest.
         /// </summary>
         public DbSet<HipHopSong> HipHopSongs { get; set; }

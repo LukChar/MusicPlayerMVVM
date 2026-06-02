@@ -10,6 +10,7 @@ using MusicPlayerMVVM.Common;
 using MusicPlayerMVVM.Models;
 using Prism.Events;
 using MusicPlayerMVVM.Events;
+using MusicPlayerMVVM.Data;
 
 namespace MusicPlayerMVVM.ViewModels
 {

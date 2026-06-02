@@ -8,8 +8,6 @@ namespace MusicPlayerMVVM.Views
         public MainWindow()
         {
             InitializeComponent();
-
-            this.DataContext = new SongViewModel();
         }
     }
 }

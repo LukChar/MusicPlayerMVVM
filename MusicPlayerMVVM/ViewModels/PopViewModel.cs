@@ -1,4 +1,9 @@
-﻿using System;
+﻿using MusicPlayerMVVM.Common;
+using MusicPlayerMVVM.Data;
+using MusicPlayerMVVM.Events;
+using MusicPlayerMVVM.Models;
+using Prism.Events;
+using System;
 using System.Collections.ObjectModel;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -6,10 +11,7 @@ using System.IO;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
-using MusicPlayerMVVM.Common;
-using MusicPlayerMVVM.Models;
-using Prism.Events;
-using MusicPlayerMVVM.Events;
+using System.Linq;
 
 namespace MusicPlayerMVVM.ViewModels
 {
@@ -103,29 +105,18 @@ namespace MusicPlayerMVVM.ViewModels
             try
             {
                 Songs.Clear();
-                using (SqlConnection con = new SqlConnection(_connectionString))
+                using (var context = new MusicDbContext())
                 {
-                    con.Open();
-                    string query = "SELECT * FROM Songs_Pop";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    while (reader.Read())
+                    var hipHopEntities = context.HipHopSongs.ToList();
+                    foreach (var song in hipHopEntities)
                     {
-                        Songs.Add(new Song
-                        {
-                            Id = reader.GetInt32(0),
-                            Title = reader.GetString(1),
-                            Artist = reader.GetString(2),
-                            Duration = reader.GetString(3),
-                            FilePath = reader.GetString(4)
-                        });
+                        Songs.Add(song);
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Fehler beim Laden von Pop:\n{ex.Message}", "Datenbank-Diagnose", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Fehler beim Laden:\n{ex.Message}", "Datenbank-Fehler", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
