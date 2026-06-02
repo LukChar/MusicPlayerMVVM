@@ -40,6 +40,11 @@ namespace MusicPlayerMVVM.ViewModels
             // Auf Navigation hören
             EventAggregator.GetEvent<NavigationEvent>().Subscribe(NavigateToViewModel);
 
+            // Globale Play-Control Events
+            GlobalPlayPauseCommand = new ActionCommand(param => EventAggregator.GetEvent<PlayControlEvent>().Publish("PlayPause"), param => true);
+            GlobalPreviousCommand = new ActionCommand(param => EventAggregator.GetEvent<PlayControlEvent>().Publish("Previous"), param => true);
+            GlobalNextCommand = new ActionCommand(param => EventAggregator.GetEvent<PlayControlEvent>().Publish("Next"), param => true);
+
             CurrentView = _homeViewModel;
         }
 
@@ -62,6 +67,10 @@ namespace MusicPlayerMVVM.ViewModels
                 }
             }
         }
+
+        public ICommand GlobalPlayPauseCommand { get; }
+        public ICommand GlobalPreviousCommand { get; }
+        public ICommand GlobalNextCommand { get; }
 
         private void NavigateToViewModel(string targetViewName)
         {

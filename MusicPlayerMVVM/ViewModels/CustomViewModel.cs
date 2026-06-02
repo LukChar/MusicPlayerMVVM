@@ -142,8 +142,6 @@ namespace MusicPlayerMVVM.ViewModels
                     Duration = "00:00"
                 };
 
-                Songs.Add(newSong);
-
                 try
                 {
                     using (var context = new MusicDbContext())
@@ -151,6 +149,9 @@ namespace MusicPlayerMVVM.ViewModels
                         context.Set<CustomSong>().Add(newSong);
                         context.SaveChanges();
                     }
+
+                    // Das eigene Subscribe löst daraufhin OnSongAdded aus und fügt den Song der Liste hinzu.
+                    EventAggregator.GetEvent<AddSongEvent>().Publish(newSong);
                 }
                 catch (Exception ex)
                 {
