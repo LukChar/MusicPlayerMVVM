@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['jazzview_0',['JazzView',['../class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html#a79349b6cf1aed1bc14a81abb630bc535',1,'MusicPlayerMVVM::Views::JazzView']]],
-  ['jazzviewmodel_1',['JazzViewModel',['../class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#a54c0015627119ce072e2ff88da7b9cd1',1,'MusicPlayerMVVM::ViewModels::JazzViewModel']]]
+  ['klassikview_0',['KlassikView',['../class_music_player_m_v_v_m_1_1_views_1_1_klassik_view.html#a5fbc93b79f1728cc2826361117b9d6f5',1,'MusicPlayerMVVM::Views::KlassikView']]],
+  ['klassikviewmodel_1',['KlassikViewModel',['../class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#ab3f4065d3fa2f03b4fe8d19297420e26',1,'MusicPlayerMVVM::ViewModels::KlassikViewModel']]]
 ];

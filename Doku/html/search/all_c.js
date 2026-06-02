@@ -1,11 +1,4 @@
 var searchData=
 [
-  ['jazzsong_0',['JazzSong',['../class_music_player_m_v_v_m_1_1_models_1_1_jazz_song.html',1,'MusicPlayerMVVM::Models']]],
-  ['jazzsongs_1',['JazzSongs',['../class_music_player_m_v_v_m_1_1_data_1_1_music_db_context.html#a0db68810c8c05cd3d8277ba3956ab9cc',1,'MusicPlayerMVVM::Data::MusicDbContext']]],
-  ['jazzview_2',['JazzView',['../class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html',1,'MusicPlayerMVVM.Views.JazzView'],['../class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html#a79349b6cf1aed1bc14a81abb630bc535',1,'MusicPlayerMVVM.Views.JazzView.JazzView()']]],
-  ['jazzview_2eg_2ecs_3',['JazzView.g.cs',['../_jazz_view_8g_8cs.html',1,'']]],
-  ['jazzview_2eg_2ei_2ecs_4',['JazzView.g.i.cs',['../_jazz_view_8g_8i_8cs.html',1,'']]],
-  ['jazzview_2examl_2ecs_5',['JazzView.xaml.cs',['../_jazz_view_8xaml_8cs.html',1,'']]],
-  ['jazzviewmodel_6',['JazzViewModel',['../class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html',1,'MusicPlayerMVVM.ViewModels.JazzViewModel'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#a54c0015627119ce072e2ff88da7b9cd1',1,'MusicPlayerMVVM.ViewModels.JazzViewModel.JazzViewModel()']]],
-  ['jazzviewmodel_2ecs_7',['JazzViewModel.cs',['../_jazz_view_model_8cs.html',1,'']]]
+  ['loadsongsfromdatabase_0',['LoadSongsFromDatabase',['../class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#a76a2114a0ab77d672bc819f1543b7c5d',1,'MusicPlayerMVVM.ViewModels.CustomViewModel.LoadSongsFromDatabase()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html#ab63cd9fb1a0fddcc59c493085bb4e317',1,'MusicPlayerMVVM.ViewModels.HipHopViewModel.LoadSongsFromDatabase()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#ad6ab45ebc68495e3207011e7833bca1f',1,'MusicPlayerMVVM.ViewModels.JazzViewModel.LoadSongsFromDatabase()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#a66f67766b645c0a9ddb2a1493dec7ddc',1,'MusicPlayerMVVM.ViewModels.KlassikViewModel.LoadSongsFromDatabase()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html#ac99b7840a92338f3c2b84db1f0a62871',1,'MusicPlayerMVVM.ViewModels.PopViewModel.LoadSongsFromDatabase()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html#a3d83e436f24cec8f38549f79a122bd06',1,'MusicPlayerMVVM.ViewModels.RockViewModel.LoadSongsFromDatabase()']]]
 ];

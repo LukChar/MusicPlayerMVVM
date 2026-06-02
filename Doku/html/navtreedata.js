@@ -25,27 +25,6 @@
 var NAVTREE =
 [
   [ "My Project", "index.html", [
-    [ "About", "md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html", [
-      [ "Key Features", "md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html#autotoc_md7", null ],
-      [ "How to Use", "md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html#autotoc_md8", null ],
-      [ "Main Types", "md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html#autotoc_md9", null ],
-      [ "Additional Documentation", "md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html#autotoc_md10", null ],
-      [ "Feedback &amp; Contributing", "md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html#autotoc_md11", null ]
-    ] ],
-    [ "About", "md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html", [
-      [ "Key Features", "md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html#autotoc_md13", null ],
-      [ "How to Use", "md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html#autotoc_md14", null ],
-      [ "Main Types", "md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html#autotoc_md15", null ],
-      [ "Additional Documentation", "md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html#autotoc_md16", null ],
-      [ "Related Packages", "md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html#autotoc_md17", null ],
-      [ "Feedback &amp; Contributing", "md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html#autotoc_md18", null ]
-    ] ],
-    [ "About", "md_packages_2_system_8_configuration_8_configuration_manager_810_80_88_2_p_a_c_k_a_g_e.html", [
-      [ "How to Use", "md_packages_2_system_8_configuration_8_configuration_manager_810_80_88_2_p_a_c_k_a_g_e.html#autotoc_md40", null ],
-      [ "Main Types", "md_packages_2_system_8_configuration_8_configuration_manager_810_80_88_2_p_a_c_k_a_g_e.html#autotoc_md41", null ],
-      [ "Additional Documentation", "md_packages_2_system_8_configuration_8_configuration_manager_810_80_88_2_p_a_c_k_a_g_e.html#autotoc_md42", null ],
-      [ "Feedback &amp; Contributing", "md_packages_2_system_8_configuration_8_configuration_manager_810_80_88_2_p_a_c_k_a_g_e.html#autotoc_md43", null ]
-    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
     ] ],
@@ -54,7 +33,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Properties", "functions_prop.html", null ],
@@ -69,9 +48,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_8_n_e_t_framework_00_version_0av4_88_8_assembly_attributes_8cs.html",
-"class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html#a2e10ea8b5485ee689dcee321277a6618",
-"class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html#afe9b99ca75d28fe6c25c5b2baabc94c3"
+"_action_comand_8cs.html",
+"class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#a36f76698e8409c83ce2f14d6c8bc680a",
+"dir_da550f89a44ed916606e203070dbf389.html"
 ];
 
 const SYNCONMSG = 'click to disable panel synchronization';

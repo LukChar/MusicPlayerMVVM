@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['generatedinternaltypehelper_2eg_2ecs_0',['GeneratedInternalTypeHelper.g.cs',['../_generated_internal_type_helper_8g_8cs.html',1,'']]],
-  ['generatedinternaltypehelper_2eg_2ei_2ecs_1',['GeneratedInternalTypeHelper.g.i.cs',['../_generated_internal_type_helper_8g_8i_8cs.html',1,'']]]
+  ['jazzview_2examl_2ecs_0',['JazzView.xaml.cs',['../_jazz_view_8xaml_8cs.html',1,'']]],
+  ['jazzviewmodel_2ecs_1',['JazzViewModel.cs',['../_jazz_view_model_8cs.html',1,'']]]
 ];

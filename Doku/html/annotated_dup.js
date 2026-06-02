@@ -28,9 +28,6 @@ var annotated_dup =
         [ "RockSong", "class_music_player_m_v_v_m_1_1_models_1_1_rock_song.html", null ],
         [ "Song", "class_music_player_m_v_v_m_1_1_models_1_1_song.html", "class_music_player_m_v_v_m_1_1_models_1_1_song" ]
       ] ],
-      [ "Resources", "namespace_music_player_m_v_v_m_1_1_resources.html", [
-        [ "Styles", "class_music_player_m_v_v_m_1_1_resources_1_1_styles.html", "class_music_player_m_v_v_m_1_1_resources_1_1_styles" ]
-      ] ],
       [ "ViewModels", "namespace_music_player_m_v_v_m_1_1_view_models.html", [
         [ "CustomViewModel", "class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html", "class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model" ],
         [ "HipHopViewModel", "class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html", "class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model" ],
@@ -46,18 +43,12 @@ var annotated_dup =
         [ "CustomView", "class_music_player_m_v_v_m_1_1_views_1_1_custom_view.html", "class_music_player_m_v_v_m_1_1_views_1_1_custom_view" ],
         [ "HipHopView", "class_music_player_m_v_v_m_1_1_views_1_1_hip_hop_view.html", "class_music_player_m_v_v_m_1_1_views_1_1_hip_hop_view" ],
         [ "HomeView", "class_music_player_m_v_v_m_1_1_views_1_1_home_view.html", "class_music_player_m_v_v_m_1_1_views_1_1_home_view" ],
-        [ "HomeWindow", "class_music_player_m_v_v_m_1_1_views_1_1_home_window.html", "class_music_player_m_v_v_m_1_1_views_1_1_home_window" ],
         [ "JazzView", "class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html", "class_music_player_m_v_v_m_1_1_views_1_1_jazz_view" ],
-        [ "Klassik", "class_music_player_m_v_v_m_1_1_views_1_1_klassik.html", "class_music_player_m_v_v_m_1_1_views_1_1_klassik" ],
         [ "KlassikView", "class_music_player_m_v_v_m_1_1_views_1_1_klassik_view.html", "class_music_player_m_v_v_m_1_1_views_1_1_klassik_view" ],
         [ "MainWindow", "class_music_player_m_v_v_m_1_1_views_1_1_main_window.html", "class_music_player_m_v_v_m_1_1_views_1_1_main_window" ],
         [ "PopView", "class_music_player_m_v_v_m_1_1_views_1_1_pop_view.html", "class_music_player_m_v_v_m_1_1_views_1_1_pop_view" ],
         [ "RockView", "class_music_player_m_v_v_m_1_1_views_1_1_rock_view.html", "class_music_player_m_v_v_m_1_1_views_1_1_rock_view" ]
       ] ],
-      [ "App", "class_music_player_m_v_v_m_1_1_app.html", "class_music_player_m_v_v_m_1_1_app" ],
-      [ "MainWindow", "class_music_player_m_v_v_m_1_1_main_window.html", "class_music_player_m_v_v_m_1_1_main_window" ]
-    ] ],
-    [ "XamlGeneratedNamespace", "namespace_xaml_generated_namespace.html", [
-      [ "GeneratedInternalTypeHelper", "class_xaml_generated_namespace_1_1_generated_internal_type_helper.html", "class_xaml_generated_namespace_1_1_generated_internal_type_helper" ]
+      [ "App", "class_music_player_m_v_v_m_1_1_app.html", "class_music_player_m_v_v_m_1_1_app" ]
     ] ]
 ];

@@ -95,6 +95,11 @@ namespace MusicPlayerMVVM.ViewModels
         /// <summary>
         /// Initialisiert eine synchrone Verbindung zur SQL-Datenbank und lädt die Pop-Titelliste.
         /// </summary>
+        /// <remarks>
+        /// Baut über den <see cref="MusicDbContext"/> eine Verbindung auf, leert die aktuelle ObservableCollection
+        /// und ruft alle Entitäten aus der dedizierten Tabelle (hier: <c>PopSongs</c>) ab.
+        /// Die Verwendung des <c>using</c>-Blocks stellt sicher, dass die Datenbankverbindung nach Abschluss sauber aus dem Speicher freigegeben (Disposed) wird.
+        /// </remarks>
         private void LoadSongsFromDatabase()
         {
             try
@@ -102,7 +107,6 @@ namespace MusicPlayerMVVM.ViewModels
                 Songs.Clear();
                 using (var context = new MusicDbContext())
                 {
-                    // HIER KORRIGIERT: Greift jetzt auf PopSongs statt auf HipHopSongs zu
                     var popEntities = context.PopSongs.ToList();
                     foreach (var song in popEntities)
                     {
@@ -142,6 +146,15 @@ namespace MusicPlayerMVVM.ViewModels
             EventAggregator.GetEvent<NavigationEvent>().Publish("HomeView");
         }
 
+        /// <summary>
+        /// Startet die Audiowiedergabe für ein spezifisches Song-Objekt.
+        /// </summary>
+        /// <remarks>
+        /// Setzt den Basis-Pfad der ausführenden Applikation mit dem relativen <see cref="Song.FilePath"/> zusammen.
+        /// Stoppt den globalen <see cref="MediaPlayer"/>, falls er bereits läuft, lädt die neue URI ein,
+        /// wendet die eingestellte <see cref="Volume"/> an und startet die Wiedergabe.
+        /// </remarks>
+        /// <param name="song">Das Song-Entity, das abgespielt werden soll.</param>
         private void PlaySong(Song song)
         {
             string basePath = AppDomain.CurrentDomain.BaseDirectory;

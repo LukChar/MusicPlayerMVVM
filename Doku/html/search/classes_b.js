@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['song_0',['Song',['../class_music_player_m_v_v_m_1_1_models_1_1_song.html',1,'MusicPlayerMVVM::Models']]],
-  ['styles_1',['Styles',['../class_music_player_m_v_v_m_1_1_resources_1_1_styles.html',1,'MusicPlayerMVVM::Resources']]]
+  ['viewmodelbase_0',['ViewModelBase',['../class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html',1,'MusicPlayerMVVM::ViewModels']]],
+  ['volumechangedevent_1',['VolumeChangedEvent',['../class_music_player_m_v_v_m_1_1_events_1_1_volume_changed_event.html',1,'MusicPlayerMVVM::Events']]]
 ];

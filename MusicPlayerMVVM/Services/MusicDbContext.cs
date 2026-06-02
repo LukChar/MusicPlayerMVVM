@@ -61,6 +61,12 @@ namespace MusicPlayerMVVM.Data
         /// Durchsucht das angegebene Basisverzeichnis nach .wav-Dateien in genrespezifischen Unterordnern
         /// und fügt diese der Datenbank hinzu.
         /// </summary>
+        /// <remarks>
+        /// Diese Methode agiert als Initialisierer der Datenbankinhalte. Sie prüft, ob die
+        /// entsprechenden Genre-Unterordner (z.B. "HipHop", "Rock") existieren, iteriert über
+        /// alle darin enthaltenen .wav-Dateien und erstellt daraus Entity-Objekte.
+        /// Die Daten werden abschließend per <see cref="DbContext.SaveChanges"/> in die lokale SQL-Datenbank geschrieben.
+        /// </remarks>
         /// <param name="baseFolderPath">Der absolute Pfad zum Ressourcen-Ordner.</param>
         private void SeedSongsFromDirectories(string baseFolderPath)
         {

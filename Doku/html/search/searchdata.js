@@ -1,14 +1,13 @@
 var indexSectionsWithContent =
 {
-  0: ".6_abcdefghijklmnoprstuvxy",
-  1: "abcghjkmnprsv",
-  2: "mx",
-  3: ".abcghjkmnprsv",
-  4: "abcdeghijklmnoprsv",
+  0: "_abcdefghijklmnoprstv",
+  1: "abchjkmnprsv",
+  2: "m",
+  3: "abchjkmnprsv",
+  4: "abcdeghjklmnoprsv",
   5: "_h",
   6: "abcdefghijknprstv",
-  7: "cp",
-  8: "6acdefghiklmoprstuvy"
+  7: "cp"
 };
 
 var indexSectionNames =
@@ -20,8 +19,7 @@ var indexSectionNames =
   4: "functions",
   5: "variables",
   6: "properties",
-  7: "events",
-  8: "pages"
+  7: "events"
 };
 
 var indexSectionLabels =
@@ -33,7 +31,6 @@ var indexSectionLabels =
   4: "Functions",
   5: "Variables",
   6: "Properties",
-  7: "Events",
-  8: "Pages"
+  7: "Events"
 };
 

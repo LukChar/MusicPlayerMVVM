@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['customview_2eg_2ecs_0',['CustomView.g.cs',['../_custom_view_8g_8cs.html',1,'']]],
-  ['customview_2eg_2ei_2ecs_1',['CustomView.g.i.cs',['../_custom_view_8g_8i_8cs.html',1,'']]],
-  ['customview_2examl_2ecs_2',['CustomView.xaml.cs',['../_custom_view_8xaml_8cs.html',1,'']]],
-  ['customviewmodel_2ecs_3',['CustomViewModel.cs',['../_custom_view_model_8cs.html',1,'']]]
+  ['hiphopview_2examl_2ecs_0',['HipHopView.xaml.cs',['../_hip_hop_view_8xaml_8cs.html',1,'']]],
+  ['hiphopviewmodel_2ecs_1',['HipHopViewModel.cs',['../_hip_hop_view_model_8cs.html',1,'']]],
+  ['homeview_2examl_2ecs_2',['HomeView.xaml.cs',['../_home_view_8xaml_8cs.html',1,'']]],
+  ['homeviewmodel_2ecs_3',['HomeViewModel.cs',['../_home_view_model_8cs.html',1,'']]]
 ];

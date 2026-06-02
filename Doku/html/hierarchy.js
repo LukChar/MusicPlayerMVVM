@@ -3,10 +3,6 @@ var hierarchy =
     [ "Application", null, [
       [ "MusicPlayerMVVM.App", "class_music_player_m_v_v_m_1_1_app.html", null ]
     ] ],
-    [ "System.Windows.Application", null, [
-      [ "MusicPlayerMVVM.App", "class_music_player_m_v_v_m_1_1_app.html", null ],
-      [ "MusicPlayerMVVM.App", "class_music_player_m_v_v_m_1_1_app.html", null ]
-    ] ],
     [ "MusicPlayerMVVM.Models.BasePlaylist", "class_music_player_m_v_v_m_1_1_models_1_1_base_playlist.html", [
       [ "MusicPlayerMVVM.Models.MusicPlayer", "class_music_player_m_v_v_m_1_1_models_1_1_music_player.html", null ]
     ] ],
@@ -15,28 +11,6 @@ var hierarchy =
     ] ],
     [ "ICommand", null, [
       [ "MusicPlayerMVVM.Common.ActionCommand", "class_music_player_m_v_v_m_1_1_common_1_1_action_command.html", null ]
-    ] ],
-    [ "System.Windows.Markup.IComponentConnector", null, [
-      [ "MusicPlayerMVVM.MainWindow", "class_music_player_m_v_v_m_1_1_main_window.html", null ],
-      [ "MusicPlayerMVVM.Resources.Styles", "class_music_player_m_v_v_m_1_1_resources_1_1_styles.html", null ],
-      [ "MusicPlayerMVVM.Views.CustomView", "class_music_player_m_v_v_m_1_1_views_1_1_custom_view.html", null ],
-      [ "MusicPlayerMVVM.Views.CustomView", "class_music_player_m_v_v_m_1_1_views_1_1_custom_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HipHopView", "class_music_player_m_v_v_m_1_1_views_1_1_hip_hop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HipHopView", "class_music_player_m_v_v_m_1_1_views_1_1_hip_hop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HomeView", "class_music_player_m_v_v_m_1_1_views_1_1_home_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HomeView", "class_music_player_m_v_v_m_1_1_views_1_1_home_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HomeWindow", "class_music_player_m_v_v_m_1_1_views_1_1_home_window.html", null ],
-      [ "MusicPlayerMVVM.Views.JazzView", "class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html", null ],
-      [ "MusicPlayerMVVM.Views.JazzView", "class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html", null ],
-      [ "MusicPlayerMVVM.Views.Klassik", "class_music_player_m_v_v_m_1_1_views_1_1_klassik.html", null ],
-      [ "MusicPlayerMVVM.Views.KlassikView", "class_music_player_m_v_v_m_1_1_views_1_1_klassik_view.html", null ],
-      [ "MusicPlayerMVVM.Views.KlassikView", "class_music_player_m_v_v_m_1_1_views_1_1_klassik_view.html", null ],
-      [ "MusicPlayerMVVM.Views.MainWindow", "class_music_player_m_v_v_m_1_1_views_1_1_main_window.html", null ],
-      [ "MusicPlayerMVVM.Views.MainWindow", "class_music_player_m_v_v_m_1_1_views_1_1_main_window.html", null ],
-      [ "MusicPlayerMVVM.Views.PopView", "class_music_player_m_v_v_m_1_1_views_1_1_pop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.PopView", "class_music_player_m_v_v_m_1_1_views_1_1_pop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.RockView", "class_music_player_m_v_v_m_1_1_views_1_1_rock_view.html", null ],
-      [ "MusicPlayerMVVM.Views.RockView", "class_music_player_m_v_v_m_1_1_views_1_1_rock_view.html", null ]
     ] ],
     [ "INotifyPropertyChanged", null, [
       [ "MusicPlayerMVVM.Common.NotifyPropertyChanged", "class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed.html", [
@@ -51,10 +25,6 @@ var hierarchy =
           [ "MusicPlayerMVVM.ViewModels.RockViewModel", "class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html", null ]
         ] ]
       ] ]
-    ] ],
-    [ "System.Windows.Markup.InternalTypeHelper", null, [
-      [ "XamlGeneratedNamespace.GeneratedInternalTypeHelper", "class_xaml_generated_namespace_1_1_generated_internal_type_helper.html", null ],
-      [ "XamlGeneratedNamespace.GeneratedInternalTypeHelper", "class_xaml_generated_namespace_1_1_generated_internal_type_helper.html", null ]
     ] ],
     [ "ModelSnapshot", null, [
       [ "MusicPlayerMVVM.Migrations.MusicDbContextModelSnapshot", "class_music_player_m_v_v_m_1_1_migrations_1_1_music_db_context_model_snapshot.html", null ]
@@ -73,36 +43,16 @@ var hierarchy =
       [ "MusicPlayerMVVM.Models.PopSong", "class_music_player_m_v_v_m_1_1_models_1_1_pop_song.html", null ],
       [ "MusicPlayerMVVM.Models.RockSong", "class_music_player_m_v_v_m_1_1_models_1_1_rock_song.html", null ]
     ] ],
-    [ "System.Windows.Controls.UserControl", null, [
-      [ "MusicPlayerMVVM.Views.CustomView", "class_music_player_m_v_v_m_1_1_views_1_1_custom_view.html", null ],
-      [ "MusicPlayerMVVM.Views.CustomView", "class_music_player_m_v_v_m_1_1_views_1_1_custom_view.html", null ],
+    [ "UserControl", null, [
       [ "MusicPlayerMVVM.Views.CustomView", "class_music_player_m_v_v_m_1_1_views_1_1_custom_view.html", null ],
       [ "MusicPlayerMVVM.Views.HipHopView", "class_music_player_m_v_v_m_1_1_views_1_1_hip_hop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HipHopView", "class_music_player_m_v_v_m_1_1_views_1_1_hip_hop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HipHopView", "class_music_player_m_v_v_m_1_1_views_1_1_hip_hop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HomeView", "class_music_player_m_v_v_m_1_1_views_1_1_home_view.html", null ],
-      [ "MusicPlayerMVVM.Views.HomeView", "class_music_player_m_v_v_m_1_1_views_1_1_home_view.html", null ],
       [ "MusicPlayerMVVM.Views.HomeView", "class_music_player_m_v_v_m_1_1_views_1_1_home_view.html", null ],
       [ "MusicPlayerMVVM.Views.JazzView", "class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html", null ],
-      [ "MusicPlayerMVVM.Views.JazzView", "class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html", null ],
-      [ "MusicPlayerMVVM.Views.JazzView", "class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html", null ],
-      [ "MusicPlayerMVVM.Views.KlassikView", "class_music_player_m_v_v_m_1_1_views_1_1_klassik_view.html", null ],
-      [ "MusicPlayerMVVM.Views.KlassikView", "class_music_player_m_v_v_m_1_1_views_1_1_klassik_view.html", null ],
       [ "MusicPlayerMVVM.Views.KlassikView", "class_music_player_m_v_v_m_1_1_views_1_1_klassik_view.html", null ],
       [ "MusicPlayerMVVM.Views.PopView", "class_music_player_m_v_v_m_1_1_views_1_1_pop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.PopView", "class_music_player_m_v_v_m_1_1_views_1_1_pop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.PopView", "class_music_player_m_v_v_m_1_1_views_1_1_pop_view.html", null ],
-      [ "MusicPlayerMVVM.Views.RockView", "class_music_player_m_v_v_m_1_1_views_1_1_rock_view.html", null ],
-      [ "MusicPlayerMVVM.Views.RockView", "class_music_player_m_v_v_m_1_1_views_1_1_rock_view.html", null ],
       [ "MusicPlayerMVVM.Views.RockView", "class_music_player_m_v_v_m_1_1_views_1_1_rock_view.html", null ]
     ] ],
-    [ "System.Windows.Window", null, [
-      [ "MusicPlayerMVVM.MainWindow", "class_music_player_m_v_v_m_1_1_main_window.html", null ],
-      [ "MusicPlayerMVVM.Resources.Styles", "class_music_player_m_v_v_m_1_1_resources_1_1_styles.html", null ],
-      [ "MusicPlayerMVVM.Views.HomeWindow", "class_music_player_m_v_v_m_1_1_views_1_1_home_window.html", null ],
-      [ "MusicPlayerMVVM.Views.Klassik", "class_music_player_m_v_v_m_1_1_views_1_1_klassik.html", null ],
-      [ "MusicPlayerMVVM.Views.MainWindow", "class_music_player_m_v_v_m_1_1_views_1_1_main_window.html", null ],
-      [ "MusicPlayerMVVM.Views.MainWindow", "class_music_player_m_v_v_m_1_1_views_1_1_main_window.html", null ],
+    [ "Window", null, [
       [ "MusicPlayerMVVM.Views.MainWindow", "class_music_player_m_v_v_m_1_1_views_1_1_main_window.html", null ]
     ] ]
 ];

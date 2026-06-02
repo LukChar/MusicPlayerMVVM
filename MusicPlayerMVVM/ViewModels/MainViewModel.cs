@@ -97,6 +97,16 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
+        /// <summary>
+        /// Steuert das globale Play/Pause-Verhalten basierend auf der aktuell aktiven Ansicht.
+        /// </summary>
+        /// <remarks>
+        /// Da die Audio-Steuerungselemente (Play, Next, Previous) in der persistenten Hauptansicht (MainView) liegen,
+        /// muss diese Methode zur Laufzeit via Pattern Matching evaluieren, welches ViewModel gerade über die <see cref="CurrentView"/>-Eigenschaft
+        /// angezeigt wird. Sie leitet den Befehl exklusiv an das aktive ViewModel weiter,
+        /// um zu verhindern, dass die Event-Abonnements aller Playlists simultan anspringen und sechs Lieder gleichzeitig abspielen.
+        /// </remarks>
+        /// <param name="parameter">Der Command-Parameter (wird hier nicht verwendet).</param>
         private void ExecuteGlobalPlayPause(object parameter)
         {
             if (CurrentView is HipHopViewModel v1) v1.PlayPauseCommand.Execute(null);

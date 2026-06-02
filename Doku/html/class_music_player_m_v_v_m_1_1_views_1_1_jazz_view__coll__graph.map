@@ -1,10 +1,5 @@
 <map id="MusicPlayerMVVM.Views.JazzView" name="MusicPlayerMVVM.Views.JazzView">
-<area shape="rect" id="Node000001" title="JazzView." alt="" coords="5,139,229,293"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="32,5,202,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,103,102,140,97,139,99,108"/>
-<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="118,103,120,140,115,139,116,108"/>
-<area shape="poly" id="edge5_Node000001_Node000002" title=" " alt="" coords="135,103,138,140,133,138,133,108"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="226,5,462,91"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="265,101,214,141,211,137,269,98"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="285,98,230,142,227,138,281,101"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,229,192"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="77,5,158,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,88,120,124,115,122,116,92"/>
 </map>

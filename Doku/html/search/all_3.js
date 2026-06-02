@@ -1,19 +1,14 @@
 var searchData=
 [
-  ['about_0',['About',['../md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html',1,'About'],['../md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html',1,'About'],['../md_packages_2_system_8_configuration_8_configuration_manager_810_80_88_2_p_a_c_k_a_g_e.html',1,'About']]],
-  ['actioncomand_2ecs_1',['ActionComand.cs',['../_action_comand_8cs.html',1,'']]],
-  ['actioncommand_2',['ActionCommand',['../class_music_player_m_v_v_m_1_1_common_1_1_action_command.html',1,'MusicPlayerMVVM.Common.ActionCommand'],['../class_music_player_m_v_v_m_1_1_common_1_1_action_command.html#ab312cd6de3b7129e8458c5a2ab0edc23',1,'MusicPlayerMVVM.Common.ActionCommand.ActionCommand()']]],
-  ['addeventhandler_3',['AddEventHandler',['../class_xaml_generated_namespace_1_1_generated_internal_type_helper.html#a73471f4a6d1ca4c4fceec9ad8610f0c8',1,'XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo eventInfo, object target, System.Delegate handler)'],['../class_xaml_generated_namespace_1_1_generated_internal_type_helper.html#a73471f4a6d1ca4c4fceec9ad8610f0c8',1,'XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo eventInfo, object target, System.Delegate handler)']]],
-  ['additional_20documentation_4',['Additional Documentation',['../md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html#autotoc_md10',1,'Additional Documentation'],['../md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html#autotoc_md16',1,'Additional Documentation'],['../md_packages_2_system_8_configuration_8_configuration_manager_810_80_88_2_p_a_c_k_a_g_e.html#autotoc_md42',1,'Additional Documentation']]],
-  ['addsongcommand_5',['AddSongCommand',['../class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#adaa86ab90a5714ae3f159e8d038e3588',1,'MusicPlayerMVVM::ViewModels::CustomViewModel']]],
-  ['addsongevent_6',['AddSongEvent',['../class_music_player_m_v_v_m_1_1_events_1_1_add_song_event.html',1,'MusicPlayerMVVM::Events']]],
-  ['addsongevent_2ecs_7',['AddSongEvent.cs',['../_add_song_event_8cs.html',1,'']]],
-  ['addsongexecute_8',['AddSongExecute',['../class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#ae93c3be1f70e3cde0db0e215c64fd4a9',1,'MusicPlayerMVVM::ViewModels::CustomViewModel']]],
-  ['and_20support_9',['Status and Support',['../dir_900360e4e793183a484c14c734da9801.html#autotoc_md1',1,'']]],
-  ['app_10',['App',['../class_music_player_m_v_v_m_1_1_app.html',1,'MusicPlayerMVVM']]],
-  ['app_2eg_2ecs_11',['App.g.cs',['../_app_8g_8cs.html',1,'']]],
-  ['app_2eg_2ei_2ecs_12',['App.g.i.cs',['../_app_8g_8i_8cs.html',1,'']]],
-  ['app_2examl_2ecs_13',['App.xaml.cs',['../_app_8xaml_8cs.html',1,'']]],
-  ['artist_14',['Artist',['../class_music_player_m_v_v_m_1_1_models_1_1_song.html#a1a04a0960f6eb0a69ffa0ded44542566',1,'MusicPlayerMVVM::Models::Song']]],
-  ['assemblyinfo_2ecs_15',['AssemblyInfo.cs',['../_assembly_info_8cs.html',1,'']]]
+  ['canexecute_0',['CanExecute',['../class_music_player_m_v_v_m_1_1_common_1_1_action_command.html#ae4bb1472f49f694bc68646b65269aab0',1,'MusicPlayerMVVM::Common::ActionCommand']]],
+  ['canexecutechanged_1',['CanExecuteChanged',['../class_music_player_m_v_v_m_1_1_common_1_1_action_command.html#a73ff4d15b1d37aac7764f7ea07031493',1,'MusicPlayerMVVM::Common::ActionCommand']]],
+  ['canexecutewithselection_2',['CanExecuteWithSelection',['../class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#aa018e7b1f17a258c3a11243118b5dc9e',1,'MusicPlayerMVVM.ViewModels.CustomViewModel.CanExecuteWithSelection()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html#a0dea8bb38a326bb63523fe99c7862b2d',1,'MusicPlayerMVVM.ViewModels.HipHopViewModel.CanExecuteWithSelection()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#aea6528cb7437956af1a09c448412da42',1,'MusicPlayerMVVM.ViewModels.JazzViewModel.CanExecuteWithSelection()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#a37051e940e6f9efc3f710474837342e4',1,'MusicPlayerMVVM.ViewModels.KlassikViewModel.CanExecuteWithSelection()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html#a245d6e76c9991867cc614899e66eac9b',1,'MusicPlayerMVVM.ViewModels.PopViewModel.CanExecuteWithSelection()'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html#a0e7c16032794cead8c10c2c3f7c4e1e7',1,'MusicPlayerMVVM.ViewModels.RockViewModel.CanExecuteWithSelection()']]],
+  ['currentview_3',['CurrentView',['../class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model.html#a362d2aad457fd34385b595f48c4b6d02',1,'MusicPlayerMVVM::ViewModels::MainViewModel']]],
+  ['currentvolume_4',['CurrentVolume',['../class_music_player_m_v_v_m_1_1_models_1_1_music_player.html#aa73de065b6592b8bb54e879192b827a9',1,'MusicPlayerMVVM::Models::MusicPlayer']]],
+  ['customsong_5',['CustomSong',['../class_music_player_m_v_v_m_1_1_models_1_1_custom_song.html',1,'MusicPlayerMVVM::Models']]],
+  ['customsongs_6',['CustomSongs',['../class_music_player_m_v_v_m_1_1_data_1_1_music_db_context.html#a5c3ce2efbe56531de85f197eeffb09da',1,'MusicPlayerMVVM::Data::MusicDbContext']]],
+  ['customview_7',['CustomView',['../class_music_player_m_v_v_m_1_1_views_1_1_custom_view.html',1,'MusicPlayerMVVM.Views.CustomView'],['../class_music_player_m_v_v_m_1_1_views_1_1_custom_view.html#a742cb3d60e28e113227f749ef88c5684',1,'MusicPlayerMVVM.Views.CustomView.CustomView()']]],
+  ['customview_2examl_2ecs_8',['CustomView.xaml.cs',['../_custom_view_8xaml_8cs.html',1,'']]],
+  ['customviewmodel_9',['CustomViewModel',['../class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html',1,'MusicPlayerMVVM.ViewModels.CustomViewModel'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#a5a13ff1afd4f09ea192496eb84e70ed8',1,'MusicPlayerMVVM.ViewModels.CustomViewModel.CustomViewModel()']]],
+  ['customviewmodel_2ecs_10',['CustomViewModel.cs',['../_custom_view_model_8cs.html',1,'']]]
 ];
