@@ -1,0 +1,5 @@
+<map id="MusicPlayerMVVM.Data.MusicDbContext.SeedSongsFromDirectories" name="MusicPlayerMVVM.Data.MusicDbContext.SeedSongsFromDirectories">
+<area shape="rect" id="Node000001" title="Durchsucht das angegebene Basisverzeichnis nach .wav&#45;Dateien in genrespezifischen Unterordnern und fü..." alt="" coords="258,5,506,48"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_data_1_1_music_db_context.html#ad59a701d82afdd1a8da1691a08f4831c" title="Initialisiert eine neue Instanz der MusicDbContext Klasse. Stellt sicher, dass die Datenbank erstellt..." alt="" coords="5,5,210,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,27,210,29,210,24,245,27"/>
+</map>

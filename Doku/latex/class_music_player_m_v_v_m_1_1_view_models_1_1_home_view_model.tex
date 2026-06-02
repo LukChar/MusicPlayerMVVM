@@ -1,0 +1,134 @@
+\doxysection{Music\+Player\+MVVM.\+View\+Models.\+Home\+View\+Model Class Reference}
+\hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model}\index{MusicPlayerMVVM.ViewModels.HomeViewModel@{MusicPlayerMVVM.ViewModels.HomeViewModel}}
+
+
+Steuert die Startseite (Genre-\/\+Auswahl) der Anwendung. Kommuniziert Navigationswünsche über den zentralen Event\+Aggregator.  
+
+
+
+
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Home\+View\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Home\+View\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_a7948eb9144479dda853195aa4c0eb4ea}{Home\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model}{Home\+View\+Model} und richtet die Navigations-\/\+Befehle ein. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_a6fde6eb6bc517f1bafc80c604db837c0}{On\+Property\+Changed}} (string property)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_a0c24ffef12a85b959ff7d9edf4830ce9}{Select\+Genre\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Holt den Befehl, der bei der Auswahl eines Genres ausgeführt wird. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_ae91c097f963aecd3b3e74f594d805ff3}{Select\+Genre\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Verarbeitet den Klick auf ein Genre und sendet einen Navigationsbefehl an das System. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_adad7fef30e3c592ae38666a929a93c65}{Property\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Steuert die Startseite (Genre-\/\+Auswahl) der Anwendung. Kommuniziert Navigationswünsche über den zentralen Event\+Aggregator. 
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_doc-constructors}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_a7948eb9144479dda853195aa4c0eb4ea}\index{MusicPlayerMVVM.ViewModels.HomeViewModel@{MusicPlayerMVVM.ViewModels.HomeViewModel}!HomeViewModel@{HomeViewModel}}
+\index{HomeViewModel@{HomeViewModel}!MusicPlayerMVVM.ViewModels.HomeViewModel@{MusicPlayerMVVM.ViewModels.HomeViewModel}}
+\doxysubsubsection{\texorpdfstring{HomeViewModel()}{HomeViewModel()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_a7948eb9144479dda853195aa4c0eb4ea} 
+Music\+Player\+MVVM.\+View\+Models.\+Home\+View\+Model.\+Home\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model}{Home\+View\+Model} und richtet die Navigations-\/\+Befehle ein. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Aggregator} & Die Instanz des Prism Event\+Aggregators.\\
+\hline
+\end{DoxyParams}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_doc-func-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_ae91c097f963aecd3b3e74f594d805ff3}\index{MusicPlayerMVVM.ViewModels.HomeViewModel@{MusicPlayerMVVM.ViewModels.HomeViewModel}!SelectGenreExecute@{SelectGenreExecute}}
+\index{SelectGenreExecute@{SelectGenreExecute}!MusicPlayerMVVM.ViewModels.HomeViewModel@{MusicPlayerMVVM.ViewModels.HomeViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectGenreExecute()}{SelectGenreExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_ae91c097f963aecd3b3e74f594d805ff3} 
+void Music\+Player\+MVVM.\+View\+Models.\+Home\+View\+Model.\+Select\+Genre\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Verarbeitet den Klick auf ein Genre und sendet einen Navigationsbefehl an das System. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & Der Name des Genres (z. B. "{}\+Hip\+Hop"{}, "{}\+Rock"{}), der aus dem XAML übergeben wird.\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_ae91c097f963aecd3b3e74f594d805ff3_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_doc-property-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_a0c24ffef12a85b959ff7d9edf4830ce9}\index{MusicPlayerMVVM.ViewModels.HomeViewModel@{MusicPlayerMVVM.ViewModels.HomeViewModel}!SelectGenreCommand@{SelectGenreCommand}}
+\index{SelectGenreCommand@{SelectGenreCommand}!MusicPlayerMVVM.ViewModels.HomeViewModel@{MusicPlayerMVVM.ViewModels.HomeViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectGenreCommand}{SelectGenreCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model_a0c24ffef12a85b959ff7d9edf4830ce9} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Home\+View\+Model.\+Select\+Genre\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Holt den Befehl, der bei der Auswahl eines Genres ausgeführt wird. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Music\+Player\+MVVM/\+\+View\+Models/\+\doxymbox{\hyperlink{_home_view_model_8cs}{Home\+View\+Model.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,188 @@
+\doxysection{Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context Class Reference}
+\hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context}{}\label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+
+
+Repräsentiert den Datenbankkontext für den Musikplayer. Verwaltet die Verbindung zur Datenbank und die Tabellen der verschiedenen Playlists.  
+
+
+
+
+Inheritance diagram for Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_ad59a701d82afdd1a8da1691a08f4831c}{Music\+Db\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Initialisiert eine neue Instanz der Music\+Db\+Context Klasse. Stellt sicher, dass die Datenbank erstellt ist und initialisiert die Standard-\/\+Songs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_aed7731a13e621a3ec523f0d3c73e70da}{On\+Configuring}} (Db\+Context\+Options\+Builder options\+Builder)
+\begin{DoxyCompactList}\small\item\em Konfiguriert den Datenbankkontext für die Verwendung des SQL Servers mit dem Connection String aus der App.\+config. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Db\+Set$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_hip_hop_song}{Hip\+Hop\+Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_acab622ab9691ee5a0a83425ac486de85}{Hip\+Hop\+Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Ruft die Tabelle für Hip-\/\+Hop-\/\+Songs ab oder legt diese fest. \end{DoxyCompactList}\item 
+Db\+Set$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_rock_song}{Rock\+Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a1e5cd05eec40e36709370369a8a2b40c}{Rock\+Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Ruft die Tabelle für Rock-\/\+Songs ab oder legt diese fest. \end{DoxyCompactList}\item 
+Db\+Set$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_pop_song}{Pop\+Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_aaa1460e84beaacec59894f7e73a39db0}{Pop\+Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Ruft die Tabelle für Pop-\/\+Songs ab oder legt diese fest. \end{DoxyCompactList}\item 
+Db\+Set$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_jazz_song}{Jazz\+Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a0db68810c8c05cd3d8277ba3956ab9cc}{Jazz\+Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Ruft die Tabelle für Jazz-\/\+Songs ab oder legt diese fest. \end{DoxyCompactList}\item 
+Db\+Set$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_klassik_song}{Klassik\+Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a2ab115671e48f5d7376011f7bc80d288}{Klassik\+Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Ruft die Tabelle für Klassik-\/\+Songs ab oder legt diese fest. \end{DoxyCompactList}\item 
+Db\+Set$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_custom_song}{Custom\+Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a5c3ce2efbe56531de85f197eeffb09da}{Custom\+Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Ruft die Tabelle für benutzerdefinierte Songs ab oder legt diese fest. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_acb5a92f06126708bad4685d6a25585e1}{Seed\+Songs\+From\+Directories}} (string base\+Folder\+Path)
+\begin{DoxyCompactList}\small\item\em Durchsucht das angegebene Basisverzeichnis nach .wav-\/\+Dateien in genrespezifischen Unterordnern und fügt diese der Datenbank hinzu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repräsentiert den Datenbankkontext für den Musikplayer. Verwaltet die Verbindung zur Datenbank und die Tabellen der verschiedenen Playlists. 
+
+\label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_doc-constructors}
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_ad59a701d82afdd1a8da1691a08f4831c}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!MusicDbContext@{MusicDbContext}}
+\index{MusicDbContext@{MusicDbContext}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{MusicDbContext()}{MusicDbContext()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_ad59a701d82afdd1a8da1691a08f4831c} 
+Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Music\+Db\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert eine neue Instanz der Music\+Db\+Context Klasse. Stellt sicher, dass die Datenbank erstellt ist und initialisiert die Standard-\/\+Songs. 
+
+
+
+\label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_doc-func-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_aed7731a13e621a3ec523f0d3c73e70da}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!OnConfiguring@{OnConfiguring}}
+\index{OnConfiguring@{OnConfiguring}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{OnConfiguring()}{OnConfiguring()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_aed7731a13e621a3ec523f0d3c73e70da} 
+override void Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+On\+Configuring (\begin{DoxyParamCaption}\item[{Db\+Context\+Options\+Builder}]{options\+Builder}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Konfiguriert den Datenbankkontext für die Verwendung des SQL Servers mit dem Connection String aus der App.\+config. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options\+Builder} & Ein Builder zur Erstellung oder Änderung von Optionen für diesen Kontext.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_acb5a92f06126708bad4685d6a25585e1}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!SeedSongsFromDirectories@{SeedSongsFromDirectories}}
+\index{SeedSongsFromDirectories@{SeedSongsFromDirectories}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{SeedSongsFromDirectories()}{SeedSongsFromDirectories()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_acb5a92f06126708bad4685d6a25585e1} 
+void Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Seed\+Songs\+From\+Directories (\begin{DoxyParamCaption}\item[{string}]{base\+Folder\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Durchsucht das angegebene Basisverzeichnis nach .wav-\/\+Dateien in genrespezifischen Unterordnern und fügt diese der Datenbank hinzu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Folder\+Path} & Der absolute Pfad zum Ressourcen-\/\+Ordner.\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_acb5a92f06126708bad4685d6a25585e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_doc-property-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a5c3ce2efbe56531de85f197eeffb09da}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!CustomSongs@{CustomSongs}}
+\index{CustomSongs@{CustomSongs}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{CustomSongs}{CustomSongs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a5c3ce2efbe56531de85f197eeffb09da} 
+Db\+Set$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_custom_song}{Custom\+Song}}$>$ Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Custom\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ruft die Tabelle für benutzerdefinierte Songs ab oder legt diese fest. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_acab622ab9691ee5a0a83425ac486de85}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!HipHopSongs@{HipHopSongs}}
+\index{HipHopSongs@{HipHopSongs}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{HipHopSongs}{HipHopSongs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_acab622ab9691ee5a0a83425ac486de85} 
+Db\+Set$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_hip_hop_song}{Hip\+Hop\+Song}}$>$ Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Hip\+Hop\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ruft die Tabelle für Hip-\/\+Hop-\/\+Songs ab oder legt diese fest. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a0db68810c8c05cd3d8277ba3956ab9cc}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!JazzSongs@{JazzSongs}}
+\index{JazzSongs@{JazzSongs}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{JazzSongs}{JazzSongs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a0db68810c8c05cd3d8277ba3956ab9cc} 
+Db\+Set$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_jazz_song}{Jazz\+Song}}$>$ Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Jazz\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ruft die Tabelle für Jazz-\/\+Songs ab oder legt diese fest. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a2ab115671e48f5d7376011f7bc80d288}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!KlassikSongs@{KlassikSongs}}
+\index{KlassikSongs@{KlassikSongs}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{KlassikSongs}{KlassikSongs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a2ab115671e48f5d7376011f7bc80d288} 
+Db\+Set$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_klassik_song}{Klassik\+Song}}$>$ Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Klassik\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ruft die Tabelle für Klassik-\/\+Songs ab oder legt diese fest. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_aaa1460e84beaacec59894f7e73a39db0}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!PopSongs@{PopSongs}}
+\index{PopSongs@{PopSongs}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{PopSongs}{PopSongs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_aaa1460e84beaacec59894f7e73a39db0} 
+Db\+Set$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_pop_song}{Pop\+Song}}$>$ Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Pop\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ruft die Tabelle für Pop-\/\+Songs ab oder legt diese fest. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a1e5cd05eec40e36709370369a8a2b40c}\index{MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}!RockSongs@{RockSongs}}
+\index{RockSongs@{RockSongs}!MusicPlayerMVVM.Data.MusicDbContext@{MusicPlayerMVVM.Data.MusicDbContext}}
+\doxysubsubsection{\texorpdfstring{RockSongs}{RockSongs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_data_1_1_music_db_context_a1e5cd05eec40e36709370369a8a2b40c} 
+Db\+Set$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_rock_song}{Rock\+Song}}$>$ Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Rock\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ruft die Tabelle für Rock-\/\+Songs ab oder legt diese fest. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Music\+Player\+MVVM/\+\+Services/\+\doxymbox{\hyperlink{_music_db_context_8cs}{Music\+Db\+Context.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="MusicPlayerMVVM.Models.HipHopSong" name="MusicPlayerMVVM.Models.HipHopSong">
+<area shape="rect" id="Node000001" title="Repräsentiert die Entität für die SQL&#45;Tabelle &#39;Songs_HipHop&#39;." alt="" coords="10,208,203,293"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_models_1_1_song.html" title="Stellt die abstrakte Basisklasse für alle Musiktitel dar. Enthält die primären Eigenschaften,..." alt="" coords="5,5,208,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,173,109,209,104,207,105,177"/>
+</map>

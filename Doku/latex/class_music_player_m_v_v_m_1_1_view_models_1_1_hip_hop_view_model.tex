@@ -1,0 +1,384 @@
+\doxysection{Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model Class Reference}
+\hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+
+
+Steuert die Geschäftslogik der Hip\+Hop-\/\+Wiedergabeliste und verarbeitet eingehende Datenereignisse.  
+
+
+
+
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a9f6b245421e316ac6658bcd358ff79a3}{Hip\+Hop\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}{Hip\+Hop\+View\+Model}, konfiguriert Steuerungskommandos und abonniert Datenereignisse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_a6fde6eb6bc517f1bafc80c604db837c0}{On\+Property\+Changed}} (string property)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aa56f44b69ee233d0b75ef17d26fc70c5}{Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt die bindbare Auflistung der Musiktitel. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a1f08e4f6fcc93a2512dc80a03a88cf10}{Selected\+Song}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt den aktuell selektierten Musiktitel. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a25e9f84cd0a0c2b47321dc94db73abd7}{Volume}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt die Systemlautstärke der Audiokomponente. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_acb51ad18946e8e0f002db35aad5e1f01}{Play\+Pause\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für die Play/\+\+Pause-\/\+Interaktion ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a3a4ec9c212bbcbc31ac45d2284b318c6}{Previous\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für den Wechsel zum vorherigen Titel ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a090c2c3206e4d2cb93b2654295ae008e}{Next\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für den Wechsel zum nächsten Titel ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a2e10ea8b5485ee689dcee321277a6618}{Back\+To\+Home\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für die Rückkehr zur Startseite ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a0dea8bb38a326bb63523fe99c7862b2d}{Can\+Execute\+With\+Selection}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Validiert den Ausführungsstatus der playerbezogenen Commands basierend auf der Selektion. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ab63cd9fb1a0fddcc59c493085bb4e317}{Load\+Songs\+From\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Initialisiert eine synchrone Verbindung zur SQL-\/\+Datenbank und lädt die Hip\+Hop-\/\+Titelliste. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aefa35260b796eddf7d5636e38846e0cf}{Play\+Pause\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Schaltet den Wiedergabezustand der Audiokomponente zwischen aktiv und pausiert um. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a18ac5d7d74da01f129fb42470c183440}{Previous\+Song\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Dekrementiert den Playlist-\/\+Index und startet den vorherigen Titel. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ab197b6b699643c7c10e23329b55fb419}{Next\+Song\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Inkrementiert den Playlist-\/\+Index und startet den nächsten Titel. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ac2d8bf3317650caa94b4782abde4dc2a}{Back\+To\+Home\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Unterbricht die aktuelle Audiowiedergabe und navigiert zurück zur Hauptübersicht. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a0124814627566a5c88404c6ec86df415}{Play\+Song}} (\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} song)
+\begin{DoxyCompactList}\small\item\em Berechnet den absoluten Dateipfad und initiiert die Wiedergabe über die Hardware-\/\+Schnittstelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a2efd10ff8bd4e7e4ad4145ea8fa340c2}{\+\_\+connection\+String}} = Configuration\+Manager.\+Connection\+Strings\+["{}Music\+DB"{}]\+.Connection\+String
+\item 
+Media\+Player \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a4fe4ba873058fd9bd086d9c4f24d3dad}{\+\_\+media\+Player}}
+\item 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_abc36512e75f2b88284ce88fb2cd3c16d}{\+\_\+songs}}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_af349e8a8ead2e77d9c96df265da1dafa}{\+\_\+selected\+Song}}
+\item 
+double \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a82c55893d42d909a9165195bbc2cd316}{\+\_\+volume}}
+\item 
+bool \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a66e6b8176f9183a2cefbed7abcd0e697}{\+\_\+is\+Playing}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_adad7fef30e3c592ae38666a929a93c65}{Property\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Steuert die Geschäftslogik der Hip\+Hop-\/\+Wiedergabeliste und verarbeitet eingehende Datenereignisse. 
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-constructors}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a9f6b245421e316ac6658bcd358ff79a3}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!HipHopViewModel@{HipHopViewModel}}
+\index{HipHopViewModel@{HipHopViewModel}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{HipHopViewModel()}{HipHopViewModel()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a9f6b245421e316ac6658bcd358ff79a3} 
+Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Hip\+Hop\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}{Hip\+Hop\+View\+Model}, konfiguriert Steuerungskommandos und abonniert Datenereignisse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Aggregator} & Die Instanz des Prism Event\+Aggregators für systemweites Messaging.\\
+\hline
+\end{DoxyParams}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-func-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ac2d8bf3317650caa94b4782abde4dc2a}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!BackToHomeExecute@{BackToHomeExecute}}
+\index{BackToHomeExecute@{BackToHomeExecute}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{BackToHomeExecute()}{BackToHomeExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ac2d8bf3317650caa94b4782abde4dc2a} 
+void Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Back\+To\+Home\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Unterbricht die aktuelle Audiowiedergabe und navigiert zurück zur Hauptübersicht. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ac2d8bf3317650caa94b4782abde4dc2a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a0dea8bb38a326bb63523fe99c7862b2d}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!CanExecuteWithSelection@{CanExecuteWithSelection}}
+\index{CanExecuteWithSelection@{CanExecuteWithSelection}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{CanExecuteWithSelection()}{CanExecuteWithSelection()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a0dea8bb38a326bb63523fe99c7862b2d} 
+bool Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Can\+Execute\+With\+Selection (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Validiert den Ausführungsstatus der playerbezogenen Commands basierend auf der Selektion. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a0dea8bb38a326bb63523fe99c7862b2d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ab63cd9fb1a0fddcc59c493085bb4e317}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!LoadSongsFromDatabase@{LoadSongsFromDatabase}}
+\index{LoadSongsFromDatabase@{LoadSongsFromDatabase}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{LoadSongsFromDatabase()}{LoadSongsFromDatabase()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ab63cd9fb1a0fddcc59c493085bb4e317} 
+void Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Load\+Songs\+From\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Initialisiert eine synchrone Verbindung zur SQL-\/\+Datenbank und lädt die Hip\+Hop-\/\+Titelliste. 
+
+Nutzt das IDisposable-\/\+Muster über einen using-\/\+Block, um die Sql\+Connection-\/\+Ressourcen und offene Datenströme auch im Fehlerfall freizugeben. Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ab63cd9fb1a0fddcc59c493085bb4e317_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ab197b6b699643c7c10e23329b55fb419}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!NextSongExecute@{NextSongExecute}}
+\index{NextSongExecute@{NextSongExecute}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{NextSongExecute()}{NextSongExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ab197b6b699643c7c10e23329b55fb419} 
+void Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Next\+Song\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Inkrementiert den Playlist-\/\+Index und startet den nächsten Titel. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_ab197b6b699643c7c10e23329b55fb419_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aefa35260b796eddf7d5636e38846e0cf}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!PlayPauseExecute@{PlayPauseExecute}}
+\index{PlayPauseExecute@{PlayPauseExecute}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{PlayPauseExecute()}{PlayPauseExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aefa35260b796eddf7d5636e38846e0cf} 
+void Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Play\+Pause\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Schaltet den Wiedergabezustand der Audiokomponente zwischen aktiv und pausiert um. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aefa35260b796eddf7d5636e38846e0cf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a0124814627566a5c88404c6ec86df415}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!PlaySong@{PlaySong}}
+\index{PlaySong@{PlaySong}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{PlaySong()}{PlaySong()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a0124814627566a5c88404c6ec86df415} 
+void Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Play\+Song (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}}]{song}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Berechnet den absoluten Dateipfad und initiiert die Wiedergabe über die Hardware-\/\+Schnittstelle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song} & Das abzuspielende Song-\/\+Modell.\\
+\hline
+\end{DoxyParams}
+
+
+Ermittelt den Pfad zur Laufzeit über App\+Domain.\+Current\+Domain.\+Base\+Directory, um relative Pfadkonflikte nach dem Build zu vermeiden. Vor dem Laden wird der Audio-\/\+Puffer geleert. Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a0124814627566a5c88404c6ec86df415_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a18ac5d7d74da01f129fb42470c183440}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!PreviousSongExecute@{PreviousSongExecute}}
+\index{PreviousSongExecute@{PreviousSongExecute}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{PreviousSongExecute()}{PreviousSongExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a18ac5d7d74da01f129fb42470c183440} 
+void Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Previous\+Song\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Dekrementiert den Playlist-\/\+Index und startet den vorherigen Titel. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a18ac5d7d74da01f129fb42470c183440_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-variable-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a2efd10ff8bd4e7e4ad4145ea8fa340c2}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!\_connectionString@{\_connectionString}}
+\index{\_connectionString@{\_connectionString}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{\_connectionString}{\_connectionString}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a2efd10ff8bd4e7e4ad4145ea8fa340c2} 
+string Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+\_\+connection\+String = Configuration\+Manager.\+Connection\+Strings\+["{}Music\+DB"{}]\+.Connection\+String\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a66e6b8176f9183a2cefbed7abcd0e697}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!\_isPlaying@{\_isPlaying}}
+\index{\_isPlaying@{\_isPlaying}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{\_isPlaying}{\_isPlaying}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a66e6b8176f9183a2cefbed7abcd0e697} 
+bool Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+\_\+is\+Playing\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a4fe4ba873058fd9bd086d9c4f24d3dad}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!\_mediaPlayer@{\_mediaPlayer}}
+\index{\_mediaPlayer@{\_mediaPlayer}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{\_mediaPlayer}{\_mediaPlayer}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a4fe4ba873058fd9bd086d9c4f24d3dad} 
+Media\+Player Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+\_\+media\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_af349e8a8ead2e77d9c96df265da1dafa}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!\_selectedSong@{\_selectedSong}}
+\index{\_selectedSong@{\_selectedSong}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{\_selectedSong}{\_selectedSong}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_af349e8a8ead2e77d9c96df265da1dafa} 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+\_\+selected\+Song\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_abc36512e75f2b88284ce88fb2cd3c16d}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!\_songs@{\_songs}}
+\index{\_songs@{\_songs}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{\_songs}{\_songs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_abc36512e75f2b88284ce88fb2cd3c16d} 
+Observable\+Collection$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}$>$ Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+\_\+songs\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a82c55893d42d909a9165195bbc2cd316}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!\_volume@{\_volume}}
+\index{\_volume@{\_volume}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{\_volume}{\_volume}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a82c55893d42d909a9165195bbc2cd316} 
+double Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+\_\+volume\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-property-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a2e10ea8b5485ee689dcee321277a6618}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!BackToHomeCommand@{BackToHomeCommand}}
+\index{BackToHomeCommand@{BackToHomeCommand}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{BackToHomeCommand}{BackToHomeCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a2e10ea8b5485ee689dcee321277a6618} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Back\+To\+Home\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für die Rückkehr zur Startseite ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a090c2c3206e4d2cb93b2654295ae008e}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!NextSongCommand@{NextSongCommand}}
+\index{NextSongCommand@{NextSongCommand}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{NextSongCommand}{NextSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a090c2c3206e4d2cb93b2654295ae008e} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Next\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für den Wechsel zum nächsten Titel ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_acb51ad18946e8e0f002db35aad5e1f01}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!PlayPauseCommand@{PlayPauseCommand}}
+\index{PlayPauseCommand@{PlayPauseCommand}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{PlayPauseCommand}{PlayPauseCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_acb51ad18946e8e0f002db35aad5e1f01} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Play\+Pause\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für die Play/\+\+Pause-\/\+Interaktion ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a3a4ec9c212bbcbc31ac45d2284b318c6}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!PreviousSongCommand@{PreviousSongCommand}}
+\index{PreviousSongCommand@{PreviousSongCommand}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{PreviousSongCommand}{PreviousSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a3a4ec9c212bbcbc31ac45d2284b318c6} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Previous\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für den Wechsel zum vorherigen Titel ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a1f08e4f6fcc93a2512dc80a03a88cf10}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!SelectedSong@{SelectedSong}}
+\index{SelectedSong@{SelectedSong}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedSong}{SelectedSong}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a1f08e4f6fcc93a2512dc80a03a88cf10} 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Selected\+Song\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt den aktuell selektierten Musiktitel. 
+
+Bei Zuweisung eines neuen Titels während einer aktiven Wiedergabe wird der neue \doxylink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song} deterministisch direkt gestartet (Hot-\/\+Swap). \Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aa56f44b69ee233d0b75ef17d26fc70c5}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!Songs@{Songs}}
+\index{Songs@{Songs}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{Songs}{Songs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aa56f44b69ee233d0b75ef17d26fc70c5} 
+Observable\+Collection$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}$>$ Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt die bindbare Auflistung der Musiktitel. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a25e9f84cd0a0c2b47321dc94db73abd7}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!Volume@{Volume}}
+\index{Volume@{Volume}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{Volume}{Volume}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a25e9f84cd0a0c2b47321dc94db73abd7} 
+double Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Volume\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt die Systemlautstärke der Audiokomponente. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Music\+Player\+MVVM/\+\+View\+Models/\+\doxymbox{\hyperlink{_hip_hop_view_model_8cs}{Hip\+Hop\+View\+Model.\+cs}}\end{DoxyCompactItemize}

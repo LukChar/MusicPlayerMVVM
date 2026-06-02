@@ -1,0 +1,353 @@
+\doxysection{Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model Class Reference}
+\hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+
+
+Steuert die Geschäftslogik der Klassik-\/\+Wiedergabeliste und verarbeitet eingehende Datenereignisse.  
+
+
+
+
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab3f4065d3fa2f03b4fe8d19297420e26}{Klassik\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model}{Klassik\+View\+Model}, konfiguriert Steuerungskommandos und abonniert Datenereignisse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_a6fde6eb6bc517f1bafc80c604db837c0}{On\+Property\+Changed}} (string property)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_acc20e3eb10447a7116f4bc367d913e1a}{Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt die bindbare Auflistung der Musiktitel. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_af6265d80d57e335fd9235b90fef75dee}{Selected\+Song}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt den aktuell selektierten Musiktitel. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a86498eb7691a5028e6a039875854555b}{Volume}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt die Systemlautstärke der Audiokomponente. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a0de2c67d9d4845b1642994d80e9b7e2a}{Play\+Pause\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für die Play/\+\+Pause-\/\+Interaktion ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab7f8c972e24ef5660a29d03e1b0e1a28}{Previous\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für den Wechsel zum vorherigen Titel ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_aac6eaee3fb9f7985730ee20e2457f18d}{Next\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für den Wechsel zum nächsten Titel ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a6588773051018d427f7fb3b72f08fec9}{Back\+To\+Home\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für die Rückkehr zur Startseite ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a37051e940e6f9efc3f710474837342e4}{Can\+Execute\+With\+Selection}} (object parameter)
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a66f67766b645c0a9ddb2a1493dec7ddc}{Load\+Songs\+From\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Initialisiert eine synchrone Verbindung zur SQL-\/\+Datenbank und lädt die Klassik-\/\+Titelliste. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab7583ea070dbe679e6cdfea0cd5ef454}{Play\+Pause\+Execute}} (object parameter)
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_af883bad909e3674018cce8b80dcd1f86}{Previous\+Song\+Execute}} (object parameter)
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ad341cf0fb093045f324558854a4a26d4}{Next\+Song\+Execute}} (object parameter)
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a8bb02bd7d06bf30ad602d72337476a90}{Back\+To\+Home\+Execute}} (object parameter)
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a8bda31abcb05dddb9f5d27096ec3b1dc}{Play\+Song}} (\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} song)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a48b8acc1ccb6d5ed391e78eb9f53cd76}{\+\_\+connection\+String}} = Configuration\+Manager.\+Connection\+Strings\+["{}Music\+DB"{}]\+.Connection\+String
+\item 
+Media\+Player \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a9463e96df5ebe2a72fbf4314f75c9e5a}{\+\_\+media\+Player}}
+\item 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab90c735727fa0748db8d2ee1ef87a04e}{\+\_\+songs}}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_accd635a611a2b1fe7f11dd098e11b8c7}{\+\_\+selected\+Song}}
+\item 
+double \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_aecfdffbee055695bd1c5a0ddc02364ad}{\+\_\+volume}}
+\item 
+bool \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a929ab38b6d6918e4b0fbab42874d45d0}{\+\_\+is\+Playing}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_adad7fef30e3c592ae38666a929a93c65}{Property\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Steuert die Geschäftslogik der Klassik-\/\+Wiedergabeliste und verarbeitet eingehende Datenereignisse. 
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_doc-constructors}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab3f4065d3fa2f03b4fe8d19297420e26}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!KlassikViewModel@{KlassikViewModel}}
+\index{KlassikViewModel@{KlassikViewModel}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{KlassikViewModel()}{KlassikViewModel()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab3f4065d3fa2f03b4fe8d19297420e26} 
+Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Klassik\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model}{Klassik\+View\+Model}, konfiguriert Steuerungskommandos und abonniert Datenereignisse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Aggregator} & Die Instanz des Prism Event\+Aggregators für systemweites Messaging.\\
+\hline
+\end{DoxyParams}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_doc-func-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a8bb02bd7d06bf30ad602d72337476a90}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!BackToHomeExecute@{BackToHomeExecute}}
+\index{BackToHomeExecute@{BackToHomeExecute}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{BackToHomeExecute()}{BackToHomeExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a8bb02bd7d06bf30ad602d72337476a90} 
+void Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Back\+To\+Home\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a8bb02bd7d06bf30ad602d72337476a90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a37051e940e6f9efc3f710474837342e4}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!CanExecuteWithSelection@{CanExecuteWithSelection}}
+\index{CanExecuteWithSelection@{CanExecuteWithSelection}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{CanExecuteWithSelection()}{CanExecuteWithSelection()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a37051e940e6f9efc3f710474837342e4} 
+bool Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Can\+Execute\+With\+Selection (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a37051e940e6f9efc3f710474837342e4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a66f67766b645c0a9ddb2a1493dec7ddc}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!LoadSongsFromDatabase@{LoadSongsFromDatabase}}
+\index{LoadSongsFromDatabase@{LoadSongsFromDatabase}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{LoadSongsFromDatabase()}{LoadSongsFromDatabase()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a66f67766b645c0a9ddb2a1493dec7ddc} 
+void Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Load\+Songs\+From\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Initialisiert eine synchrone Verbindung zur SQL-\/\+Datenbank und lädt die Klassik-\/\+Titelliste. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a66f67766b645c0a9ddb2a1493dec7ddc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ad341cf0fb093045f324558854a4a26d4}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!NextSongExecute@{NextSongExecute}}
+\index{NextSongExecute@{NextSongExecute}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{NextSongExecute()}{NextSongExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ad341cf0fb093045f324558854a4a26d4} 
+void Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Next\+Song\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ad341cf0fb093045f324558854a4a26d4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab7583ea070dbe679e6cdfea0cd5ef454}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!PlayPauseExecute@{PlayPauseExecute}}
+\index{PlayPauseExecute@{PlayPauseExecute}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{PlayPauseExecute()}{PlayPauseExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab7583ea070dbe679e6cdfea0cd5ef454} 
+void Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Play\+Pause\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab7583ea070dbe679e6cdfea0cd5ef454_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a8bda31abcb05dddb9f5d27096ec3b1dc}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!PlaySong@{PlaySong}}
+\index{PlaySong@{PlaySong}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{PlaySong()}{PlaySong()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a8bda31abcb05dddb9f5d27096ec3b1dc} 
+void Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Play\+Song (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}}]{song}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a8bda31abcb05dddb9f5d27096ec3b1dc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_af883bad909e3674018cce8b80dcd1f86}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!PreviousSongExecute@{PreviousSongExecute}}
+\index{PreviousSongExecute@{PreviousSongExecute}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{PreviousSongExecute()}{PreviousSongExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_af883bad909e3674018cce8b80dcd1f86} 
+void Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Previous\+Song\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_af883bad909e3674018cce8b80dcd1f86_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_doc-variable-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a48b8acc1ccb6d5ed391e78eb9f53cd76}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!\_connectionString@{\_connectionString}}
+\index{\_connectionString@{\_connectionString}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{\_connectionString}{\_connectionString}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a48b8acc1ccb6d5ed391e78eb9f53cd76} 
+string Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+\_\+connection\+String = Configuration\+Manager.\+Connection\+Strings\+["{}Music\+DB"{}]\+.Connection\+String\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a929ab38b6d6918e4b0fbab42874d45d0}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!\_isPlaying@{\_isPlaying}}
+\index{\_isPlaying@{\_isPlaying}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{\_isPlaying}{\_isPlaying}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a929ab38b6d6918e4b0fbab42874d45d0} 
+bool Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+\_\+is\+Playing\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a9463e96df5ebe2a72fbf4314f75c9e5a}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!\_mediaPlayer@{\_mediaPlayer}}
+\index{\_mediaPlayer@{\_mediaPlayer}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{\_mediaPlayer}{\_mediaPlayer}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a9463e96df5ebe2a72fbf4314f75c9e5a} 
+Media\+Player Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+\_\+media\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_accd635a611a2b1fe7f11dd098e11b8c7}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!\_selectedSong@{\_selectedSong}}
+\index{\_selectedSong@{\_selectedSong}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{\_selectedSong}{\_selectedSong}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_accd635a611a2b1fe7f11dd098e11b8c7} 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+\_\+selected\+Song\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab90c735727fa0748db8d2ee1ef87a04e}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!\_songs@{\_songs}}
+\index{\_songs@{\_songs}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{\_songs}{\_songs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab90c735727fa0748db8d2ee1ef87a04e} 
+Observable\+Collection$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}$>$ Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+\_\+songs\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_aecfdffbee055695bd1c5a0ddc02364ad}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!\_volume@{\_volume}}
+\index{\_volume@{\_volume}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{\_volume}{\_volume}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_aecfdffbee055695bd1c5a0ddc02364ad} 
+double Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+\_\+volume\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_doc-property-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a6588773051018d427f7fb3b72f08fec9}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!BackToHomeCommand@{BackToHomeCommand}}
+\index{BackToHomeCommand@{BackToHomeCommand}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{BackToHomeCommand}{BackToHomeCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a6588773051018d427f7fb3b72f08fec9} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Back\+To\+Home\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für die Rückkehr zur Startseite ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_aac6eaee3fb9f7985730ee20e2457f18d}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!NextSongCommand@{NextSongCommand}}
+\index{NextSongCommand@{NextSongCommand}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{NextSongCommand}{NextSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_aac6eaee3fb9f7985730ee20e2457f18d} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Next\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für den Wechsel zum nächsten Titel ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a0de2c67d9d4845b1642994d80e9b7e2a}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!PlayPauseCommand@{PlayPauseCommand}}
+\index{PlayPauseCommand@{PlayPauseCommand}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{PlayPauseCommand}{PlayPauseCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a0de2c67d9d4845b1642994d80e9b7e2a} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Play\+Pause\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für die Play/\+\+Pause-\/\+Interaktion ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab7f8c972e24ef5660a29d03e1b0e1a28}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!PreviousSongCommand@{PreviousSongCommand}}
+\index{PreviousSongCommand@{PreviousSongCommand}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{PreviousSongCommand}{PreviousSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_ab7f8c972e24ef5660a29d03e1b0e1a28} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Previous\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für den Wechsel zum vorherigen Titel ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_af6265d80d57e335fd9235b90fef75dee}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!SelectedSong@{SelectedSong}}
+\index{SelectedSong@{SelectedSong}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedSong}{SelectedSong}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_af6265d80d57e335fd9235b90fef75dee} 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Selected\+Song\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt den aktuell selektierten Musiktitel. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_acc20e3eb10447a7116f4bc367d913e1a}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!Songs@{Songs}}
+\index{Songs@{Songs}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{Songs}{Songs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_acc20e3eb10447a7116f4bc367d913e1a} 
+Observable\+Collection$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}$>$ Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt die bindbare Auflistung der Musiktitel. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a86498eb7691a5028e6a039875854555b}\index{MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}!Volume@{Volume}}
+\index{Volume@{Volume}!MusicPlayerMVVM.ViewModels.KlassikViewModel@{MusicPlayerMVVM.ViewModels.KlassikViewModel}}
+\doxysubsubsection{\texorpdfstring{Volume}{Volume}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model_a86498eb7691a5028e6a039875854555b} 
+double Music\+Player\+MVVM.\+View\+Models.\+Klassik\+View\+Model.\+Volume\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt die Systemlautstärke der Audiokomponente. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Music\+Player\+MVVM/\+\+View\+Models/\+\doxymbox{\hyperlink{_klassik_view_model_8cs}{Klassik\+View\+Model.\+cs}}\end{DoxyCompactItemize}

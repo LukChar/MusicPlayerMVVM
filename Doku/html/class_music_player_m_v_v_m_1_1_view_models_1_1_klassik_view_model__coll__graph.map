@@ -1,0 +1,11 @@
+<map id="MusicPlayerMVVM.ViewModels.KlassikViewModel" name="MusicPlayerMVVM.ViewModels.KlassikViewModel">
+<area shape="rect" id="Node000001" title="Steuert die Geschäftslogik der Klassik&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="127,485,329,955"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels zur Bereitstellung der EventAggregator&#45;Infrastruktur...." alt="" coords="14,293,216,379"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,390,161,486,156,486,131,396"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed.html" title=" " alt="" coords="5,124,224,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,222,117,294,112,293,114,227"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="39,5,190,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="115,87,117,124,112,124,114,92"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_models_1_1_song.html" title="Stellt die abstrakte Basisklasse für alle Musiktitel dar. Enthält die primären Eigenschaften,..." alt="" coords="240,259,443,413"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="320,411,305,470,300,468,318,416"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,247,167,273"/>
+<area shape="rect" id="Node000001" href="$class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed.html" title=" " alt="" coords="215,239,444,281"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="181,258,216,259,212,261,183,262"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels zur Bereitstellung der EventAggregator&#45;Infrastruktur...." alt="" coords="492,239,704,281"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="459,257,494,259,489,261,460,263"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html" title="Steuert die benutzerdefinierte Playlist, ermöglicht das lokale Hinzufügen und Löschen von Titeln und ..." alt="" coords="752,5,965,48"/>
+<area shape="poly" id="edge7_Node000002_Node000003" title=" " alt="" coords="615,223,638,185,669,141,707,96,751,58,775,47,770,50,754,62,710,100,673,144,642,188,619,227"/>
+<area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html" title="Steuert die Geschäftslogik der HipHop&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="752,72,965,115"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="628,225,682,174,715,147,751,124,779,114,774,116,754,129,718,152,685,178,631,230"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model.html" title="Steuert die Startseite (Genre&#45;Auswahl) der Anwendung. Kommuniziert Navigationswünsche über den zentra..." alt="" coords="752,139,965,181"/>
+<area shape="poly" id="edge9_Node000002_Node000005" title=" " alt="" coords="659,229,751,191,787,181,782,183,753,196,661,234"/>
+<area shape="rect" id="Node000006" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html" title="Steuert die Geschäftslogik der Jazz&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="752,205,965,248"/>
+<area shape="poly" id="edge10_Node000002_Node000006" title=" " alt="" coords="719,242,754,240,749,241,720,247"/>
+<area shape="rect" id="Node000007" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html" title="Steuert die Geschäftslogik der Klassik&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="752,272,965,315"/>
+<area shape="poly" id="edge11_Node000002_Node000007" title=" " alt="" coords="720,273,755,279,749,280,720,278"/>
+<area shape="rect" id="Node000008" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model.html" title=" " alt="" coords="752,339,965,381"/>
+<area shape="poly" id="edge12_Node000002_Node000008" title=" " alt="" coords="661,286,753,324,787,338,782,338,751,329,660,291"/>
+<area shape="rect" id="Node000009" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html" title="Steuert die Geschäftslogik der Pop&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="752,405,965,448"/>
+<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="630,290,685,342,718,368,754,391,779,405,774,405,751,396,715,373,682,346,628,295"/>
+<area shape="rect" id="Node000010" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html" title="Steuert die Geschäftslogik der Rock&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="752,472,965,515"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="618,292,642,332,673,376,710,420,754,458,775,472,770,471,751,462,707,424,669,379,638,335,616,297"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="MusicPlayerMVVM.ViewModels.RockViewModel.PlaySong" name="MusicPlayerMVVM.ViewModels.RockViewModel.PlaySong">
+<area shape="rect" id="Node000001" title=" " alt="" coords="566,72,778,115"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html#ad4b5959e3898444c97bf4f8b0d88b692" title=" " alt="" coords="280,5,506,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="563,68,485,51,486,46,568,68"/>
+<area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html#a94c62dc6621e4b60dd34f152e82e63ed" title=" " alt="" coords="278,72,509,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="548,94,509,96,509,91,553,93"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html#a898a847cafa523b8f6966e36befcee1c" title=" " alt="" coords="269,139,518,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="568,118,486,141,485,135,563,119"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html#adfab41b43f8de81304db4b36150ebe0f" title="Initialisiert das RockViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse." alt="" coords="5,72,221,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="283,53,207,74,205,69,288,51"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="259,94,222,96,221,91,264,93"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="283,135,205,118,206,113,288,134"/>
+</map>

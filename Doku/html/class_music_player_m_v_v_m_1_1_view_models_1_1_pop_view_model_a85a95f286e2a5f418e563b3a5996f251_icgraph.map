@@ -1,0 +1,13 @@
+<map id="MusicPlayerMVVM.ViewModels.PopViewModel.PlaySong" name="MusicPlayerMVVM.ViewModels.PopViewModel.PlaySong">
+<area shape="rect" id="Node000001" title=" " alt="" coords="555,72,767,115"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html#aadd7af7b5ec0283e80f5767bfda233a1" title=" " alt="" coords="277,5,496,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="553,68,477,51,477,46,558,68"/>
+<area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html#ada1fe1ac3921da5d9c4dbd29eda44784" title=" " alt="" coords="275,72,498,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="537,94,499,96,498,91,542,93"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html#ac5b141f1ce59ceb45a63ec61a9ba1a90" title=" " alt="" coords="266,139,507,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="558,118,478,141,477,135,553,119"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html#a946dac64cb32f939639e61818441895a" title="Initialisiert das PopViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse." alt="" coords="5,72,218,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="278,53,203,74,202,69,283,51"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="256,94,219,96,218,91,262,93"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="278,135,202,118,203,113,284,134"/>
+</map>

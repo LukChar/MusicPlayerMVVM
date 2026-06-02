@@ -1,0 +1,5 @@
+<map id="MusicPlayerMVVM.Data.MusicDbContext" name="MusicPlayerMVVM.Data.MusicDbContext">
+<area shape="rect" id="Node000001" title="Repräsentiert den Datenbankkontext für den Musikplayer. Verwaltet die Verbindung zur Datenbank und di..." alt="" coords="5,123,199,357"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="65,5,139,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,87,105,123,100,122,102,92"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="MusicPlayerMVVM.ViewModels.KlassikViewModel.PlaySong" name="MusicPlayerMVVM.ViewModels.KlassikViewModel.PlaySong">
+<area shape="rect" id="Node000001" title=" " alt="" coords="602,72,814,115"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#ad341cf0fb093045f324558854a4a26d4" title=" " alt="" coords="304,5,542,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="597,68,517,51,518,46,602,68"/>
+<area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#ab7583ea070dbe679e6cdfea0cd5ef454" title=" " alt="" coords="302,72,545,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="584,94,545,96,545,91,589,93"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#af883bad909e3674018cce8b80dcd1f86" title=" " alt="" coords="293,139,554,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="602,118,518,141,517,135,597,119"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#ab3f4065d3fa2f03b4fe8d19297420e26" title="Initialisiert das KlassikViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse." alt="" coords="5,72,245,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="308,53,224,74,223,69,313,51"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="283,94,246,96,245,91,289,93"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="307,135,223,118,224,113,313,134"/>
+</map>

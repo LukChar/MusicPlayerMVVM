@@ -1,0 +1,13 @@
+<map id="MusicPlayerMVVM.ViewModels.JazzViewModel.PlaySong" name="MusicPlayerMVVM.ViewModels.JazzViewModel.PlaySong">
+<area shape="rect" id="Node000001" title=" " alt="" coords="560,72,772,115"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#a5211e9227b44a811db41f69f4bc51f82" title=" " alt="" coords="277,5,500,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="557,68,480,51,481,46,562,68"/>
+<area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#adfaa7db73bb1f0b92a037609584833dd" title=" " alt="" coords="275,72,503,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="542,94,504,96,503,91,547,93"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#a16be823b0ecd1944bb44b22143512090" title=" " alt="" coords="266,139,512,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="562,118,481,141,480,135,557,119"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html#a54c0015627119ce072e2ff88da7b9cd1" title="Initialisiert das JazzViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse." alt="" coords="5,72,218,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="280,53,204,74,202,69,285,51"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="257,94,218,96,218,91,262,93"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="280,135,203,118,203,113,285,134"/>
+</map>

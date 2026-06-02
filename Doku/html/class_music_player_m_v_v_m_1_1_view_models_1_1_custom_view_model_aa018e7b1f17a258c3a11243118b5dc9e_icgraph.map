@@ -1,0 +1,5 @@
+<map id="MusicPlayerMVVM.ViewModels.CustomViewModel.CanExecuteWithSelection" name="MusicPlayerMVVM.ViewModels.CustomViewModel.CanExecuteWithSelection">
+<area shape="rect" id="Node000001" title="Validiert den Ausführungsstatus der befehlsgebundenen Aktionen basierend auf der aktuellen Selektion." alt="" coords="299,5,587,48"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#a5a13ff1afd4f09ea192496eb84e70ed8" title="Initialisiert das CustomViewModel, konfiguriert alle Steuerungskommandos und lädt persistierte Daten." alt="" coords="5,5,251,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,27,251,29,251,24,286,27"/>
+</map>

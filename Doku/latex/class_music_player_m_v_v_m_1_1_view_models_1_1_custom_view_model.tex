@@ -1,0 +1,474 @@
+\doxysection{Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model Class Reference}
+\hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+
+
+Steuert die benutzerdefinierte Playlist, ermöglicht das lokale Hinzufügen und Löschen von Titeln und synchronisiert diese über das Entity Framework Core mit der Datenbank.  
+
+
+
+
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a5a13ff1afd4f09ea192496eb84e70ed8}{Custom\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model}{Custom\+View\+Model}, konfiguriert alle Steuerungskommandos und lädt persistierte Daten. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_a6fde6eb6bc517f1bafc80c604db837c0}{On\+Property\+Changed}} (string property)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a3b7225fba15475b599a0b42c65f3d047}{Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt die bindbare Auflistung der Musiktitel. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ae069529750060d55662e4e4a74a24d64}{Selected\+Song}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt den aktuell selektierten Musiktitel und startet diesen bei aktiver Wiedergabe. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a309d292a32b083954fc07eedb176603b}{Volume}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\begin{DoxyCompactList}\small\item\em Holt oder setzt die Systemlautstärke der Audiokomponente. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa15a8e82cefed5f29a37d3e1431e5c4b}{Play\+Pause\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für die Play/\+\+Pause-\/\+Interaktion ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a45a71730fd6562ce061edbb8ef6434fd}{Previous\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für den Wechsel zum vorherigen Titel ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a865bfe87aea98183b9bd03ac5ba6c318}{Next\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für den Wechsel zum nächsten Titel ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a783c53141c3da772ce521edc3d00ce69}{Back\+To\+Home\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl für die Rückkehr zur Startseite ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_adaa86ab90a5714ae3f159e8d038e3588}{Add\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl zum Hinzufügen einer neuen lokalen Audiodatei ab. \end{DoxyCompactList}\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_af57a360fc0d5ff84f50b7f6caac75063}{Delete\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den Befehl zum Löschen der aktuell ausgewählten Audiodatei ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa018e7b1f17a258c3a11243118b5dc9e}{Can\+Execute\+With\+Selection}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Validiert den Ausführungsstatus der befehlsgebundenen Aktionen basierend auf der aktuellen Selektion. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a769fc08d5e3dc500c64d0b78082d83e6}{On\+Song\+Added}} (\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} new\+Song)
+\begin{DoxyCompactList}\small\item\em Erfasst ein übermitteltes Song-\/\+Objekt und fügt dieses der aktiven Laufzeitauflistung hinzu. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ae93c3be1f70e3cde0db0e215c64fd4a9}{Add\+Song\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Öffnet einen Dateiauswahldialog zur Selektion einer Audiodatei, erstellt eine neue Entität und persistiert diese asynchron in der Datenbank. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa53318201041dfb10628148dcf58c5b0}{Delete\+Song\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Entfernt den selektierten \doxylink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song} aus der UI-\/\+Auflistung, stoppt eine eventuell laufende Wiedergabe und löscht den Datensatz physisch aus der Datenbank. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a76a2114a0ab77d672bc819f1543b7c5d}{Load\+Songs\+From\+Database}} ()
+\begin{DoxyCompactList}\small\item\em Liest die benutzerdefinierten Datensätze beim Initialisieren mittels Entity Framework Core aus. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa47d6578b8d1d0ccd4b3639dc2c4ce34}{Play\+Pause\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Ändert den Wiedergabezustand der Audiokomponente zwischen Aktiv und Pausiert. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ac6c2bcc0ffb35d82db13cb31adc3dd8c}{Previous\+Song\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Dekrementiert den Listenindex und startet den vorherigen Titel. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6f73d06c733517393c88500c4c5c8a98}{Next\+Song\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Inkrementiert den Listenindex und startet den nächsten Titel. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a035bb3e30c5842061bb9bb306122410c}{Back\+To\+Home\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Beendet die Medienwiedergabe und führt eine Navigation zur Startseite aus. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aaadb48037d479d7ba612585e417a5cbf}{Play\+Song}} (\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} song)
+\begin{DoxyCompactList}\small\item\em Analysiert den Dateipfad (relativ oder absolut) und initiiert die hardwarenahe Audiowiedergabe. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_add24fe0d8a05a5f749c3ae385bce322f}{On\+Global\+Play\+Control}} (string command)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Media\+Player \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a8790e9adac841ac2ea5be6e703946873}{\+\_\+media\+Player}}
+\item 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6f1d47b2085fc63d610e5a7629238e66}{\+\_\+songs}}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a21a3af254def56d99ae624a0abdab0ad}{\+\_\+selected\+Song}}
+\item 
+double \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a5e5fe50e89c2870807ad8e843360f136}{\+\_\+volume}}
+\item 
+bool \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6cb355ea7279c31b620b14628872c4e0}{\+\_\+is\+Playing}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_adad7fef30e3c592ae38666a929a93c65}{Property\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Steuert die benutzerdefinierte Playlist, ermöglicht das lokale Hinzufügen und Löschen von Titeln und synchronisiert diese über das Entity Framework Core mit der Datenbank. 
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_doc-constructors}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a5a13ff1afd4f09ea192496eb84e70ed8}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!CustomViewModel@{CustomViewModel}}
+\index{CustomViewModel@{CustomViewModel}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{CustomViewModel()}{CustomViewModel()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a5a13ff1afd4f09ea192496eb84e70ed8} 
+Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Custom\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model}{Custom\+View\+Model}, konfiguriert alle Steuerungskommandos und lädt persistierte Daten. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Aggregator} & Die Instanz des Prism Event\+Aggregators für systemweites Messaging.\\
+\hline
+\end{DoxyParams}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_doc-func-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ae93c3be1f70e3cde0db0e215c64fd4a9}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!AddSongExecute@{AddSongExecute}}
+\index{AddSongExecute@{AddSongExecute}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{AddSongExecute()}{AddSongExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ae93c3be1f70e3cde0db0e215c64fd4a9} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Add\+Song\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Öffnet einen Dateiauswahldialog zur Selektion einer Audiodatei, erstellt eine neue Entität und persistiert diese asynchron in der Datenbank. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ae93c3be1f70e3cde0db0e215c64fd4a9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a035bb3e30c5842061bb9bb306122410c}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!BackToHomeExecute@{BackToHomeExecute}}
+\index{BackToHomeExecute@{BackToHomeExecute}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{BackToHomeExecute()}{BackToHomeExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a035bb3e30c5842061bb9bb306122410c} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Back\+To\+Home\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Beendet die Medienwiedergabe und führt eine Navigation zur Startseite aus. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a035bb3e30c5842061bb9bb306122410c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa018e7b1f17a258c3a11243118b5dc9e}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!CanExecuteWithSelection@{CanExecuteWithSelection}}
+\index{CanExecuteWithSelection@{CanExecuteWithSelection}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{CanExecuteWithSelection()}{CanExecuteWithSelection()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa018e7b1f17a258c3a11243118b5dc9e} 
+bool Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Can\+Execute\+With\+Selection (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Validiert den Ausführungsstatus der befehlsgebundenen Aktionen basierend auf der aktuellen Selektion. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa018e7b1f17a258c3a11243118b5dc9e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa53318201041dfb10628148dcf58c5b0}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!DeleteSongExecute@{DeleteSongExecute}}
+\index{DeleteSongExecute@{DeleteSongExecute}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{DeleteSongExecute()}{DeleteSongExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa53318201041dfb10628148dcf58c5b0} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Delete\+Song\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Entfernt den selektierten \doxylink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song} aus der UI-\/\+Auflistung, stoppt eine eventuell laufende Wiedergabe und löscht den Datensatz physisch aus der Datenbank. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa53318201041dfb10628148dcf58c5b0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a76a2114a0ab77d672bc819f1543b7c5d}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!LoadSongsFromDatabase@{LoadSongsFromDatabase}}
+\index{LoadSongsFromDatabase@{LoadSongsFromDatabase}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{LoadSongsFromDatabase()}{LoadSongsFromDatabase()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a76a2114a0ab77d672bc819f1543b7c5d} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Load\+Songs\+From\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Liest die benutzerdefinierten Datensätze beim Initialisieren mittels Entity Framework Core aus. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a76a2114a0ab77d672bc819f1543b7c5d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6f73d06c733517393c88500c4c5c8a98}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!NextSongExecute@{NextSongExecute}}
+\index{NextSongExecute@{NextSongExecute}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{NextSongExecute()}{NextSongExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6f73d06c733517393c88500c4c5c8a98} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Next\+Song\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Inkrementiert den Listenindex und startet den nächsten Titel. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6f73d06c733517393c88500c4c5c8a98_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_add24fe0d8a05a5f749c3ae385bce322f}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!OnGlobalPlayControl@{OnGlobalPlayControl}}
+\index{OnGlobalPlayControl@{OnGlobalPlayControl}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{OnGlobalPlayControl()}{OnGlobalPlayControl()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_add24fe0d8a05a5f749c3ae385bce322f} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+On\+Global\+Play\+Control (\begin{DoxyParamCaption}\item[{string}]{command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_add24fe0d8a05a5f749c3ae385bce322f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a769fc08d5e3dc500c64d0b78082d83e6}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!OnSongAdded@{OnSongAdded}}
+\index{OnSongAdded@{OnSongAdded}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{OnSongAdded()}{OnSongAdded()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a769fc08d5e3dc500c64d0b78082d83e6} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+On\+Song\+Added (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}}]{new\+Song}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Erfasst ein übermitteltes Song-\/\+Objekt und fügt dieses der aktiven Laufzeitauflistung hinzu. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a769fc08d5e3dc500c64d0b78082d83e6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa47d6578b8d1d0ccd4b3639dc2c4ce34}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!PlayPauseExecute@{PlayPauseExecute}}
+\index{PlayPauseExecute@{PlayPauseExecute}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{PlayPauseExecute()}{PlayPauseExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa47d6578b8d1d0ccd4b3639dc2c4ce34} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Play\+Pause\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Ändert den Wiedergabezustand der Audiokomponente zwischen Aktiv und Pausiert. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa47d6578b8d1d0ccd4b3639dc2c4ce34_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aaadb48037d479d7ba612585e417a5cbf}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!PlaySong@{PlaySong}}
+\index{PlaySong@{PlaySong}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{PlaySong()}{PlaySong()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aaadb48037d479d7ba612585e417a5cbf} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Play\+Song (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}}]{song}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Analysiert den Dateipfad (relativ oder absolut) und initiiert die hardwarenahe Audiowiedergabe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song} & Die abzuspielende Song-\/\+Entität.\\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aaadb48037d479d7ba612585e417a5cbf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ac6c2bcc0ffb35d82db13cb31adc3dd8c}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!PreviousSongExecute@{PreviousSongExecute}}
+\index{PreviousSongExecute@{PreviousSongExecute}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{PreviousSongExecute()}{PreviousSongExecute()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ac6c2bcc0ffb35d82db13cb31adc3dd8c} 
+void Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Previous\+Song\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Dekrementiert den Listenindex und startet den vorherigen Titel. 
+
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ac6c2bcc0ffb35d82db13cb31adc3dd8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_doc-variable-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6cb355ea7279c31b620b14628872c4e0}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!\_isPlaying@{\_isPlaying}}
+\index{\_isPlaying@{\_isPlaying}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{\_isPlaying}{\_isPlaying}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6cb355ea7279c31b620b14628872c4e0} 
+bool Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+\_\+is\+Playing\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a8790e9adac841ac2ea5be6e703946873}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!\_mediaPlayer@{\_mediaPlayer}}
+\index{\_mediaPlayer@{\_mediaPlayer}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{\_mediaPlayer}{\_mediaPlayer}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a8790e9adac841ac2ea5be6e703946873} 
+Media\+Player Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+\_\+media\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a21a3af254def56d99ae624a0abdab0ad}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!\_selectedSong@{\_selectedSong}}
+\index{\_selectedSong@{\_selectedSong}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{\_selectedSong}{\_selectedSong}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a21a3af254def56d99ae624a0abdab0ad} 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+\_\+selected\+Song\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6f1d47b2085fc63d610e5a7629238e66}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!\_songs@{\_songs}}
+\index{\_songs@{\_songs}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{\_songs}{\_songs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a6f1d47b2085fc63d610e5a7629238e66} 
+Observable\+Collection$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}$>$ Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+\_\+songs\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a5e5fe50e89c2870807ad8e843360f136}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!\_volume@{\_volume}}
+\index{\_volume@{\_volume}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{\_volume}{\_volume}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a5e5fe50e89c2870807ad8e843360f136} 
+double Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+\_\+volume\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_doc-property-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_adaa86ab90a5714ae3f159e8d038e3588}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!AddSongCommand@{AddSongCommand}}
+\index{AddSongCommand@{AddSongCommand}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{AddSongCommand}{AddSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_adaa86ab90a5714ae3f159e8d038e3588} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Add\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl zum Hinzufügen einer neuen lokalen Audiodatei ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a783c53141c3da772ce521edc3d00ce69}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!BackToHomeCommand@{BackToHomeCommand}}
+\index{BackToHomeCommand@{BackToHomeCommand}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{BackToHomeCommand}{BackToHomeCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a783c53141c3da772ce521edc3d00ce69} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Back\+To\+Home\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für die Rückkehr zur Startseite ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_af57a360fc0d5ff84f50b7f6caac75063}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!DeleteSongCommand@{DeleteSongCommand}}
+\index{DeleteSongCommand@{DeleteSongCommand}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{DeleteSongCommand}{DeleteSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_af57a360fc0d5ff84f50b7f6caac75063} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Delete\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl zum Löschen der aktuell ausgewählten Audiodatei ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a865bfe87aea98183b9bd03ac5ba6c318}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!NextSongCommand@{NextSongCommand}}
+\index{NextSongCommand@{NextSongCommand}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{NextSongCommand}{NextSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a865bfe87aea98183b9bd03ac5ba6c318} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Next\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für den Wechsel zum nächsten Titel ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa15a8e82cefed5f29a37d3e1431e5c4b}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!PlayPauseCommand@{PlayPauseCommand}}
+\index{PlayPauseCommand@{PlayPauseCommand}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{PlayPauseCommand}{PlayPauseCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_aa15a8e82cefed5f29a37d3e1431e5c4b} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Play\+Pause\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für die Play/\+\+Pause-\/\+Interaktion ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a45a71730fd6562ce061edbb8ef6434fd}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!PreviousSongCommand@{PreviousSongCommand}}
+\index{PreviousSongCommand@{PreviousSongCommand}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{PreviousSongCommand}{PreviousSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a45a71730fd6562ce061edbb8ef6434fd} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Previous\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ruft den Befehl für den Wechsel zum vorherigen Titel ab. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ae069529750060d55662e4e4a74a24d64}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!SelectedSong@{SelectedSong}}
+\index{SelectedSong@{SelectedSong}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedSong}{SelectedSong}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_ae069529750060d55662e4e4a74a24d64} 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Selected\+Song\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt den aktuell selektierten Musiktitel und startet diesen bei aktiver Wiedergabe. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a3b7225fba15475b599a0b42c65f3d047}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!Songs@{Songs}}
+\index{Songs@{Songs}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{Songs}{Songs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a3b7225fba15475b599a0b42c65f3d047} 
+Observable\+Collection$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}$>$ Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt die bindbare Auflistung der Musiktitel. 
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a309d292a32b083954fc07eedb176603b}\index{MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}!Volume@{Volume}}
+\index{Volume@{Volume}!MusicPlayerMVVM.ViewModels.CustomViewModel@{MusicPlayerMVVM.ViewModels.CustomViewModel}}
+\doxysubsubsection{\texorpdfstring{Volume}{Volume}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model_a309d292a32b083954fc07eedb176603b} 
+double Music\+Player\+MVVM.\+View\+Models.\+Custom\+View\+Model.\+Volume\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Holt oder setzt die Systemlautstärke der Audiokomponente. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Music\+Player\+MVVM/\+\+View\+Models/\+\doxymbox{\hyperlink{_custom_view_model_8cs}{Custom\+View\+Model.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="MusicPlayerMVVM.ViewModels.HipHopViewModel.LoadSongsFromDatabase" name="MusicPlayerMVVM.ViewModels.HipHopViewModel.LoadSongsFromDatabase">
+<area shape="rect" id="Node000001" title="Initialisiert eine synchrone Verbindung zur SQL&#45;Datenbank und lädt die HipHop&#45;Titelliste." alt="" coords="295,5,579,48"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html#a9f6b245421e316ac6658bcd358ff79a3" title="Initialisiert das HipHopViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse." alt="" coords="5,5,247,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,27,247,29,247,24,282,27"/>
+</map>

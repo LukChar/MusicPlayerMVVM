@@ -1,0 +1,5 @@
+<map id="MusicPlayerMVVM.ViewModels.KlassikViewModel.CanExecuteWithSelection" name="MusicPlayerMVVM.ViewModels.KlassikViewModel.CanExecuteWithSelection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="293,5,524,64"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#ab3f4065d3fa2f03b4fe8d19297420e26" title="Initialisiert das KlassikViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse." alt="" coords="5,13,245,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,35,245,37,245,32,279,34"/>
+</map>

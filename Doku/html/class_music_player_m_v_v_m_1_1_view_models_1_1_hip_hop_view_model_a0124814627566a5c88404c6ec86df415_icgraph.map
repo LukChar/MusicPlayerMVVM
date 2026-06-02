@@ -1,0 +1,13 @@
+<map id="MusicPlayerMVVM.ViewModels.HipHopViewModel.PlaySong" name="MusicPlayerMVVM.ViewModels.HipHopViewModel.PlaySong">
+<area shape="rect" id="Node000001" title="Berechnet den absoluten Dateipfad und initiiert die Wiedergabe über die Hardware&#45;Schnittstelle." alt="" coords="605,72,817,115"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html#ab197b6b699643c7c10e23329b55fb419" title="Inkrementiert den Playlist&#45;Index und startet den nächsten Titel." alt="" coords="306,5,546,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="599,68,520,51,520,46,605,68"/>
+<area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html#aefa35260b796eddf7d5636e38846e0cf" title="Schaltet den Wiedergabezustand der Audiokomponente zwischen aktiv und pausiert um." alt="" coords="304,72,548,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="587,94,548,96,548,91,592,93"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html#a18ac5d7d74da01f129fb42470c183440" title="Dekrementiert den Playlist&#45;Index und startet den vorherigen Titel." alt="" coords="295,139,557,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="605,118,521,141,520,135,599,119"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html#a9f6b245421e316ac6658bcd358ff79a3" title="Initialisiert das HipHopViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse." alt="" coords="5,72,247,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="310,53,226,74,224,69,314,51"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="285,94,248,96,247,91,291,93"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="309,135,225,118,225,113,315,134"/>
+</map>

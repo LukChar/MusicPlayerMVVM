@@ -1,0 +1,13 @@
+<map id="MusicPlayerMVVM.ViewModels.CustomViewModel.PlaySong" name="MusicPlayerMVVM.ViewModels.CustomViewModel.PlaySong">
+<area shape="rect" id="Node000001" title="Analysiert den Dateipfad (relativ oder absolut) und initiiert die hardwarenahe Audiowiedergabe." alt="" coords="611,72,823,115"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#a6f73d06c733517393c88500c4c5c8a98" title="Inkrementiert den Listenindex und startet den nächsten Titel." alt="" coords="310,5,552,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="605,68,525,51,526,46,610,68"/>
+<area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#aa47d6578b8d1d0ccd4b3639dc2c4ce34" title="Ändert den Wiedergabezustand der Audiokomponente zwischen Aktiv und Pausiert." alt="" coords="308,72,554,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="593,94,555,96,554,91,598,93"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#ac6c2bcc0ffb35d82db13cb31adc3dd8c" title="Dekrementiert den Listenindex und startet den vorherigen Titel." alt="" coords="299,139,563,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="610,118,526,141,525,135,605,119"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html#a5a13ff1afd4f09ea192496eb84e70ed8" title="Initialisiert das CustomViewModel, konfiguriert alle Steuerungskommandos und lädt persistierte Daten." alt="" coords="5,72,251,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,53,229,74,227,69,318,51"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="290,94,252,96,251,91,295,93"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="313,135,228,118,228,113,319,134"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MusicPlayerMVVM.ViewModels.HomeViewModel.SelectGenreExecute" name="MusicPlayerMVVM.ViewModels.HomeViewModel.SelectGenreExecute">
+<area shape="rect" id="Node000001" title="Verarbeitet den Klick auf ein Genre und sendet einen Navigationsbefehl an das System." alt="" coords="277,5,521,48"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model.html#a7948eb9144479dda853195aa4c0eb4ea" title="Initialisiert das HomeViewModel und richtet die Navigations&#45;Befehle ein." alt="" coords="5,5,229,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,27,229,29,229,24,264,27"/>
+</map>

@@ -1,0 +1,37 @@
+<map id="MusicPlayerMVVM.ViewModels.MainViewModel" name="MusicPlayerMVVM.ViewModels.MainViewModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="597,1133,799,1432"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels zur Bereitstellung der EventAggregator&#45;Infrastruktur...." alt="" coords="552,293,754,379"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="535,350,467,366,394,392,359,410,326,431,297,457,273,487,261,524,253,590,247,773,254,956,262,1023,273,1060,302,1100,338,1136,379,1166,423,1193,514,1233,600,1261,595,1261,512,1238,421,1197,376,1171,335,1140,298,1104,268,1063,256,1024,248,956,241,773,248,590,256,522,268,484,293,453,323,427,356,405,392,387,466,361,539,346"/>
+<area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_home_view_model.html" title="Steuert die Startseite (Genre&#45;Auswahl) der Anwendung. Kommuniziert Navigationswünsche über den zentra..." alt="" coords="5,720,207,827"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="535,354,449,369,358,388,279,412,249,425,228,439,200,469,176,504,157,541,142,580,122,656,112,721,107,720,117,655,137,578,153,539,172,501,196,466,224,435,247,420,278,407,357,383,448,364,539,350"/>
+<area shape="rect" id="Node000006" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html" title="Steuert die Geschäftslogik der HipHop&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="959,539,1160,1008"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="744,383,895,459,924,468,936,473,949,483,971,509,990,539,985,539,967,512,946,487,934,478,922,473,893,464,744,388"/>
+<area shape="rect" id="Node000008" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model.html" title="Steuert die Geschäftslogik der Rock&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="1184,549,1386,997"/>
+<area shape="poly" id="edge10_Node000008_Node000002" title=" " alt="" coords="754,382,838,411,884,419,922,420,959,423,1006,435,1025,447,1043,459,1080,466,1111,465,1141,466,1158,472,1175,483,1204,513,1228,550,1223,549,1200,517,1171,487,1155,477,1140,471,1111,470,1079,472,1041,464,1022,451,1004,440,959,428,921,426,884,424,836,416,755,387"/>
+<area shape="rect" id="Node000009" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html" title="Steuert die Geschäftslogik der Pop&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="508,539,710,1008"/>
+<area shape="poly" id="edge13_Node000009_Node000002" title=" " alt="" coords="586,391,571,413,557,438,543,487,541,539,536,538,538,487,552,436,566,410,588,387"/>
+<area shape="rect" id="Node000010" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html" title="Steuert die Geschäftslogik der Klassik&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="1409,539,1611,1008"/>
+<area shape="poly" id="edge16_Node000010_Node000002" title=" " alt="" coords="750,382,837,411,915,424,977,427,1039,428,1119,435,1177,446,1236,459,1320,465,1366,470,1385,476,1400,483,1426,508,1448,539,1443,539,1422,512,1397,487,1383,481,1365,475,1319,470,1235,464,1176,451,1118,440,1039,433,977,432,914,430,836,416,752,387"/>
+<area shape="rect" id="Node000011" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html" title="Steuert die Geschäftslogik der Jazz&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="283,539,484,1008"/>
+<area shape="poly" id="edge19_Node000011_Node000002" title=" " alt="" coords="593,391,544,439,519,462,498,487,468,540,463,538,493,484,515,458,540,435,596,386"/>
+<area shape="rect" id="Node000012" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html" title="Steuert die benutzerdefinierte Playlist, ermöglicht das lokale Hinzufügen und Löschen von Titeln und ..." alt="" coords="733,485,935,1061"/>
+<area shape="poly" id="edge22_Node000012_Node000002" title=" " alt="" coords="680,389,725,484,736,512,731,512,720,486,679,395"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed.html" title=" " alt="" coords="544,124,762,209"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="654,222,655,294,650,293,652,227"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="578,5,728,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="653,87,655,125,650,123,652,92"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="89,829,79,890,72,964,75,1002,81,1040,94,1075,113,1108,143,1134,188,1159,245,1182,310,1202,451,1236,583,1263,578,1264,450,1242,309,1207,243,1187,186,1164,140,1139,109,1111,89,1078,76,1041,69,1003,67,964,74,889,90,824"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="984,1006,952,1063,913,1111,865,1157,813,1201,811,1196,861,1153,910,1108,948,1060,980,1009"/>
+<area shape="rect" id="Node000007" href="$class_music_player_m_v_v_m_1_1_models_1_1_song.html" title="Stellt die abstrakte Basisklasse für alle Musiktitel dar. Enthält die primären Eigenschaften,..." alt="" coords="849,259,1052,413"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="999,410,1011,436,1035,522,1030,521,1006,438,998,415"/>
+<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="1051,380,1118,425,1149,453,1175,484,1205,535,1200,534,1171,487,1145,456,1115,429,1051,386"/>
+<area shape="poly" id="edge14_Node000009_Node000007" title=" " alt="" coords="847,386,783,431,751,457,723,487,696,525,692,522,719,484,747,453,780,426,851,383"/>
+<area shape="poly" id="edge17_Node000010_Node000007" title=" " alt="" coords="1051,343,1135,358,1227,384,1274,403,1319,425,1362,452,1400,483,1434,525,1429,524,1396,487,1358,456,1317,430,1272,408,1226,390,1134,364,1052,349"/>
+<area shape="poly" id="edge20_Node000011_Node000007" title=" " alt="" coords="847,385,767,416,705,429,643,440,568,461,522,476,497,487,464,526,460,523,494,483,520,471,567,456,642,435,704,423,765,411,851,382"/>
+<area shape="poly" id="edge23_Node000012_Node000007" title=" " alt="" coords="916,411,908,438,898,470,893,468,903,436,913,415"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="1220,996,1200,1032,1175,1063,1136,1100,1093,1133,1047,1162,999,1187,904,1228,816,1256,815,1251,902,1223,997,1182,1044,1157,1090,1128,1132,1096,1171,1060,1195,1029,1216,999"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="651,1006,672,1118,667,1116,649,1010"/>
+<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="1443,1006,1423,1038,1400,1063,1335,1116,1262,1160,1185,1195,1105,1223,1026,1245,950,1260,817,1278,816,1273,949,1255,1025,1239,1104,1218,1183,1190,1260,1155,1332,1112,1396,1059,1419,1034,1438,1009"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="467,1005,498,1060,540,1119,588,1176,583,1175,536,1122,493,1063,465,1010"/>
+<area shape="poly" id="edge21_Node000001_Node000012" title=" " alt="" coords="791,1059,778,1110,775,1119,771,1115,773,1109,787,1063"/>
+</map>

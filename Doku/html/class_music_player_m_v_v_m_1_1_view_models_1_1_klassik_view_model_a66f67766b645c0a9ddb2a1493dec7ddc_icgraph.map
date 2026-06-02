@@ -1,0 +1,5 @@
+<map id="MusicPlayerMVVM.ViewModels.KlassikViewModel.LoadSongsFromDatabase" name="MusicPlayerMVVM.ViewModels.KlassikViewModel.LoadSongsFromDatabase">
+<area shape="rect" id="Node000001" title="Initialisiert eine synchrone Verbindung zur SQL&#45;Datenbank und lädt die Klassik&#45;Titelliste." alt="" coords="293,5,576,48"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_klassik_view_model.html#ab3f4065d3fa2f03b4fe8d19297420e26" title="Initialisiert das KlassikViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse." alt="" coords="5,5,245,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,27,245,29,245,24,280,27"/>
+</map>
