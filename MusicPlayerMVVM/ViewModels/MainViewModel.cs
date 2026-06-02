@@ -16,6 +16,7 @@ namespace MusicPlayerMVVM.ViewModels
     public class MainViewModel : ViewModelBase
     {
         private object _currentView;
+        private double _volume = 0.5;
 
         private HomeViewModel _homeViewModel;
         private HipHopViewModel _hipHopViewModel;
@@ -46,6 +47,20 @@ namespace MusicPlayerMVVM.ViewModels
         {
             get => _currentView;
             set { _currentView = value; OnPropertyChanged(nameof(CurrentView)); }
+        }
+
+        public double Volume
+        {
+            get => _volume;
+            set
+            {
+                if (_volume != value)
+                {
+                    _volume = value;
+                    OnPropertyChanged(nameof(Volume));
+                    EventAggregator.GetEvent<VolumeChangedEvent>().Publish(_volume);
+                }
+            }
         }
 
         private void NavigateToViewModel(string targetViewName)

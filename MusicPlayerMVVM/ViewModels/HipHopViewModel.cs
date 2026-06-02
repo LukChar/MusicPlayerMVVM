@@ -45,6 +45,8 @@ namespace MusicPlayerMVVM.ViewModels
             // Registrierung des Abonnements für den Datentransfer neuer Musiktitel
             EventAggregator.GetEvent<AddSongEvent>().Subscribe(AddSong);
 
+            EventAggregator.GetEvent<VolumeChangedEvent>().Subscribe(neueLautstaerke => Volume = neueLautstaerke);
+
             LoadSongsFromDatabase();
         }
 

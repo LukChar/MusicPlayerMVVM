@@ -46,6 +46,9 @@ namespace MusicPlayerMVVM.ViewModels
 
             EventAggregator.GetEvent<AddSongEvent>().Subscribe(OnSongAdded);
 
+            EventAggregator.GetEvent<VolumeChangedEvent>().Subscribe(neueLautstaerke => Volume = neueLautstaerke);
+
+
             LoadSongsFromDatabase();
         }
 
