@@ -66,13 +66,5 @@
                 </ListView>
             </Border>
         </Grid>
-
-        <StackPanel Grid.Row="2" Background="#222222" Margin="0,5,0,15">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
-                <Button Style="{StaticResource GreenCircleButton}" Content="⏮" Command="{Binding PreviousSongCommand}" FontSize="18" Margin="5,0"/>
-                <Button Style="{StaticResource GreenCircleButton}" Content="⏯" Command="{Binding PlayPauseCommand}" FontSize="20" Margin="5,0"/>
-                <Button Style="{StaticResource GreenCircleButton}" Content="⏭" Command="{Binding NextSongCommand}" FontSize="18" Margin="5,0"/>
-            </StackPanel>
-        </StackPanel>
     </Grid>
 </UserControl>

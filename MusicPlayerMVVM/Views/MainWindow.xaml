@@ -20,16 +20,28 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="60" />
+            <RowDefinition Height="70" />
         </Grid.RowDefinitions>
 
         <ContentControl Grid.Row="0" Content="{Binding CurrentView, FallbackValue={x:Type views:HomeView}}" />
 
         <Border Grid.Row="1" Background="#111111" BorderBrush="#333333" BorderThickness="0,1,0,0">
             <Grid Margin="15,0">
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Command="{Binding GlobalPreviousCommand}" Content="⏮" Width="40" Height="40" Margin="0,0,15,0" Background="#1DB954" Foreground="White" BorderThickness="0" FontSize="18" Cursor="Hand"/>
+                    <Button Command="{Binding GlobalPlayPauseCommand}" Content="⏯" Width="50" Height="50" Margin="0,0,15,0" Background="#1DB954" Foreground="White" BorderThickness="0" FontSize="20" Cursor="Hand"/>
+                    <Button Command="{Binding GlobalNextCommand}" Content="⏭" Width="40" Height="40" Background="#1DB954" Foreground="White" BorderThickness="0" FontSize="18" Cursor="Hand"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
                     <TextBlock Text="Lautstärke:" Foreground="White" Margin="0,0,10,0" VerticalAlignment="Center"/>
-                    <Slider Width="150" 
+                    <Slider Width="120" 
                             Minimum="0" 
                             Maximum="1" 
                             Value="{Binding Volume, UpdateSourceTrigger=PropertyChanged}" 

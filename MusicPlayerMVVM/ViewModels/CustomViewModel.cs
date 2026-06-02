@@ -48,6 +48,8 @@ namespace MusicPlayerMVVM.ViewModels
 
             EventAggregator.GetEvent<VolumeChangedEvent>().Subscribe(neueLautstaerke => Volume = neueLautstaerke);
 
+            EventAggregator.GetEvent<PlayControlEvent>().Subscribe(OnGlobalPlayControl);
+
 
             LoadSongsFromDatabase();
         }
@@ -273,6 +275,22 @@ namespace MusicPlayerMVVM.ViewModels
             else
             {
                 MessageBox.Show($"Dateipfad konnte nicht gefunden werden:\n{fullPath}", "Wiedergabefehler", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void OnGlobalPlayControl(string command)
+        {
+            switch (command)
+            {
+                case "PlayPause":
+                    if (PlayPauseCommand.CanExecute(null)) PlayPauseCommand.Execute(null);
+                    break;
+                case "Previous":
+                    if (PreviousSongCommand.CanExecute(null)) PreviousSongCommand.Execute(null);
+                    break;
+                case "Next":
+                    if (NextSongCommand.CanExecute(null)) NextSongCommand.Execute(null);
+                    break;
             }
         }
     }
