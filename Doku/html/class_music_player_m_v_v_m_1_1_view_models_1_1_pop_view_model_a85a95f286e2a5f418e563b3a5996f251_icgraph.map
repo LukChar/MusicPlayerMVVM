@@ -1,5 +1,5 @@
 <map id="MusicPlayerMVVM.ViewModels.PopViewModel.PlaySong" name="MusicPlayerMVVM.ViewModels.PopViewModel.PlaySong">
-<area shape="rect" id="Node000001" title=" " alt="" coords="555,72,767,115"/>
+<area shape="rect" id="Node000001" title="Startet die Audiowiedergabe für ein spezifisches Song&#45;Objekt." alt="" coords="555,72,767,115"/>
 <area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html#aadd7af7b5ec0283e80f5767bfda233a1" title=" " alt="" coords="277,5,496,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="553,68,477,51,477,46,558,68"/>
 <area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model.html#ada1fe1ac3921da5d9c4dbd29eda44784" title=" " alt="" coords="275,72,498,115"/>

@@ -1,6 +1,6 @@
 <map id="MusicPlayerMVVM.ViewModels.JazzViewModel" name="MusicPlayerMVVM.ViewModels.JazzViewModel">
 <area shape="rect" id="Node000001" title="Steuert die Geschäftslogik der Jazz&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="14,389,216,880"/>
-<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels zur Bereitstellung der EventAggregator&#45;Infrastruktur...." alt="" coords="14,256,216,341"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels der Anwendung. Erbt von NotifyPropertyChanged für das UI&#45;Da..." alt="" coords="14,256,216,341"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,354,117,390,112,389,114,359"/>
 <area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed.html" title=" " alt="" coords="5,123,224,208"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,220,117,256,112,256,114,226"/>

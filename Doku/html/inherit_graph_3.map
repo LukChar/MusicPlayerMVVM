@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000000" title=" " alt="" coords="5,247,167,273"/>
 <area shape="rect" id="Node000001" href="$class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed.html" title=" " alt="" coords="215,239,444,281"/>
 <area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="181,258,216,259,212,261,183,262"/>
-<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels zur Bereitstellung der EventAggregator&#45;Infrastruktur...." alt="" coords="492,239,704,281"/>
+<area shape="rect" id="Node000002" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels der Anwendung. Erbt von NotifyPropertyChanged für das UI&#45;Da..." alt="" coords="492,239,704,281"/>
 <area shape="poly" id="edge5_Node000001_Node000002" title=" " alt="" coords="459,257,494,259,489,261,460,263"/>
 <area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html" title="Steuert die benutzerdefinierte Playlist, ermöglicht das lokale Hinzufügen und Löschen von Titeln und ..." alt="" coords="752,5,965,48"/>
 <area shape="poly" id="edge6_Node000002_Node000003" title=" " alt="" coords="615,223,638,185,669,141,707,96,751,58,775,47,770,50,754,62,710,100,673,144,642,188,619,227"/>

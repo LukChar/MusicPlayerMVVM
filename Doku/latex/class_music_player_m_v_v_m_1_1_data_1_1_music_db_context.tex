@@ -101,6 +101,8 @@ void Music\+Player\+MVVM.\+Data.\+Music\+Db\+Context.\+Seed\+Songs\+From\+Direct
 
 Durchsucht das angegebene Basisverzeichnis nach .wav-\/\+Dateien in genrespezifischen Unterordnern und fügt diese der Datenbank hinzu. 
 
+Diese Methode agiert als Initialisierer der Datenbankinhalte. Sie prüft, ob die entsprechenden Genre-\/\+Unterordner (z.\+B. "{}\+Hip\+Hop"{}, "{}\+Rock"{}) existieren, iteriert über alle darin enthaltenen .wav-\/\+Dateien und erstellt daraus Entity-\/\+Objekte. Die Daten werden abschließend per Db\+Context.\+Save\+Changes in die lokale SQL-\/\+Datenbank geschrieben. 
+
 
 \begin{DoxyParams}{Parameters}
 {\em base\+Folder\+Path} & Der absolute Pfad zum Ressourcen-\/\+Ordner.\\

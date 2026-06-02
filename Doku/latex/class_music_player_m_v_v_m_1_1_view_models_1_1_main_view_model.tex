@@ -2,7 +2,8 @@
 \hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model}\index{MusicPlayerMVVM.ViewModels.MainViewModel@{MusicPlayerMVVM.ViewModels.MainViewModel}}
 
 
-Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Main\+View\+Model:\+\nopagebreak
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Main\+View\+Model:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +12,8 @@ Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Main\+View\+Model:\
 \end{figure}
 
 
-Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Main\+View\+Model:\+\nopagebreak
+Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Main\+View\+Model:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,7 +29,7 @@ Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Main\+View\+Model
 \begin{DoxyCompactItemize}
 \item 
 \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
-\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initialisiert eine neue Instanz der View\+Model\+Base-\/Klasse und weist den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -50,14 +52,14 @@ ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_mai
 \begin{DoxyCompactItemize}
 \item 
 IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
-\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Ruft den systemweiten Ereignisdienst ab, der von abgeleiteten \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} genutzt wird, um auf Ereignisse zu reagieren oder diese auszulösen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model_ad2a60ca0c7d76922f3ba340426cd0e0d}{Navigate\+To\+View\+Model}} (string target\+View\+Name)
 \item 
 void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model_a05816441ad148d990e6ffc6fff55324f}{Execute\+Global\+Play\+Pause}} (object parameter)
-\item 
+\begin{DoxyCompactList}\small\item\em Steuert das globale Play/\+\+Pause-\/\+Verhalten basierend auf der aktuell aktiven Ansicht. \end{DoxyCompactList}\item 
 void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model_a89c8110c6bc1e6e8be46682f908afa47}{Execute\+Global\+Previous}} (object parameter)
 \item 
 void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model_a5714a3db9058b0ce0b5bd20802608511}{Execute\+Global\+Next}} (object parameter)
@@ -124,6 +126,17 @@ Here is the caller graph for this function:\+\nopagebreak
 {\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model_a05816441ad148d990e6ffc6fff55324f} 
 void Music\+Player\+MVVM.\+View\+Models.\+Main\+View\+Model.\+Execute\+Global\+Play\+Pause (\begin{DoxyParamCaption}\item[{object}]{parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
+
+
+Steuert das globale Play/\+\+Pause-\/\+Verhalten basierend auf der aktuell aktiven Ansicht. 
+
+Da die Audio-\/\+Steuerungselemente (Play, Next, Previous) in der persistenten Hauptansicht (Main\+View) liegen, muss diese Methode zur Laufzeit via Pattern Matching evaluieren, welches View\+Model gerade über die Current\+View-\/Eigenschaft angezeigt wird. Sie leitet den Befehl exklusiv an das aktive View\+Model weiter, um zu verhindern, dass die Event-\/\+Abonnements aller Playlists simultan anspringen und sechs Lieder gleichzeitig abspielen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & Der Command-\/\+Parameter (wird hier nicht verwendet).\\
+\hline
+\end{DoxyParams}
 Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}

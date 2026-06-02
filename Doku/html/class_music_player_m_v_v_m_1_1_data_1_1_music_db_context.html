@@ -260,6 +260,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Durchsucht das angegebene Basisverzeichnis nach .wav-Dateien in genrespezifischen Unterordnern und fügt diese der Datenbank hinzu. </p>
+<p>Diese Methode agiert als Initialisierer der Datenbankinhalte. Sie prüft, ob die entsprechenden Genre-Unterordner (z.B. "HipHop", "Rock") existieren, iteriert über alle darin enthaltenen .wav-Dateien und erstellt daraus Entity-Objekte. Die Daten werden abschließend per DbContext.SaveChanges in die lokale SQL-Datenbank geschrieben. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">baseFolderPath</td><td>Der absolute Pfad zum Ressourcen-Ordner.</td></tr>

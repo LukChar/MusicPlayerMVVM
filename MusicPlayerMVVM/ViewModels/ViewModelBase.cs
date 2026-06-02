@@ -9,22 +9,26 @@ using MusicPlayerMVVM.Common;
 namespace MusicPlayerMVVM.ViewModels
 {
     /// <summary>
-    /// Abstrakte Basisklasse für alle ViewModels zur Bereitstellung der EventAggregator-Infrastruktur.
-    /// Erbt von NotifyPropertyChanged für Datenbindung.
+    /// Abstrakte Basisklasse für alle ViewModels der Anwendung.
+    /// Erbt von NotifyPropertyChanged für das UI-Data-Binding und stellt den systemweiten EventAggregator bereit.
     /// </summary>
-    public class ViewModelBase : NotifyPropertyChanged
+    /// <remarks>
+    /// Diese Klasse dient als Fundament der MVVM-Architektur im Projekt. 
+    /// Sie zentralisiert die Bereitstellung des EventAggregators zur losen Kopplung und Kommunikation zwischen verschiedenen ViewModels.
+    /// </remarks>
+    public abstract class ViewModelBase : NotifyPropertyChanged
     {
         /// <summary>
-        /// Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu.
+        /// Initialisiert eine neue Instanz der <see cref="ViewModelBase"/>-Klasse und weist den zentralen Ereignisdienst zu.
         /// </summary>
-        /// <param name="eventAggregator">Die Instanz des Prism EventAggregators.</param>
+        /// <param name="eventAggregator">Die Instanz des Prism EventAggregators für systemweites Messaging (Publish/Subscribe).</param>
         public ViewModelBase(IEventAggregator eventAggregator)
         {
             EventAggregator = eventAggregator;
         }
 
         /// <summary>
-        /// Ruft den internen Ereignisdienst für abgeleitete Klassen ab.
+        /// Ruft den systemweiten Ereignisdienst ab, der von abgeleiteten ViewModels genutzt wird, um auf Ereignisse zu reagieren oder diese auszulösen.
         /// </summary>
         protected IEventAggregator EventAggregator { get; }
     }

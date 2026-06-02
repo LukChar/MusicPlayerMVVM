@@ -1,5 +1,5 @@
 <map id="MusicPlayerMVVM.ViewModels.ViewModelBase" name="MusicPlayerMVVM.ViewModels.ViewModelBase">
-<area shape="rect" id="Node000001" title="Abstrakte Basisklasse für alle ViewModels zur Bereitstellung der EventAggregator&#45;Infrastruktur...." alt="" coords="793,256,995,341"/>
+<area shape="rect" id="Node000001" title="Abstrakte Basisklasse für alle ViewModels der Anwendung. Erbt von NotifyPropertyChanged für das UI&#45;Da..." alt="" coords="793,256,995,341"/>
 <area shape="rect" id="Node000004" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_custom_view_model.html" title="Steuert die benutzerdefinierte Playlist, ermöglicht das lokale Hinzufügen und Löschen von Titeln und ..." alt="" coords="5,389,207,987"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="776,303,631,310,467,324,388,336,318,350,261,369,220,392,209,401,205,398,217,387,258,364,317,345,387,331,466,319,631,305,781,300"/>
 <area shape="rect" id="Node000005" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model.html" title="Steuert die Geschäftslogik der HipHop&#45;Wiedergabeliste und verarbeitet eingehende Datenereignisse." alt="" coords="231,443,432,933"/>

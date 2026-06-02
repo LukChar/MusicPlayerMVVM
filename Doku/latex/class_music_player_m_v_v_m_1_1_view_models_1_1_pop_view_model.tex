@@ -7,7 +7,8 @@ Steuert die Geschäftslogik der Pop-\/\+Wiedergabeliste und verarbeitet eingehen
 
 
 
-Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Pop\+View\+Model:\+\nopagebreak
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Pop\+View\+Model:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,7 +17,8 @@ Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Pop\+View\+Model:\+
 \end{figure}
 
 
-Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Pop\+View\+Model:\+\nopagebreak
+Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Pop\+View\+Model:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -32,7 +34,7 @@ Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+Pop\+View\+Model:
 \begin{DoxyCompactItemize}
 \item 
 \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
-\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initialisiert eine neue Instanz der View\+Model\+Base-\/Klasse und weist den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -59,7 +61,7 @@ ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_pop
 \begin{DoxyCompactItemize}
 \item 
 IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
-\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Ruft den systemweiten Ereignisdienst ab, der von abgeleiteten \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} genutzt wird, um auf Ereignisse zu reagieren oder diese auszulösen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -76,7 +78,7 @@ void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_pop_vie
 void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model_a45b883044f7edbb5dc081168868ce7a9}{Back\+To\+Home\+Execute}} (object parameter)
 \item 
 void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model_a85a95f286e2a5f418e563b3a5996f251}{Play\+Song}} (\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} song)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Startet die Audiowiedergabe für ein spezifisches Song-\/\+Objekt. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -162,7 +164,7 @@ void Music\+Player\+MVVM.\+View\+Models.\+Pop\+View\+Model.\+Load\+Songs\+From\+
 
 Initialisiert eine synchrone Verbindung zur SQL-\/\+Datenbank und lädt die Pop-\/\+Titelliste. 
 
-Here is the caller graph for this function:\+\nopagebreak
+Baut über den Music\+Db\+Context eine Verbindung auf, leert die aktuelle Observable\+Collection und ruft alle Entitäten aus der dedizierten Tabelle (hier:\+ {\ttfamily Pop\+Songs}) ab. Die Verwendung des {\ttfamily using}-\/Blocks stellt sicher, dass die Datenbankverbindung nach Abschluss sauber aus dem Speicher freigegeben (Disposed) wird. Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -201,6 +203,17 @@ Here is the caller graph for this function:\+\nopagebreak
 {\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_pop_view_model_a85a95f286e2a5f418e563b3a5996f251} 
 void Music\+Player\+MVVM.\+View\+Models.\+Pop\+View\+Model.\+Play\+Song (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}}]{song}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
 
+
+
+Startet die Audiowiedergabe für ein spezifisches Song-\/\+Objekt. 
+
+Setzt den Basis-\/\+Pfad der ausführenden Applikation mit dem relativen Song.\+File\+Path zusammen. Stoppt den globalen Media\+Player, falls er bereits läuft, lädt die neue URI ein, wendet die eingestellte Volume an und startet die Wiedergabe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em song} & Das Song-\/\+Entity, das abgespielt werden soll.\\
+\hline
+\end{DoxyParams}
 Here is the caller graph for this function:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}

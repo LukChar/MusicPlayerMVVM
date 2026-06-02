@@ -2,12 +2,13 @@
 \hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}\index{MusicPlayerMVVM.ViewModels.ViewModelBase@{MusicPlayerMVVM.ViewModels.ViewModelBase}}
 
 
-Abstrakte Basisklasse für alle \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} zur Bereitstellung der Event\+Aggregator-\/\+Infrastruktur. Erbt von \doxylink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Notify\+Property\+Changed} für Datenbindung.  
+Abstrakte Basisklasse für alle \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} der Anwendung. Erbt von \doxylink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Notify\+Property\+Changed} für das UI-\/\+Data-\/\+Binding und stellt den systemweiten Event\+Aggregator bereit.  
 
 
 
 
-Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base:\+\nopagebreak
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,7 +17,8 @@ Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base:\
 \end{figure}
 
 
-Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base:\+\nopagebreak
+Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base:\+
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,7 +29,7 @@ Collaboration diagram for Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base
 \begin{DoxyCompactItemize}
 \item 
 \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
-\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initialisiert eine neue Instanz der View\+Model\+Base-\/Klasse und weist den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,7 +39,7 @@ void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_prope
 \begin{DoxyCompactItemize}
 \item 
 IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
-\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Ruft den systemweiten Ereignisdienst ab, der von abgeleiteten \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} genutzt wird, um auf Ereignisse zu reagieren oder diese auszulösen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Events inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
 \begin{DoxyCompactItemize}
@@ -47,7 +49,9 @@ Property\+Changed\+Event\+Handler \doxymbox{\hyperlink{class_music_player_m_v_v_
 
 
 \doxysubsection{Detailed Description}
-Abstrakte Basisklasse für alle \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} zur Bereitstellung der Event\+Aggregator-\/\+Infrastruktur. Erbt von \doxylink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Notify\+Property\+Changed} für Datenbindung. 
+Abstrakte Basisklasse für alle \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} der Anwendung. Erbt von \doxylink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Notify\+Property\+Changed} für das UI-\/\+Data-\/\+Binding und stellt den systemweiten Event\+Aggregator bereit. 
+
+Diese Klasse dient als Fundament der MVVM-\/\+Architektur im Projekt. Sie zentralisiert die Bereitstellung des Event\+Aggregators zur losen Kopplung und Kommunikation zwischen verschiedenen \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models}. 
 
 \label{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_doc-constructors}
 \Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_doc-constructors}
@@ -60,11 +64,11 @@ Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base.\+View\+Model\+Base (\beg
 
 
 
-Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. 
+Initialisiert eine neue Instanz der View\+Model\+Base-\/Klasse und weist den zentralen Ereignisdienst zu. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em event\+Aggregator} & Die Instanz des Prism Event\+Aggregators.\\
+{\em event\+Aggregator} & Die Instanz des Prism Event\+Aggregators für systemweites Messaging (Publish/\+\+Subscribe).\\
 \hline
 \end{DoxyParams}
 
@@ -80,7 +84,7 @@ IEvent\+Aggregator Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base.\+Even
 
 
 
-Ruft den internen Ereignisdienst für abgeleitete Klassen ab. 
+Ruft den systemweiten Ereignisdienst ab, der von abgeleiteten \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} genutzt wird, um auf Ereignisse zu reagieren oder diese auszulösen. 
 
 
 

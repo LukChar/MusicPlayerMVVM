@@ -1,6 +1,6 @@
 <map id="MusicPlayerMVVM.Common.NotifyPropertyChanged" name="MusicPlayerMVVM.Common.NotifyPropertyChanged">
 <area shape="rect" id="Node000001" title=" " alt="" coords="785,123,1004,208"/>
-<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels zur Bereitstellung der EventAggregator&#45;Infrastruktur...." alt="" coords="793,256,995,341"/>
+<area shape="rect" id="Node000003" href="$class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base.html" title="Abstrakte Basisklasse für alle ViewModels der Anwendung. Erbt von NotifyPropertyChanged für das UI&#45;Da..." alt="" coords="793,256,995,341"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="895,221,897,257,892,255,893,225"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="819,5,970,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="895,87,897,124,892,122,893,92"/>
