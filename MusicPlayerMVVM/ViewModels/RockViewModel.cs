@@ -1,28 +1,35 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.Configuration;
-using System.Data.SqlClient;
 using System.IO;
+using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 using MusicPlayerMVVM.Common;
+using MusicPlayerMVVM.Data;
 using MusicPlayerMVVM.Models;
+using Prism.Events;
+using MusicPlayerMVVM.Events;
 
 namespace MusicPlayerMVVM.ViewModels
 {
-    public class RockViewModel : NotifyPropertyChanged
+    /// <summary>
+    /// Steuert die Geschäftslogik der Rock-Wiedergabeliste und verarbeitet eingehende Datenereignisse.
+    /// </summary>
+    public class RockViewModel : ViewModelBase
     {
-        private readonly string _connectionString = ConfigurationManager.ConnectionStrings["MusicDB"].ConnectionString;
-        private readonly MediaPlayer _mediaPlayer;
+        private MediaPlayer _mediaPlayer;
         private ObservableCollection<Song> _songs;
         private Song _selectedSong;
         private double _volume;
         private bool _isPlaying;
 
-        public RockViewModel(MainViewModel mainViewModel)
+        /// <summary>
+        /// Initialisiert das RockViewModel, konfiguriert Steuerungskommandos und abonniert Datenereignisse.
+        /// </summary>
+        /// <param name="eventAggregator">Die Instanz des Prism EventAggregators für systemweites Messaging.</param>
+        public RockViewModel(IEventAggregator eventAggregator) : base(eventAggregator)
         {
-            MainViewModel = mainViewModel;
             _mediaPlayer = new MediaPlayer();
             _songs = new ObservableCollection<Song>();
             _volume = 0.5;
@@ -30,18 +37,21 @@ namespace MusicPlayerMVVM.ViewModels
             PlayPauseCommand = new ActionCommand(PlayPauseExecute, CanExecuteWithSelection);
             PreviousSongCommand = new ActionCommand(PreviousSongExecute, CanExecuteWithSelection);
             NextSongCommand = new ActionCommand(NextSongExecute, CanExecuteWithSelection);
+            BackToHomeCommand = new ActionCommand(BackToHomeExecute, param => true);
+
+            EventAggregator.GetEvent<AddSongEvent>().Subscribe(AddSong);
 
             LoadSongsFromDatabase();
         }
 
-        public MainViewModel MainViewModel { get; }
-
+        /// <summary>Holt oder setzt die bindbare Auflistung der Musiktitel.</summary>
         public ObservableCollection<Song> Songs
         {
             get => _songs;
             set { _songs = value; OnPropertyChanged(nameof(Songs)); }
         }
 
+        /// <summary>Holt oder setzt den aktuell selektierten Musiktitel.</summary>
         public Song SelectedSong
         {
             get => _selectedSong;
@@ -56,6 +66,7 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
+        /// <summary>Holt oder setzt die Systemlautstärke der Audiokomponente.</summary>
         public double Volume
         {
             get => _volume;
@@ -67,72 +78,75 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
+        /// <summary>Ruft den Befehl für die Play/Pause-Interaktion ab.</summary>
         public ICommand PlayPauseCommand { get; }
+
+        /// <summary>Ruft den Befehl für den Wechsel zum vorherigen Titel ab.</summary>
         public ICommand PreviousSongCommand { get; }
+
+        /// <summary>Ruft den Befehl für den Wechsel zum nächsten Titel ab.</summary>
         public ICommand NextSongCommand { get; }
 
-        private bool CanExecuteWithSelection(object parameter)
+        /// <summary>Ruft den Befehl für die Rückkehr zur Startseite ab.</summary>
+        public ICommand BackToHomeCommand { get; }
+
+        private bool CanExecuteWithSelection(object parameter) => SelectedSong != null;
+
+        private void AddSong(Song song)
         {
-            return SelectedSong != null;
+            if (song != null) Songs.Add(song);
         }
 
+        /// <summary>
+        /// Initialisiert eine synchrone Verbindung zur SQL-Datenbank über das Entity Framework Core 
+        /// und lädt die Rock-Titelliste.
+        /// </summary>
         private void LoadSongsFromDatabase()
         {
-            Songs.Clear();
-            using (SqlConnection con = new SqlConnection(_connectionString))
+            try
             {
-                con.Open();
-                string query = "SELECT * FROM Songs_Rock";
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader reader = cmd.ExecuteReader();
+                Songs.Clear();
 
-                while (reader.Read())
+                using (var context = new MusicDbContext())
                 {
-                    Songs.Add(new Song
+                    var rockEntities = context.RockSongs.ToList();
+
+                    foreach (var song in rockEntities)
                     {
-                        Id = reader.GetInt32(0),
-                        Title = reader.GetString(1),
-                        Artist = reader.GetString(2),
-                        Duration = reader.GetString(3),
-                        FilePath = reader.GetString(4)
-                    });
+                        Songs.Add(song);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Laden von Rock:\n{ex.Message}", "Datenbank-Diagnose", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void PlayPauseExecute(object parameter)
         {
             if (SelectedSong == null) return;
-
-            if (_isPlaying)
-            {
-                _mediaPlayer.Pause();
-                _isPlaying = false;
-            }
-            else
-            {
-                PlaySong(SelectedSong);
-            }
+            if (_isPlaying) { _mediaPlayer.Pause(); _isPlaying = false; }
+            else { PlaySong(SelectedSong); }
         }
 
         private void PreviousSongExecute(object parameter)
         {
             int index = Songs.IndexOf(SelectedSong);
-            if (index > 0)
-            {
-                SelectedSong = Songs[index - 1];
-                PlaySong(SelectedSong);
-            }
+            if (index > 0) { SelectedSong = Songs[index - 1]; PlaySong(SelectedSong); }
         }
 
         private void NextSongExecute(object parameter)
         {
             int index = Songs.IndexOf(SelectedSong);
-            if (index < Songs.Count - 1)
-            {
-                SelectedSong = Songs[index + 1];
-                PlaySong(SelectedSong);
-            }
+            if (index < Songs.Count - 1) { SelectedSong = Songs[index + 1]; PlaySong(SelectedSong); }
+        }
+
+        private void BackToHomeExecute(object parameter)
+        {
+            _mediaPlayer.Stop();
+            _isPlaying = false;
+            EventAggregator.GetEvent<NavigationEvent>().Publish("HomeView");
         }
 
         private void PlaySong(Song song)

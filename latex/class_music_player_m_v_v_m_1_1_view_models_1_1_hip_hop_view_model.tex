@@ -1,0 +1,118 @@
+\doxysection{Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model Class Reference}
+\hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+
+
+Steuert die Geschäftslogik der Hip\+Hop-\/\+Wiedergabeliste und verarbeitet eingehende Datenereignisse.  
+
+
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a9f6b245421e316ac6658bcd358ff79a3}{Hip\+Hop\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}{Hip\+Hop\+View\+Model}, konfiguriert Steuerungskommandos und abonniert Datenereignisse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_a6fde6eb6bc517f1bafc80c604db837c0}{On\+Property\+Changed}} (string property)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aa56f44b69ee233d0b75ef17d26fc70c5}{Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a1f08e4f6fcc93a2512dc80a03a88cf10}{Selected\+Song}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\item 
+double \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a25e9f84cd0a0c2b47321dc94db73abd7}{Volume}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_acb51ad18946e8e0f002db35aad5e1f01}{Play\+Pause\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a3a4ec9c212bbcbc31ac45d2284b318c6}{Previous\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a090c2c3206e4d2cb93b2654295ae008e}{Next\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_adad7fef30e3c592ae38666a929a93c65}{Property\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Steuert die Geschäftslogik der Hip\+Hop-\/\+Wiedergabeliste und verarbeitet eingehende Datenereignisse. 
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-constructors}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a9f6b245421e316ac6658bcd358ff79a3}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!HipHopViewModel@{HipHopViewModel}}
+\index{HipHopViewModel@{HipHopViewModel}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{HipHopViewModel()}{HipHopViewModel()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a9f6b245421e316ac6658bcd358ff79a3} 
+Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Hip\+Hop\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert das \doxylink{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model}{Hip\+Hop\+View\+Model}, konfiguriert Steuerungskommandos und abonniert Datenereignisse. 
+
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-property-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a090c2c3206e4d2cb93b2654295ae008e}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!NextSongCommand@{NextSongCommand}}
+\index{NextSongCommand@{NextSongCommand}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{NextSongCommand}{NextSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a090c2c3206e4d2cb93b2654295ae008e} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Next\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_acb51ad18946e8e0f002db35aad5e1f01}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!PlayPauseCommand@{PlayPauseCommand}}
+\index{PlayPauseCommand@{PlayPauseCommand}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{PlayPauseCommand}{PlayPauseCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_acb51ad18946e8e0f002db35aad5e1f01} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Play\+Pause\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a3a4ec9c212bbcbc31ac45d2284b318c6}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!PreviousSongCommand@{PreviousSongCommand}}
+\index{PreviousSongCommand@{PreviousSongCommand}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{PreviousSongCommand}{PreviousSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a3a4ec9c212bbcbc31ac45d2284b318c6} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Previous\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a1f08e4f6fcc93a2512dc80a03a88cf10}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!SelectedSong@{SelectedSong}}
+\index{SelectedSong@{SelectedSong}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedSong}{SelectedSong}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a1f08e4f6fcc93a2512dc80a03a88cf10} 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Selected\+Song\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aa56f44b69ee233d0b75ef17d26fc70c5}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!Songs@{Songs}}
+\index{Songs@{Songs}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{Songs}{Songs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_aa56f44b69ee233d0b75ef17d26fc70c5} 
+Observable\+Collection$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}$>$ Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a25e9f84cd0a0c2b47321dc94db73abd7}\index{MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}!Volume@{Volume}}
+\index{Volume@{Volume}!MusicPlayerMVVM.ViewModels.HipHopViewModel@{MusicPlayerMVVM.ViewModels.HipHopViewModel}}
+\doxysubsubsection{\texorpdfstring{Volume}{Volume}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_hip_hop_view_model_a25e9f84cd0a0c2b47321dc94db73abd7} 
+double Music\+Player\+MVVM.\+View\+Models.\+Hip\+Hop\+View\+Model.\+Volume\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Music\+Player\+MVVM/\+\+View\+Models/\+\doxymbox{\hyperlink{_hip_hop_view_model_8cs}{Hip\+Hop\+View\+Model.\+cs}}\end{DoxyCompactItemize}

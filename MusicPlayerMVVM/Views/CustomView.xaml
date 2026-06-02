@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="900" d:DesignWidth="450" Background="#222222">
+             d:DesignHeight="750" d:DesignWidth="500" Background="#222222">
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -14,9 +14,15 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <DockPanel>
-        <Grid DockPanel.Dock="Top" Height="300">
-            <Image Source="../Resources/360_F_136059498_i1vEZZYQJFz4oUKMLnTRHkkQwLEaYSQ6.jpg"
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Height="180">
+            <Image Source="../Resources/custom_genre_banner.jpg"
                    Opacity="0.3"
                    Stretch="UniformToFill"/>
 
@@ -25,42 +31,53 @@
                     Width="30" Height="30" FontSize="11"
                     HorizontalAlignment="Left" VerticalAlignment="Top"
                     Margin="10"
-                    Command="{Binding MainViewModel.NavigateHomeCommand}"/>
+                    Command="{Binding BackToHomeCommand}"/>
 
-            <StackPanel VerticalAlignment="Bottom" Margin="8">
-                <TextBlock Text="PLAYLIST" Foreground="White" FontSize="30" FontWeight="Medium"/>
-                <TextBlock Text="Ein Mix deiner Lieblingsmusik" Foreground="LightGray" FontSize="12" FontWeight="Bold"/>
+            <StackPanel VerticalAlignment="Bottom" Margin="15">
+                <TextBlock Text="PLAYLIST" Foreground="White" FontSize="14" FontWeight="Medium"/>
+                <TextBlock Text="Eigene Playlist" Foreground="White" FontSize="36" FontWeight="Medium"/>
+                <TextBlock Text="Deine individuell hinzugefügten Titel" Foreground="LightGray" FontSize="12" FontWeight="Bold"/>
             </StackPanel>
         </Grid>
 
-        <StackPanel Background="#252525" Margin="10">
-            <ListView ItemsSource="{Binding Songs}" SelectedItem="{Binding SelectedSong}" Height="400" Background="#333333" Foreground="White" Margin="0,10,0,10">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal" Margin="5">
-                            <TextBlock Text="{Binding Title}" Foreground="White" Margin="5,0"/>
-                            <TextBlock Text=" - " Foreground="LightGray"/>
-                            <TextBlock Text="{Binding Artist}" Foreground="LightGray" Margin="5,0"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-                <Button Style="{StaticResource GreenCircleButton}" Content="⏮" Command="{Binding PreviousSongCommand}" FontSize="18"/>
-                <Button Style="{StaticResource GreenCircleButton}" Content="⏯" Command="{Binding PlayPauseCommand}" FontSize="20"/>
-                <Button Style="{StaticResource GreenCircleButton}" Content="⏭" Command="{Binding NextSongCommand}" FontSize="18"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,0,10">
+                <Button Content="➕ Hinzufügen" Command="{Binding AddSongCommand}" Style="{StaticResource GreenWideButton}" Padding="10,5" Margin="0,0,10,0"/>
+                <Button Content="🗑 Löschen" Command="{Binding DeleteSongCommand}" Style="{StaticResource GreenWideButton}" Padding="10,5"/>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
-                <Button Style="{StaticResource GreenWideButton}" Content="➕ Song hinzufügen" Width="150" Height="40" Margin="10,0" Command="{Binding AddSongCommand}"/>
-                <Button Style="{StaticResource GreenWideButton}" Content="🗑️ Song löschen" Width="150" Height="40" Margin="10,0" Command="{Binding DeleteSongCommand}"/>
+            <Border Grid.Row="1" Background="#252525" CornerRadius="10">
+                <ListView ItemsSource="{Binding Songs}" SelectedItem="{Binding SelectedSong}" 
+                          Background="#333333" Foreground="White" Margin="10">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="{Binding Title}" Foreground="White" Margin="5,0"/>
+                                <TextBlock Text=" - " Foreground="LightGray"/>
+                                <TextBlock Text="{Binding Artist}" Foreground="LightGray" Margin="5,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Border>
+        </Grid>
+
+        <StackPanel Grid.Row="2" Background="#222222" Margin="0,5,0,15">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+                <Button Style="{StaticResource GreenCircleButton}" Content="⏮" Command="{Binding PreviousSongCommand}" FontSize="18" Margin="5,0"/>
+                <Button Style="{StaticResource GreenCircleButton}" Content="⏯" Command="{Binding PlayPauseCommand}" FontSize="20" Margin="5,0"/>
+                <Button Style="{StaticResource GreenCircleButton}" Content="⏭" Command="{Binding NextSongCommand}" FontSize="18" Margin="5,0"/>
             </StackPanel>
 
-            <StackPanel Orientation="Horizontal" Margin="10,20,10,10" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Margin="10,10,10,0" HorizontalAlignment="Center">
                 <TextBlock Text="Lautstärke:" Foreground="White" VerticalAlignment="Center" Margin="0,0,5,0"/>
                 <Slider Style="{StaticResource GreenSliderStyle}" Value="{Binding Volume, Mode=TwoWay}" Minimum="0.0" Maximum="1.0" Width="200"/>
             </StackPanel>
         </StackPanel>
-    </DockPanel>
+    </Grid>
 </UserControl>

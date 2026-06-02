@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['main_0',['Main',['../class_music_player_m_v_v_m_1_1_app.html#aa14ffa48c3a52e332b8d5cd5c07d4aa5',1,'MusicPlayerMVVM.App.Main()'],['../class_music_player_m_v_v_m_1_1_app.html#aa14ffa48c3a52e332b8d5cd5c07d4aa5',1,'MusicPlayerMVVM.App.Main()']]],
+  ['main_20types_1',['Main Types',['../md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e.html#autotoc_md9',1,'Main Types'],['../md_packages_2_microsoft_8_extensions_8_dependency_injection_8_abstractions_88_80_81_2_p_a_c_k_a_g_e.html#autotoc_md15',1,'Main Types'],['../md_packages_2_system_8_configuration_8_configuration_manager_810_80_88_2_p_a_c_k_a_g_e.html#autotoc_md41',1,'Main Types']]],
+  ['mainviewmodel_2',['MainViewModel',['../class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model.html',1,'MusicPlayerMVVM.ViewModels.MainViewModel'],['../class_music_player_m_v_v_m_1_1_view_models_1_1_main_view_model.html#add916e85a622794a064f25ad33d555de',1,'MusicPlayerMVVM.ViewModels.MainViewModel.MainViewModel()']]],
+  ['mainviewmodel_2ecs_3',['MainViewModel.cs',['../_main_view_model_8cs.html',1,'']]],
+  ['mainwindow_4',['MainWindow',['../class_music_player_m_v_v_m_1_1_main_window.html',1,'MusicPlayerMVVM.MainWindow'],['../class_music_player_m_v_v_m_1_1_views_1_1_main_window.html',1,'MusicPlayerMVVM.Views.MainWindow'],['../class_music_player_m_v_v_m_1_1_views_1_1_main_window.html#addc375492a9b047a1c4eeb59f146e7b4',1,'MusicPlayerMVVM.Views.MainWindow.MainWindow()']]],
+  ['mainwindow_2eg_2ecs_5',['MainWindow.g.cs',['../_main_window_8g_8cs.html',1,'']]],
+  ['mainwindow_2eg_2ei_2ecs_6',['MainWindow.g.i.cs',['../_main_window_8g_8i_8cs.html',1,'(Global Namespace)'],['../_views_2_main_window_8g_8i_8cs.html',1,'(Global Namespace)']]],
+  ['mainwindow_2examl_2ecs_7',['MainWindow.xaml.cs',['../_main_window_8xaml_8cs.html',1,'']]],
+  ['musicdbcontext_8',['MusicDbContext',['../class_music_player_m_v_v_m_1_1_models_1_1_music_db_context.html',1,'MusicPlayerMVVM.Models.MusicDbContext'],['../class_music_player_m_v_v_m_1_1_models_1_1_music_db_context.html#a5c882204001dd3dafa3fb5901efd1f12',1,'MusicPlayerMVVM.Models.MusicDbContext.MusicDbContext()']]],
+  ['musicdbcontext_2ecs_9',['MusicDbContext.cs',['../_music_db_context_8cs.html',1,'']]],
+  ['musicplayer_10',['MusicPlayer',['../class_music_player_m_v_v_m_1_1_models_1_1_music_player.html',1,'MusicPlayerMVVM.Models.MusicPlayer'],['../class_music_player_m_v_v_m_1_1_models_1_1_music_player.html#af885a5454f4bb4f729e1468e02024654',1,'MusicPlayerMVVM.Models.MusicPlayer.MusicPlayer()']]],
+  ['musicplayer_2ecs_11',['MusicPlayer.cs',['../_music_player_8cs.html',1,'']]],
+  ['musicplayermvvm_12',['MusicPlayerMVVM',['../namespace_music_player_m_v_v_m.html',1,'']]],
+  ['musicplayermvvm_3a_3acommon_13',['Common',['../namespace_music_player_m_v_v_m_1_1_common.html',1,'MusicPlayerMVVM']]],
+  ['musicplayermvvm_3a_3aevents_14',['Events',['../namespace_music_player_m_v_v_m_1_1_events.html',1,'MusicPlayerMVVM']]],
+  ['musicplayermvvm_3a_3amodels_15',['Models',['../namespace_music_player_m_v_v_m_1_1_models.html',1,'MusicPlayerMVVM']]],
+  ['musicplayermvvm_3a_3aproperties_16',['Properties',['../namespace_music_player_m_v_v_m_1_1_properties.html',1,'MusicPlayerMVVM']]],
+  ['musicplayermvvm_3a_3aresources_17',['Resources',['../namespace_music_player_m_v_v_m_1_1_resources.html',1,'MusicPlayerMVVM']]],
+  ['musicplayermvvm_3a_3aviewmodels_18',['ViewModels',['../namespace_music_player_m_v_v_m_1_1_view_models.html',1,'MusicPlayerMVVM']]],
+  ['musicplayermvvm_3a_3aviews_19',['Views',['../namespace_music_player_m_v_v_m_1_1_views.html',1,'MusicPlayerMVVM']]],
+  ['musicplayermvvm_5fcontent_2eg_2ecs_20',['MusicPlayerMVVM_Content.g.cs',['../_music_player_m_v_v_m___content_8g_8cs.html',1,'']]],
+  ['musicplayermvvm_5fcontent_2eg_2ei_2ecs_21',['MusicPlayerMVVM_Content.g.i.cs',['../_music_player_m_v_v_m___content_8g_8i_8cs.html',1,'']]]
+];

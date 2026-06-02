@@ -16,7 +16,7 @@ namespace MusicPlayerMVVM.ViewModels
         private double _volume = 0.5;
         private bool _isPlaying = false;
 
-        private static readonly System.Windows.Controls.MediaElement MediaPlayer = new System.Windows.Controls.MediaElement
+        private static System.Windows.Controls.MediaElement MediaPlayer = new System.Windows.Controls.MediaElement
         {
             LoadedBehavior = System.Windows.Controls.MediaState.Manual,
             UnloadedBehavior = System.Windows.Controls.MediaState.Manual

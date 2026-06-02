@@ -1,0 +1,77 @@
+\doxysection{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base Class Reference}
+\hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}\index{MusicPlayerMVVM.ViewModels.ViewModelBase@{MusicPlayerMVVM.ViewModels.ViewModelBase}}
+
+
+Abstrakte Basisklasse für alle \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} zur Bereitstellung der Event\+Aggregator-\/\+Infrastruktur. Erbt von \doxylink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Notify\+Property\+Changed} für Datenbindung.  
+
+
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.625000cm]{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_a6fde6eb6bc517f1bafc80c604db837c0}{On\+Property\+Changed}} (string property)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_adad7fef30e3c592ae38666a929a93c65}{Property\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstrakte Basisklasse für alle \doxylink{namespace_music_player_m_v_v_m_1_1_view_models}{View\+Models} zur Bereitstellung der Event\+Aggregator-\/\+Infrastruktur. Erbt von \doxylink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Notify\+Property\+Changed} für Datenbindung. 
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_doc-constructors}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}\index{MusicPlayerMVVM.ViewModels.ViewModelBase@{MusicPlayerMVVM.ViewModels.ViewModelBase}!ViewModelBase@{ViewModelBase}}
+\index{ViewModelBase@{ViewModelBase}!MusicPlayerMVVM.ViewModels.ViewModelBase@{MusicPlayerMVVM.ViewModels.ViewModelBase}}
+\doxysubsubsection{\texorpdfstring{ViewModelBase()}{ViewModelBase()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a} 
+Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base.\+View\+Model\+Base (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event\+Aggregator} & Die Instanz des Prism Event\+Aggregators.\\
+\hline
+\end{DoxyParams}
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_doc-property-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}\index{MusicPlayerMVVM.ViewModels.ViewModelBase@{MusicPlayerMVVM.ViewModels.ViewModelBase}!EventAggregator@{EventAggregator}}
+\index{EventAggregator@{EventAggregator}!MusicPlayerMVVM.ViewModels.ViewModelBase@{MusicPlayerMVVM.ViewModels.ViewModelBase}}
+\doxysubsubsection{\texorpdfstring{EventAggregator}{EventAggregator}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046} 
+IEvent\+Aggregator Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base.\+Event\+Aggregator\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+Ruft den internen Ereignisdienst für abgeleitete Klassen ab. 
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Music\+Player\+MVVM/\+\+View\+Models/\+\doxymbox{\hyperlink{_view_model_base_8cs}{View\+Model\+Base.\+cs}}\end{DoxyCompactItemize}

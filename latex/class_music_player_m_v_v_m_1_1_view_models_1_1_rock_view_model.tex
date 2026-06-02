@@ -1,0 +1,114 @@
+\doxysection{Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model Class Reference}
+\hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model}{}\label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model}\index{MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}}
+
+
+Steuert die Geschäftslogik der Rock-\/\+Wiedergabeliste.  
+
+
+Inheritance diagram for Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_adfab41b43f8de81304db4b36150ebe0f}{Rock\+View\+Model}} (IEvent\+Aggregator event\+Aggregator)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a399769cd1963e631620b78b1f0c5897a}{View\+Model\+Base}} (IEvent\+Aggregator event\+Aggregator)
+\begin{DoxyCompactList}\small\item\em Initialisiert die Basisklasse und ordnet den zentralen Ereignisdienst zu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_a6fde6eb6bc517f1bafc80c604db837c0}{On\+Property\+Changed}} (string property)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} $>$ \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a80303e21748345df58141a5f81a4d717}{Songs}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\item 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_ae307246fec02c052ef44c5884054a269}{Selected\+Song}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\item 
+double \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a5dc7495fdef828b2230d8ea52751add0}{Volume}}\hspace{0.3cm}{\ttfamily  \+[get, set]\+}
+\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_ae05b30d20956bf86b40e576730e0071c}{Play\+Pause\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_afe9b99ca75d28fe6c25c5b2baabc94c3}{Previous\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\item 
+ICommand \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a469a8f3fdbdae70d5ee33c3f07699ad0}{Next\+Song\+Command}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base}{Music\+Player\+MVVM.\+View\+Models.\+View\+Model\+Base}}}
+\begin{DoxyCompactItemize}
+\item 
+IEvent\+Aggregator \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_view_models_1_1_view_model_base_a275ffe0aae0b39d9d242d1588453e046}{Event\+Aggregator}}\hspace{0.3cm}{\ttfamily  \+[get]\+}
+\begin{DoxyCompactList}\small\item\em Ruft den internen Ereignisdienst für abgeleitete Klassen ab. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Events inherited from \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed}{Music\+Player\+MVVM.\+Common.\+Notify\+Property\+Changed}}}
+\begin{DoxyCompactItemize}
+\item 
+Property\+Changed\+Event\+Handler \doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_common_1_1_notify_property_changed_adad7fef30e3c592ae38666a929a93c65}{Property\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Steuert die Geschäftslogik der Rock-\/\+Wiedergabeliste. 
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_doc-constructors}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_adfab41b43f8de81304db4b36150ebe0f}\index{MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}!RockViewModel@{RockViewModel}}
+\index{RockViewModel@{RockViewModel}!MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}}
+\doxysubsubsection{\texorpdfstring{RockViewModel()}{RockViewModel()}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_adfab41b43f8de81304db4b36150ebe0f} 
+Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model.\+Rock\+View\+Model (\begin{DoxyParamCaption}\item[{IEvent\+Aggregator}]{event\+Aggregator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_doc-property-members}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a469a8f3fdbdae70d5ee33c3f07699ad0}\index{MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}!NextSongCommand@{NextSongCommand}}
+\index{NextSongCommand@{NextSongCommand}!MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}}
+\doxysubsubsection{\texorpdfstring{NextSongCommand}{NextSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a469a8f3fdbdae70d5ee33c3f07699ad0} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model.\+Next\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_ae05b30d20956bf86b40e576730e0071c}\index{MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}!PlayPauseCommand@{PlayPauseCommand}}
+\index{PlayPauseCommand@{PlayPauseCommand}!MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}}
+\doxysubsubsection{\texorpdfstring{PlayPauseCommand}{PlayPauseCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_ae05b30d20956bf86b40e576730e0071c} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model.\+Play\+Pause\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_afe9b99ca75d28fe6c25c5b2baabc94c3}\index{MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}!PreviousSongCommand@{PreviousSongCommand}}
+\index{PreviousSongCommand@{PreviousSongCommand}!MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}}
+\doxysubsubsection{\texorpdfstring{PreviousSongCommand}{PreviousSongCommand}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_afe9b99ca75d28fe6c25c5b2baabc94c3} 
+ICommand Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model.\+Previous\+Song\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_ae307246fec02c052ef44c5884054a269}\index{MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}!SelectedSong@{SelectedSong}}
+\index{SelectedSong@{SelectedSong}!MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}}
+\doxysubsubsection{\texorpdfstring{SelectedSong}{SelectedSong}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_ae307246fec02c052ef44c5884054a269} 
+\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}} Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model.\+Selected\+Song\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a80303e21748345df58141a5f81a4d717}\index{MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}!Songs@{Songs}}
+\index{Songs@{Songs}!MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}}
+\doxysubsubsection{\texorpdfstring{Songs}{Songs}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a80303e21748345df58141a5f81a4d717} 
+Observable\+Collection$<$\doxymbox{\hyperlink{class_music_player_m_v_v_m_1_1_models_1_1_song}{Song}}$>$ Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model.\+Songs\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a5dc7495fdef828b2230d8ea52751add0}\index{MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}!Volume@{Volume}}
+\index{Volume@{Volume}!MusicPlayerMVVM.ViewModels.RockViewModel@{MusicPlayerMVVM.ViewModels.RockViewModel}}
+\doxysubsubsection{\texorpdfstring{Volume}{Volume}}
+{\footnotesize\ttfamily \label{class_music_player_m_v_v_m_1_1_view_models_1_1_rock_view_model_a5dc7495fdef828b2230d8ea52751add0} 
+double Music\+Player\+MVVM.\+View\+Models.\+Rock\+View\+Model.\+Volume\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+Music\+Player\+MVVM/\+\+View\+Models/\+\doxymbox{\hyperlink{_rock_view_model_8cs}{Rock\+View\+Model.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\chapter{About }
+\hypertarget{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e}{}\label{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e}\index{About@{About}}
+\label{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md6}%
+\Hypertarget{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md6}%
+
+
+As of C\# 8, the C\# language has support for producing and consuming asynchronous iterators. The library types in support of those features are available in .NET Core 3.\+0 and newer as well as in .NET Standard 2.\+1. This library provides the necessary definitions of those types to support these language features on .NET Framework and on .NET Standard 2.\+0. This library is not necessary nor recommended when targeting versions of .NET that include the relevant support.\hypertarget{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md7}{}\doxysection{\texorpdfstring{Key Features}{Key Features}}\label{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md7}
+
+\begin{DoxyItemize}
+\item Enables the use of C\# async iterators on older .NET platforms
+\end{DoxyItemize}\hypertarget{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md8}{}\doxysection{\texorpdfstring{How to Use}{How to Use}}\label{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md8}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\ \#}}
+\DoxyCodeLine{\textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{}
+\DoxyCodeLine{internal\ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }Program}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ async\ Task\ Main()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Starting..."{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ await\ \textcolor{keywordflow}{foreach}\ (var\ value\ \textcolor{keywordflow}{in}\ GetValuesAsync())}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}Finished!"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ async\ IAsyncEnumerable<int>\ GetValuesAsync()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ 10;\ i++)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ await\ Task.Delay(TimeSpan.FromSeconds(1));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ yield\ \textcolor{keywordflow}{return}\ i;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md9}{}\doxysection{\texorpdfstring{Main Types}{Main Types}}\label{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md9}
+The main types provided by this library are:\+
+
+
+\begin{DoxyItemize}
+\item {\ttfamily IAsync\+Enumerable\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}}
+\item {\ttfamily IAsync\+Enumerator\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}}
+\item {\ttfamily IAsync\+Disposable\texorpdfstring{$<$}{<}T\texorpdfstring{$>$}{>}}
+\end{DoxyItemize}\hypertarget{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md10}{}\doxysection{\texorpdfstring{Additional Documentation}{Additional Documentation}}\label{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md10}
+
+\begin{DoxyItemize}
+\item \href{https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-8.0/async-streams}{\texttt{C\# Feature Specification}}
+\item \href{https://learn.microsoft.com/archive/msdn-magazine/2019/november/csharp-iterating-with-async-enumerables-in-csharp-8}{\texttt{Walkthrough article}}
+\end{DoxyItemize}\hypertarget{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md11}{}\doxysection{\texorpdfstring{Feedback \& Contributing}{Feedback \& Contributing}}\label{md_packages_2_microsoft_8_bcl_8_async_interfaces_88_80_80_2_p_a_c_k_a_g_e_autotoc_md11}
+Microsoft.\+Bcl.\+Async\+Interfaces is released as open source under the \href{https://licenses.nuget.org/MIT}{\texttt{MIT license}}. Bug reports and contributions are welcome at \href{https://github.com/dotnet/runtime}{\texttt{the Git\+Hub repository}}. 
