@@ -39,8 +39,6 @@ namespace MusicPlayerMVVM.ViewModels
             NextSongCommand = new ActionCommand(NextSongExecute, CanExecuteWithSelection);
             BackToHomeCommand = new ActionCommand(BackToHomeExecute, param => true);
 
-            EventAggregator.GetEvent<AddSongEvent>().Subscribe(AddSong);
-
             EventAggregator.GetEvent<VolumeChangedEvent>().Subscribe(neueLautstaerke => Volume = neueLautstaerke);
 
             LoadSongsFromDatabase();
@@ -93,11 +91,6 @@ namespace MusicPlayerMVVM.ViewModels
         public ICommand BackToHomeCommand { get; }
 
         private bool CanExecuteWithSelection(object parameter) => SelectedSong != null;
-
-        private void AddSong(Song song)
-        {
-            if (song != null) Songs.Add(song);
-        }
 
         /// <summary>
         /// Initialisiert eine synchrone Verbindung zur SQL-Datenbank über das Entity Framework Core 

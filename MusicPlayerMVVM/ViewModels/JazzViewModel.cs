@@ -42,8 +42,6 @@ namespace MusicPlayerMVVM.ViewModels
             NextSongCommand = new ActionCommand(NextSongExecute, CanExecuteWithSelection);
             BackToHomeCommand = new ActionCommand(BackToHomeExecute, param => true);
 
-            EventAggregator.GetEvent<AddSongEvent>().Subscribe(AddSong);
-
             EventAggregator.GetEvent<VolumeChangedEvent>().Subscribe(neueLautstaerke => Volume = neueLautstaerke);
 
             LoadSongsFromDatabase();
@@ -94,11 +92,6 @@ namespace MusicPlayerMVVM.ViewModels
 
         private bool CanExecuteWithSelection(object parameter) => SelectedSong != null;
 
-        private void AddSong(Song song)
-        {
-            if (song != null) Songs.Add(song);
-        }
-
         /// <summary>
         /// Initialisiert eine synchrone Verbindung zur SQL-Datenbank und lädt die Jazz-Titelliste.
         /// </summary>
@@ -109,8 +102,9 @@ namespace MusicPlayerMVVM.ViewModels
                 Songs.Clear();
                 using (var context = new MusicDbContext())
                 {
-                    var hipHopEntities = context.HipHopSongs.ToList();
-                    foreach (var song in hipHopEntities)
+                    // HIER KORRIGIERT: Greift jetzt auf JazzSongs statt auf HipHopSongs zu
+                    var jazzEntities = context.JazzSongs.ToList();
+                    foreach (var song in jazzEntities)
                     {
                         Songs.Add(song);
                     }

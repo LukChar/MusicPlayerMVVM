@@ -28,7 +28,6 @@ namespace MusicPlayerMVVM.ViewModels
 
         public MainViewModel(IEventAggregator eventAggregator) : base(eventAggregator)
         {
-            // Alle ViewModels beim Start einmalig erzeugen und den EventAggregator injizieren
             _homeViewModel = new HomeViewModel(eventAggregator);
             _hipHopViewModel = new HipHopViewModel(eventAggregator);
             _rockViewModel = new RockViewModel(eventAggregator);
@@ -37,13 +36,11 @@ namespace MusicPlayerMVVM.ViewModels
             _jazzViewModel = new JazzViewModel(eventAggregator);
             _customViewModel = new CustomViewModel(eventAggregator);
 
-            // Auf Navigation hören
             EventAggregator.GetEvent<NavigationEvent>().Subscribe(NavigateToViewModel);
 
-            // Globale Play-Control Events
-            GlobalPlayPauseCommand = new ActionCommand(param => EventAggregator.GetEvent<PlayControlEvent>().Publish("PlayPause"), param => true);
-            GlobalPreviousCommand = new ActionCommand(param => EventAggregator.GetEvent<PlayControlEvent>().Publish("Previous"), param => true);
-            GlobalNextCommand = new ActionCommand(param => EventAggregator.GetEvent<PlayControlEvent>().Publish("Next"), param => true);
+            GlobalPlayPauseCommand = new ActionCommand(ExecuteGlobalPlayPause, param => true);
+            GlobalPreviousCommand = new ActionCommand(ExecuteGlobalPrevious, param => true);
+            GlobalNextCommand = new ActionCommand(ExecuteGlobalNext, param => true);
 
             CurrentView = _homeViewModel;
         }
@@ -98,6 +95,36 @@ namespace MusicPlayerMVVM.ViewModels
                     CurrentView = _customViewModel;
                     break;
             }
+        }
+
+        private void ExecuteGlobalPlayPause(object parameter)
+        {
+            if (CurrentView is HipHopViewModel v1) v1.PlayPauseCommand.Execute(null);
+            else if (CurrentView is RockViewModel v2) v2.PlayPauseCommand.Execute(null);
+            else if (CurrentView is PopViewModel v3) v3.PlayPauseCommand.Execute(null);
+            else if (CurrentView is JazzViewModel v4) v4.PlayPauseCommand.Execute(null);
+            else if (CurrentView is KlassikViewModel v5) v5.PlayPauseCommand.Execute(null);
+            else if (CurrentView is CustomViewModel v6) v6.PlayPauseCommand.Execute(null);
+        }
+
+        private void ExecuteGlobalPrevious(object parameter)
+        {
+            if (CurrentView is HipHopViewModel v1) v1.PreviousSongCommand.Execute(null);
+            else if (CurrentView is RockViewModel v2) v2.PreviousSongCommand.Execute(null);
+            else if (CurrentView is PopViewModel v3) v3.PreviousSongCommand.Execute(null);
+            else if (CurrentView is JazzViewModel v4) v4.PreviousSongCommand.Execute(null);
+            else if (CurrentView is KlassikViewModel v5) v5.PreviousSongCommand.Execute(null);
+            else if (CurrentView is CustomViewModel v6) v6.PreviousSongCommand.Execute(null);
+        }
+
+        private void ExecuteGlobalNext(object parameter)
+        {
+            if (CurrentView is HipHopViewModel v1) v1.NextSongCommand.Execute(null);
+            else if (CurrentView is RockViewModel v2) v2.NextSongCommand.Execute(null);
+            else if (CurrentView is PopViewModel v3) v3.NextSongCommand.Execute(null);
+            else if (CurrentView is JazzViewModel v4) v4.NextSongCommand.Execute(null);
+            else if (CurrentView is KlassikViewModel v5) v5.NextSongCommand.Execute(null);
+            else if (CurrentView is CustomViewModel v6) v6.NextSongCommand.Execute(null);
         }
     }
 }

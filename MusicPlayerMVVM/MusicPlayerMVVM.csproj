@@ -199,7 +199,6 @@
     <Compile Include="Events\AddSongEvent.cs" />
     <Compile Include="Events\NavigationEvent.cs" />
     <Compile Include="Events\PlayControlEvent.cs" />
-    <Compile Include="Events\SelectedGenreEvent.cs" />
     <Compile Include="Events\VolumeChangedEvent.cs" />
     <Compile Include="Migrations\MusicDbContextModelSnapshot.cs" />
     <Compile Include="Models\BasePlaylist.cs" />
@@ -314,76 +313,76 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\2Pac-Hit-Em-Up.wav">
+    <Content Include="Resources\HipHop\2Pac-Hit-Em-Up.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resources\ab67616d0000b27308f3e7a08eb03064e6eb0af7.jpg" />
-    <Content Include="Resources\Bill Evans Like Someone in Love.wav" />
-    <Content Include="Resources\Chet Baker Portait in Black and White.wav" />
+    <Content Include="Resources\Jazz\Bill Evans Like Someone in Love.wav" />
+    <Content Include="Resources\Jazz\Chet Baker Portait in Black and White.wav" />
     <Resource Include="Resources\e4256a_7646515a96b341ff9f35bb3be5a32557~mv2.png" />
-    <Content Include="Resources\Estelle American Boy.wav">
+    <Content Include="Resources\Pop\Estelle American Boy.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Fleetwood Mac Dreams.wav">
+    <Content Include="Resources\Rock\Fleetwood Mac Dreams.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resources\fototapeten-hip-hop-graffiti-design.jpg.jpg" />
-    <Content Include="Resources\Grieg Holberg Suite.wav">
+    <Content Include="Resources\Klassik\Grieg Holberg Suite.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resources\How-to-Understand-and-Appreciate-Classical-Music.jpg" />
     <Resource Include="Resources\istockphoto-504373726-612x612.jpg" />
     <Resource Include="Resources\jazz-musik-grunge-plakat-mit-musikinstrumenten-m5rgyx.jpg" />
-    <Content Include="Resources\Justin Timberlake SexyBack.wav">
+    <Content Include="Resources\Pop\Justin Timberlake SexyBack.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Ludovico Einaudi Una Mattina.wav">
+    <Content Include="Resources\Klassik\Ludovico Einaudi Una Mattina.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Miles Davis So What.wav">
+    <Content Include="Resources\Jazz\Miles Davis So What.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Mos-Def Auditorium.wav">
+    <Content Include="Resources\HipHop\Mos-Def Auditorium.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Nate-Dogg-I-Got-Love.wav">
+    <Content Include="Resources\HipHop\Nate-Dogg-I-Got-Love.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Nelly Furtado Promiscuous.wav">
+    <Content Include="Resources\Pop\Nelly Furtado Promiscuous.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Nirvana In Bloom.wav">
+    <Content Include="Resources\Rock\Nirvana In Bloom.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Oskar Schuster Zahada.wav">
+    <Content Include="Resources\Klassik\Oskar Schuster Zahada.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Outkast Roses.wav">
+    <Content Include="Resources\Pop\Outkast Roses.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Pharrell Frontin.wav">
+    <Content Include="Resources\Pop\Pharrell Frontin.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Pink Floyd Shine on you Crazy Diamond.wav">
+    <Content Include="Resources\Rock\Pink Floyd Shine on you Crazy Diamond.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Pusha T Diet Coke.wav">
+    <Content Include="Resources\HipHop\Pusha T Diet Coke.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resources\rock-music-sign-logo-29bc20.png" />
-    <Content Include="Resources\Snoop Dogg Gin and Juice.wav">
+    <Content Include="Resources\HipHop\Snoop Dogg Gin and Juice.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Soundgarden Black Hole Sun.wav">
+    <Content Include="Resources\Rock\Soundgarden Black Hole Sun.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\The Smashing Pumpkins 1979.wav">
+    <Content Include="Resources\Rock\The Smashing Pumpkins 1979.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Timbaland The Way I Are.wav">
+    <Content Include="Resources\Pop\Timbaland The Way I Are.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Vivaldi The-Four-Seasons.wav">
+    <Content Include="Resources\Klassik\Vivaldi The-Four-Seasons.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

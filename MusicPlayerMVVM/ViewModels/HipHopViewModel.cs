@@ -42,9 +42,6 @@ namespace MusicPlayerMVVM.ViewModels
             NextSongCommand = new ActionCommand(NextSongExecute, CanExecuteWithSelection);
             BackToHomeCommand = new ActionCommand(BackToHomeExecute, param => true);
 
-            // Registrierung des Abonnements für den Datentransfer neuer Musiktitel
-            EventAggregator.GetEvent<AddSongEvent>().Subscribe(AddSong);
-
             EventAggregator.GetEvent<VolumeChangedEvent>().Subscribe(neueLautstaerke => Volume = neueLautstaerke);
 
             LoadSongsFromDatabase();
@@ -115,22 +112,11 @@ namespace MusicPlayerMVVM.ViewModels
         }
 
         /// <summary>
-        /// Erfasst ein übermitteltes Song-Objekt und fügt dieses der aktiven Auflistung hinzu.
-        /// </summary>
-        private void AddSong(Song song)
-        {
-            if (song != null)
-            {
-                Songs.Add(song);
-            }
-        }
-
-        /// <summary>
         /// Initialisiert eine synchrone Verbindung zur SQL-Datenbank und lädt die HipHop-Titelliste.
         /// </summary>
         /// <remarks>
         /// Nutzt das IDisposable-Muster über einen using-Block, um die SqlConnection-Ressourcen 
-        /// und offene Datenströme auch im Fehlerfall deterministisch freizugeben.
+        /// und offene Datenströme auch im Fehlerfall freizugeben.
         /// </remarks>
         private void LoadSongsFromDatabase()
         {
