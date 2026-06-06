@@ -15,8 +15,8 @@ using MusicPlayerMVVM.Data;
 namespace MusicPlayerMVVM.ViewModels
 {
     /// <summary>
-    /// Steuert die benutzerdefinierte Playlist, ermöglicht das lokale Hinzufügen und Löschen von Titeln 
-    /// und synchronisiert diese über das Entity Framework Core mit der Datenbank.
+    /// Steuert die eigene Playlist. Hier können neue Lieder von Hand eingetragen, 
+    /// gelöscht und abgespielt werden. Alles wird dauerhaft in der Datenbank gespeichert.
     /// </summary>
     public class CustomViewModel : ViewModelBase
     {
@@ -26,10 +26,15 @@ namespace MusicPlayerMVVM.ViewModels
         private double _volume;
         private bool _isPlaying;
 
+        // Felder für die Datenerfassung über die UI
+        private string _newTitle;
+        private string _newArtist;
+        private string _newFilePath;
+        private string _newDuration = "00:00";
+
         /// <summary>
-        /// Initialisiert das CustomViewModel, konfiguriert alle Steuerungskommandos und lädt persistierte Daten.
+        /// Startet das ViewModel, richtet die Knöpfe (Commands) ein und lädt die Lieder aus der Datenbank.
         /// </summary>
-        /// <param name="eventAggregator">Die Instanz des Prism EventAggregators für systemweites Messaging.</param>
         public CustomViewModel(IEventAggregator eventAggregator) : base(eventAggregator)
         {
             _mediaPlayer = new MediaPlayer();
@@ -41,27 +46,28 @@ namespace MusicPlayerMVVM.ViewModels
             NextSongCommand = new ActionCommand(NextSongExecute, CanExecuteWithSelection);
             BackToHomeCommand = new ActionCommand(BackToHomeExecute, param => true);
 
-            AddSongCommand = new ActionCommand(AddSongExecute, param => true);
+            // Command für das Hinzufügen nutzt jetzt die Prüfung, ob alle Felder ausgefüllt sind
+            AddSongCommand = new ActionCommand(AddSongExecute, CanAddSongExecute);
             DeleteSongCommand = new ActionCommand(DeleteSongExecute, CanExecuteWithSelection);
 
+            // Command für den Datei-Explorer
+            BrowseFileCommand = new ActionCommand(BrowseFileExecute, param => true);
+
             EventAggregator.GetEvent<AddSongEvent>().Subscribe(OnSongAdded);
-
             EventAggregator.GetEvent<VolumeChangedEvent>().Subscribe(neueLautstaerke => Volume = neueLautstaerke);
-
             EventAggregator.GetEvent<PlayControlEvent>().Subscribe(OnGlobalPlayControl);
-
 
             LoadSongsFromDatabase();
         }
 
-        /// <summary>Holt oder setzt die bindbare Auflistung der Musiktitel.</summary>
+        /// <summary>Liste aller Lieder, die in der Ansicht angezeigt werden.</summary>
         public ObservableCollection<Song> Songs
         {
             get => _songs;
             set { _songs = value; OnPropertyChanged(nameof(Songs)); }
         }
 
-        /// <summary>Holt oder setzt den aktuell selektierten Musiktitel und startet diesen bei aktiver Wiedergabe.</summary>
+        /// <summary>Das aktuell ausgewählte Lied. Startet automatisch, wenn der Player gerade läuft.</summary>
         public Song SelectedSong
         {
             get => _selectedSong;
@@ -76,7 +82,7 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
-        /// <summary>Holt oder setzt die Systemlautstärke der Audiokomponente.</summary>
+        /// <summary>Die aktuelle Lautstärke des Players.</summary>
         public double Volume
         {
             get => _volume;
@@ -88,84 +94,132 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
-        /// <summary>Ruft den Befehl für die Play/Pause-Interaktion ab.</summary>
+        /// <summary>Der eingegebene Titel für das neue Lied.</summary>
+        public string NewTitle
+        {
+            get => _newTitle;
+            set { _newTitle = value; OnPropertyChanged(nameof(NewTitle)); }
+        }
+
+        /// <summary>Der eingegebene Interpret für das neue Lied.</summary>
+        public string NewArtist
+        {
+            get => _newArtist;
+            set { _newArtist = value; OnPropertyChanged(nameof(NewArtist)); }
+        }
+
+        /// <summary>Der Dateipfad zum neuen Lied.</summary>
+        public string NewFilePath
+        {
+            get => _newFilePath;
+            set { _newFilePath = value; OnPropertyChanged(nameof(NewFilePath)); }
+        }
+
+        /// <summary>Die eingegebene Dauer des neuen Liedes.</summary>
+        public string NewDuration
+        {
+            get => _newDuration;
+            set { _newDuration = value; OnPropertyChanged(nameof(NewDuration)); }
+        }
+
+        /// <summary>Knopf für Start und Pause.</summary>
         public ICommand PlayPauseCommand { get; }
 
-        /// <summary>Ruft den Befehl für den Wechsel zum vorherigen Titel ab.</summary>
+        /// <summary>Knopf für das vorherige Lied.</summary>
         public ICommand PreviousSongCommand { get; }
 
-        /// <summary>Ruft den Befehl für den Wechsel zum nächsten Titel ab.</summary>
+        /// <summary>Knopf für das nächste Lied.</summary>
         public ICommand NextSongCommand { get; }
 
-        /// <summary>Ruft den Befehl für die Rückkehr zur Startseite ab.</summary>
+        /// <summary>Knopf, um zurück zum Hauptmenü zu gehen.</summary>
         public ICommand BackToHomeCommand { get; }
 
-        /// <summary>Ruft den Befehl zum Hinzufügen einer neuen lokalen Audiodatei ab.</summary>
+        /// <summary>Knopf, um das eingetragene Lied zu speichern.</summary>
         public ICommand AddSongCommand { get; }
 
-        /// <summary>Ruft den Befehl zum Löschen der aktuell ausgewählten Audiodatei ab.</summary>
+        /// <summary>Knopf, um das ausgewählte Lied zu löschen.</summary>
         public ICommand DeleteSongCommand { get; }
 
-        /// <summary>
-        /// Validiert den Ausführungsstatus der befehlsgebundenen Aktionen basierend auf der aktuellen Selektion.
-        /// </summary>
+        /// <summary>Knopf, um den Windows-Dateiexplorer zu öffnen.</summary>
+        public ICommand BrowseFileCommand { get; }
+
+        /// <summary>Prüft, ob ein Lied ausgewählt ist, damit die Knöpfe aktiviert werden.</summary>
         private bool CanExecuteWithSelection(object parameter) => SelectedSong != null;
 
-        /// <summary>
-        /// Erfasst ein übermitteltes Song-Objekt und fügt dieses der aktiven Laufzeitauflistung hinzu.
-        /// </summary>
+        /// <summary>Prüft, ob alle Pflichtfelder für ein neues Lied ausgefüllt sind.</summary>
+        private bool CanAddSongExecute(object parameter)
+        {
+            return !string.IsNullOrWhiteSpace(NewTitle) &&
+                   !string.IsNullOrWhiteSpace(NewArtist) &&
+                   !string.IsNullOrWhiteSpace(NewFilePath);
+        }
+
+        /// <summary>Fügt das Lied zur Liste hinzu, wenn es von woanders gemeldet wird.</summary>
         private void OnSongAdded(Song newSong)
         {
-            if (newSong != null)
+            if (newSong != null && !Songs.Contains(newSong))
             {
                 Songs.Add(newSong);
             }
         }
 
-        /// <summary>
-        /// Öffnet einen Dateiauswahldialog zur Selektion einer Audiodatei, erstellt eine neue Entität 
-        /// und persistiert diese asynchron in der Datenbank.
-        /// </summary>
-        private void AddSongExecute(object parameter)
+        /// <summary>Öffnet den Windows-Dateiexplorer zur Auswahl einer Audiodatei.</summary>
+        private void BrowseFileExecute(object parameter)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                Filter = "Audio Dateien (*.mp3;*.wav)|*.mp3;*.wav",
+                Filter = "Audio Dateien (*.wav;*.mp3)|*.wav;*.mp3",
+                Title = "Audiodatei auswählen",
                 Multiselect = false
             };
 
             if (openFileDialog.ShowDialog() == true)
             {
-                var newSong = new CustomSong
-                {
-                    Title = Path.GetFileNameWithoutExtension(openFileDialog.FileName),
-                    Artist = "Lokale Datei",
-                    FilePath = openFileDialog.FileName,
-                    Duration = "00:00"
-                };
+                NewFilePath = openFileDialog.FileName;
 
-                try
+                if (string.IsNullOrWhiteSpace(NewTitle))
                 {
-                    using (var context = new MusicDbContext())
-                    {
-                        context.Set<CustomSong>().Add(newSong);
-                        context.SaveChanges();
-                    }
-
-                    // Das eigene Subscribe löst daraufhin OnSongAdded aus und fügt den Song der Liste hinzu.
-                    EventAggregator.GetEvent<AddSongEvent>().Publish(newSong);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Fehler beim Speichern des Titels:\n{ex.Message}", "Datenbankfehler", MessageBoxButton.OK, MessageBoxImage.Error);
+                    NewTitle = Path.GetFileNameWithoutExtension(openFileDialog.FileName);
                 }
             }
         }
 
-        /// <summary>
-        /// Entfernt den selektierten Song aus der UI-Auflistung, stoppt eine eventuell laufende Wiedergabe 
-        /// und löscht den Datensatz physisch aus der Datenbank.
-        /// </summary>
+        /// <summary>Speichert die eingegebenen Daten als neues Lied in der Datenbank ab.</summary>
+        private void AddSongExecute(object parameter)
+        {
+            var newSong = new CustomSong
+            {
+                Title = NewTitle,
+                Artist = NewArtist,
+                FilePath = NewFilePath,
+                Duration = string.IsNullOrWhiteSpace(NewDuration) ? "00:00" : NewDuration
+            };
+
+            try
+            {
+                using (var context = new MusicDbContext())
+                {
+                    context.Set<CustomSong>().Add(newSong);
+                    context.SaveChanges();
+                }
+
+                // Fügt das Lied zur Anzeige hinzu
+                Songs.Add(newSong);
+                EventAggregator.GetEvent<AddSongEvent>().Publish(newSong);
+
+                // Felder nach dem Speichern wieder leeren
+                NewTitle = string.Empty;
+                NewArtist = string.Empty;
+                NewFilePath = string.Empty;
+                NewDuration = "00:00";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Speichern des Titels:\n{ex.Message}", "Datenbankfehler", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        /// <summary>Löscht das ausgewählte Lied aus der Liste und aus der Datenbank.</summary>
         private void DeleteSongExecute(object parameter)
         {
             if (SelectedSong != null)
@@ -199,9 +253,7 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
-        /// <summary>
-        /// Liest die benutzerdefinierten Datensätze beim Initialisieren mittels Entity Framework Core aus.
-        /// </summary>
+        /// <summary>Holt beim Start alle eigenen Lieder aus der Datenbank.</summary>
         private void LoadSongsFromDatabase()
         {
             try
@@ -224,7 +276,7 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
-        /// <summary>Ändert den Wiedergabezustand der Audiokomponente zwischen Aktiv und Pausiert.</summary>
+        /// <summary>Startet oder pausiert das Lied.</summary>
         private void PlayPauseExecute(object parameter)
         {
             if (SelectedSong == null) return;
@@ -232,21 +284,21 @@ namespace MusicPlayerMVVM.ViewModels
             else { PlaySong(SelectedSong); }
         }
 
-        /// <summary>Dekrementiert den Listenindex und startet den vorherigen Titel.</summary>
+        /// <summary>Geht zum vorherigen Lied in der Liste.</summary>
         private void PreviousSongExecute(object parameter)
         {
             int index = Songs.IndexOf(SelectedSong);
             if (index > 0) { SelectedSong = Songs[index - 1]; PlaySong(SelectedSong); }
         }
 
-        /// <summary>Inkrementiert den Listenindex und startet den nächsten Titel.</summary>
+        /// <summary>Geht zum nächsten Lied in der Liste.</summary>
         private void NextSongExecute(object parameter)
         {
             int index = Songs.IndexOf(SelectedSong);
             if (index < Songs.Count - 1) { SelectedSong = Songs[index + 1]; PlaySong(SelectedSong); }
         }
 
-        /// <summary>Beendet die Medienwiedergabe und führt eine Navigation zur Startseite aus.</summary>
+        /// <summary>Stoppt die Musik und geht zur Startseite zurück.</summary>
         private void BackToHomeExecute(object parameter)
         {
             _mediaPlayer.Stop();
@@ -254,15 +306,17 @@ namespace MusicPlayerMVVM.ViewModels
             EventAggregator.GetEvent<NavigationEvent>().Publish("HomeView");
         }
 
-        /// <summary>
-        /// Analysiert den Dateipfad (relativ oder absolut) und initiiert die hardwarenahe Audiowiedergabe.
-        /// </summary>
-        /// <param name="song">Die abzuspielende Song-Entität.</param>
+        /// <summary>Sucht die Musikdatei auf dem PC und spielt sie ab.</summary>
         private void PlaySong(Song song)
         {
-            string fullPath = Path.IsPathRooted(song.FilePath)
-                ? song.FilePath
-                : Path.Combine(AppDomain.CurrentDomain.BaseDirectory, song.FilePath);
+            if (string.IsNullOrWhiteSpace(song.FilePath)) return;
+
+            // Entfernt doppelte Anführungszeichen und Zeilenumbrüche aus der Eingabe
+            string cleanPath = song.FilePath.Trim('"', ' ', '\r', '\n');
+
+            string fullPath = Path.IsPathRooted(cleanPath)
+                ? cleanPath
+                : Path.Combine(AppDomain.CurrentDomain.BaseDirectory, cleanPath);
 
             if (File.Exists(fullPath))
             {
@@ -278,6 +332,7 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
+        /// <summary>Reagiert auf Klicks der globalen Steuerungs-Knöpfe im Hauptfenster.</summary>
         private void OnGlobalPlayControl(string command)
         {
             switch (command)

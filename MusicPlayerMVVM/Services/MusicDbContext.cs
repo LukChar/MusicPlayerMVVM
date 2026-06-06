@@ -53,7 +53,7 @@ namespace MusicPlayerMVVM.Data
             if (!optionsBuilder.IsConfigured)
             {
                 string connectionString = ConfigurationManager.ConnectionStrings["MusicDB"].ConnectionString;
-                optionsBuilder.UseSqlServer(connectionString);
+                optionsBuilder.UseSqlServer(connectionString, options => options.EnableRetryOnFailure());
             }
         }
 
