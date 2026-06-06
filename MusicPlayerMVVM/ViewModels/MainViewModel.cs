@@ -17,6 +17,7 @@ namespace MusicPlayerMVVM.ViewModels
     {
         private object _currentView;
         private double _volume = 0.5;
+        private Visibility _controlBarVisibility = Visibility.Collapsed;
 
         private HomeViewModel _homeViewModel;
         private HipHopViewModel _hipHopViewModel;
@@ -65,12 +66,20 @@ namespace MusicPlayerMVVM.ViewModels
             }
         }
 
+        public Visibility ControlBarVisibility
+        {
+            get => _controlBarVisibility;
+            set { _controlBarVisibility = value; OnPropertyChanged(nameof(ControlBarVisibility)); }
+        }
+
         public ICommand GlobalPlayPauseCommand { get; }
         public ICommand GlobalPreviousCommand { get; }
         public ICommand GlobalNextCommand { get; }
 
         private void NavigateToViewModel(string targetViewName)
         {
+            ControlBarVisibility = (targetViewName == "HomeView") ? Visibility.Collapsed : Visibility.Visible;
+
             switch (targetViewName)
             {
                 case "HomeView":

@@ -20,12 +20,12 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="70" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
         <ContentControl Grid.Row="0" Content="{Binding CurrentView, FallbackValue={x:Type views:HomeView}}" />
 
-        <Border Grid.Row="1" Background="#111111" BorderBrush="#333333" BorderThickness="0,1,0,0">
+        <Border Grid.Row="1" Visibility="{Binding ControlBarVisibility}" Height="70" Background="#111111" BorderBrush="#333333" BorderThickness="0,1,0,0">
             <Grid Margin="15,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
