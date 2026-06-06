@@ -26,7 +26,7 @@
                    Stretch="UniformToFill"/>
 
             <Button Content="⬅" 
-                    Style="{StaticResource GreenWideButton}" 
+                    Style="{StaticResource PrimaryWideButton}" 
                     Width="30" Height="30" FontSize="11"
                     HorizontalAlignment="Left" VerticalAlignment="Top"
                     Margin="10"
@@ -36,7 +36,7 @@
             <StackPanel VerticalAlignment="Bottom" Margin="15">
                 <TextBlock Text="PLAYLIST" Foreground="White" FontSize="14" FontWeight="Medium"/>
                 <TextBlock Text="Eigene Playlist" Foreground="White" FontSize="36" FontWeight="Medium"/>
-                <TextBlock Text="Deine individuell hinzugefügten Titel" Foreground="LightGray" FontSize="12" FontWeight="Bold"/>
+                <TextBlock Text="Deine Lieblings-Titel" Foreground="LightGray" FontSize="12" FontWeight="Bold"/>
             </StackPanel>
         </Grid>
 
@@ -51,7 +51,7 @@
                 <Expander VerticalAlignment="Top" Margin="0,0,10,0">
                     <Expander.Header>
                         <Button Content="➕ Hinzufügen" 
-                                Style="{StaticResource GreenWideButton}" 
+                                Style="{StaticResource PrimaryWideButton}" 
                                 Padding="10,5" 
                                 IsHitTestVisible="False" 
                                 ToolTip="Klicke hier, um das Eingabemenü zu öffnen"/>
@@ -72,20 +72,20 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
                                 <TextBox Grid.Column="0" Text="{Binding NewFilePath, UpdateSourceTrigger=PropertyChanged}" Background="#333333" Foreground="White" BorderThickness="0" Padding="5" Margin="0,0,5,0" ToolTip="Lokaler Dateipfad"/>
-                                <Button Grid.Column="1" Content="📂" Command="{Binding BrowseFileCommand}" Style="{StaticResource GreenWideButton}" Padding="10,0" ToolTip="Windows-Dateiexplorer öffnen"/>
+                                <Button Grid.Column="1" Content="📂" Command="{Binding BrowseFileCommand}" Style="{StaticResource PrimaryWideButton}" Padding="10,0" ToolTip="Windows-Dateiexplorer öffnen"/>
                             </Grid>
 
                             <TextBlock Text="Dauer:" Foreground="LightGray" Margin="0,0,0,5"/>
                             <TextBox Text="{Binding NewDuration, UpdateSourceTrigger=PropertyChanged}" Background="#333333" Foreground="White" BorderThickness="0" Margin="0,0,0,15" Padding="5" ToolTip="Format MM:SS (z.B. 03:15)"/>
 
-                            <Button Content="💾 Speichern" Command="{Binding AddSongCommand}" Style="{StaticResource GreenWideButton}" Padding="15,8" HorizontalAlignment="Right" ToolTip="Lied in der Datenbank speichern"/>
+                            <Button Content="💾 Speichern" Command="{Binding AddSongCommand}" Style="{StaticResource PrimaryWideButton}" Padding="15,8" HorizontalAlignment="Right" ToolTip="Lied in der Datenbank speichern"/>
                         </StackPanel>
                     </Border>
                 </Expander>
 
                 <Button Content="🗑 Löschen" 
                         Command="{Binding DeleteSongCommand}" 
-                        Style="{StaticResource GreenWideButton}" 
+                        Style="{StaticResource PrimaryWideButton}" 
                         VerticalAlignment="Top" 
                         Padding="10,5" 
                         ToolTip="Das aktuell markierte Lied endgültig löschen"/>

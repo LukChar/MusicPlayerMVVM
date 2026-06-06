@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <Style x:Key="GreenCircleButton" TargetType="Button">
+    <Style x:Key="PrimaryCircleButton" TargetType="Button">
         <Setter Property="Background" Value="#1DB954"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontWeight" Value="Bold"/>
@@ -23,7 +23,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="GreenWideButton" TargetType="Button">
+    <Style x:Key="PrimaryWideButton" TargetType="Button">
         <Setter Property="Background" Value="#1DB954"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontWeight" Value="Bold"/>
@@ -46,7 +46,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="GreenButton" TargetType="Button" BasedOn="{StaticResource GreenWideButton}">
+    <Style x:Key="GenreTileButton" TargetType="Button" BasedOn="{StaticResource PrimaryWideButton}">
         <Setter Property="MinWidth" Value="130"/>
         <Setter Property="MaxWidth" Value="200"/>
         <Setter Property="Height" Value="140"/>
@@ -56,7 +56,7 @@
         <Setter Property="BorderBrush" Value="#1DB954"/>
     </Style>
 
-    <Style x:Key="GreenSliderStyle" TargetType="Slider">
+    <Style x:Key="PrimarySliderStyle" TargetType="Slider">
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Minimum" Value="0"/>
         <Setter Property="Maximum" Value="1"/>

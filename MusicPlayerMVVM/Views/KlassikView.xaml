@@ -27,7 +27,7 @@
                    Stretch="UniformToFill"/>
 
             <Button Content="⬅" 
-                    Style="{StaticResource GreenWideButton}" 
+                    Style="{StaticResource PrimaryWideButton}" 
                     Width="30" Height="30" FontSize="11"
                     HorizontalAlignment="Left" VerticalAlignment="Top"
                     Margin="10"

@@ -332,7 +332,9 @@
     </Content>
     <Resource Include="Resources\How-to-Understand-and-Appreciate-Classical-Music.jpg" />
     <Resource Include="Resources\istockphoto-504373726-612x612.jpg" />
-    <Resource Include="Resources\jazz-musik-grunge-plakat-mit-musikinstrumenten-m5rgyx.jpg" />
+    <Resource Include="Resources\jazz-musik-grunge-plakat-mit-musikinstrumenten-m5rgyx.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Content Include="Resources\Pop\Justin Timberlake SexyBack.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -17,28 +17,28 @@
     <Grid>
         <UniformGrid Columns="3" Rows="2" Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-            <Button Style="{StaticResource GreenButton}" Command="{Binding SelectGenreCommand}" CommandParameter="HipHop">
+            <Button Style="{StaticResource GenreTileButton}" Command="{Binding SelectGenreCommand}" CommandParameter="HipHop">
                 <StackPanel>
                     <Image Source="../Resources/fototapeten-hip-hop-graffiti-design.jpg.jpg" Stretch="Uniform" Height="100"/>
                     <TextBlock Text="Hip Hop" Foreground="Black" HorizontalAlignment="Center" Margin="0,5,0,0"/>
                 </StackPanel>
             </Button>
 
-            <Button Style="{StaticResource GreenButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Rock">
+            <Button Style="{StaticResource GenreTileButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Rock">
                 <StackPanel>
                     <Image Source="../Resources/rock-music-sign-logo-29bc20.png" Stretch="Uniform" Height="100"/>
                     <TextBlock Text="Rock" Foreground="Black" HorizontalAlignment="Center" Margin="0,5,0,0"/>
                 </StackPanel>
             </Button>
 
-            <Button Style="{StaticResource GreenButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Pop">
+            <Button Style="{StaticResource GenreTileButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Pop">
                 <StackPanel>
                     <Image Source="../Resources/ab67616d0000b27308f3e7a08eb03064e6eb0af7.jpg" Stretch="Uniform" Height="100"/>
                     <TextBlock Text="Pop" Foreground="Black" HorizontalAlignment="Center" Margin="0,5,0,0"/>
                 </StackPanel>
             </Button>
 
-            <Button Style="{StaticResource GreenButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Klassik">
+            <Button Style="{StaticResource GenreTileButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Klassik">
                 <StackPanel>
                     <Border CornerRadius="15" ClipToBounds="True" Height="100" Width="120" HorizontalAlignment="Center">
                         <Image Source="../Resources/How-to-Understand-and-Appreciate-Classical-Music.jpg" Stretch="UniformToFill"/>
@@ -47,14 +47,14 @@
                 </StackPanel>
             </Button>
 
-            <Button Style="{StaticResource GreenButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Jazz">
+            <Button Style="{StaticResource GenreTileButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Jazz">
                 <StackPanel>
                     <Image Source="../Resources/jazz-musik-grunge-plakat-mit-musikinstrumenten-m5rgyx.jpg" Stretch="Uniform" Height="100"/>
                     <TextBlock Text="Jazz" Foreground="Black" HorizontalAlignment="Center" Margin="0,5,0,0"/>
                 </StackPanel>
             </Button>
 
-            <Button Style="{StaticResource GreenButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Custom">
+            <Button Style="{StaticResource GenreTileButton}" Command="{Binding SelectGenreCommand}" CommandParameter="Custom">
                 <StackPanel>
                     <Image Source="../Resources/e4256a_7646515a96b341ff9f35bb3be5a32557~mv2.png" Stretch="Uniform" Height="100"/>
                     <TextBlock Text="Custom" Foreground="Black" HorizontalAlignment="Center" Margin="0,5,0,0"/>
