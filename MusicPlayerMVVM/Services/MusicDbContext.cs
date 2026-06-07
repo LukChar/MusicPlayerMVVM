@@ -22,8 +22,9 @@ namespace MusicPlayerMVVM.Data
         {
             Database.EnsureCreated();
 
-            // Startet den Scan und überschreibt alles
-            SeedSongsFromDirectories(@"C:\Users\Lukas\source\repos\MusicPlayerMVVM\MusicPlayerMVVM\Resources");
+            // Dynamischer Pfad: Sucht den "Resources"-Ordner im aktuellen Verzeichnis der App
+            string baseFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources");
+            SeedSongsFromDirectories(baseFolder);
         }
 
         /// <summary>Ruft die Tabelle für Hip-Hop-Songs ab oder legt diese fest.</summary>
@@ -61,40 +62,19 @@ namespace MusicPlayerMVVM.Data
         /// Durchsucht das angegebene Basisverzeichnis nach .wav-Dateien in genrespezifischen Unterordnern
         /// und fügt diese der Datenbank hinzu.
         /// </summary>
-        /// <remarks>
-        /// Diese Methode agiert als Initialisierer der Datenbankinhalte. Sie prüft, ob die
-        /// entsprechenden Genre-Unterordner (z.B. "HipHop", "Rock") existieren, iteriert über
-        /// alle darin enthaltenen .wav-Dateien und erstellt daraus Entity-Objekte.
-        /// Die Daten werden abschließend per <see cref="DbContext.SaveChanges"/> in die lokale SQL-Datenbank geschrieben.
-        /// </remarks>
         /// <param name="baseFolderPath">Der absolute Pfad zum Ressourcen-Ordner.</param>
         private void SeedSongsFromDirectories(string baseFolderPath)
         {
-            if (!Directory.Exists(baseFolderPath)) return;
+            // Abbrechen, falls der Ordner nicht existiert oder die HipHop-Tabelle bereits Daten enthält (verhindert doppeltes Einlesen)
+            if (!Directory.Exists(baseFolderPath) || HipHopSongs.Any())
+                return;
 
-            // ALLES LÖSCHEN 5 fehlerhaften Lieder entferne
-            HipHopSongs.RemoveRange(HipHopSongs.ToList());
-
-            /* 
-            RockSongs.RemoveRange(RockSongs.ToList());
-            PopSongs.RemoveRange(PopSongs.ToList());
-            JazzSongs.RemoveRange(JazzSongs.ToList());
-            KlassikSongs.RemoveRange(KlassikSongs.ToList());
-            CustomSongs.RemoveRange(CustomSongs.ToList());
-            */
-
-            // Speichert die Löschung, Datenbank ist jetzt zu 100 % leer
-            this.SaveChanges();
-
-            // .WAV DATEIEN NEU EINLESEN
             string hipHopPath = Path.Combine(baseFolderPath, "HipHop");
             if (Directory.Exists(hipHopPath))
             {
                 foreach (string file in Directory.GetFiles(hipHopPath, "*.wav"))
                     HipHopSongs.Add(new HipHopSong { Title = Path.GetFileNameWithoutExtension(file), Artist = "Lokale Datei", FilePath = file, Duration = "00:00" });
             }
-
-            /* // 
 
             string rockPath = Path.Combine(baseFolderPath, "Rock");
             if (Directory.Exists(rockPath))
@@ -130,9 +110,8 @@ namespace MusicPlayerMVVM.Data
                 foreach (string file in Directory.GetFiles(customPath, "*.wav"))
                     CustomSongs.Add(new CustomSong { Title = Path.GetFileNameWithoutExtension(file), Artist = "Lokale Datei", FilePath = file, Duration = "00:00" });
             }
-            */
 
-            // Lieder Datenbank speichern
+            // Speichert alle neu gefundenen Lieder in die Datenbank
             this.SaveChanges();
         }
     }
