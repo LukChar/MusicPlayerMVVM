@@ -150,7 +150,6 @@ namespace MusicPlayerMVVM.ViewModels
         private bool CanAddSongExecute(object parameter)
         {
             return !string.IsNullOrWhiteSpace(NewTitle) &&
-                   !string.IsNullOrWhiteSpace(NewArtist) &&
                    !string.IsNullOrWhiteSpace(NewFilePath);
         }
 
@@ -190,7 +189,7 @@ namespace MusicPlayerMVVM.ViewModels
             var newSong = new CustomSong
             {
                 Title = NewTitle,
-                Artist = NewArtist,
+                Artist = string.IsNullOrWhiteSpace(NewArtist) ? "Unbekannt" : NewArtist,
                 FilePath = NewFilePath,
                 Duration = string.IsNullOrWhiteSpace(NewDuration) ? "00:00" : NewDuration
             };
