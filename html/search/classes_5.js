@@ -1,5 +1,0 @@
-var searchData=
-[
-  ['jazzview_0',['JazzView',['../class_music_player_m_v_v_m_1_1_views_1_1_jazz_view.html',1,'MusicPlayerMVVM::Views']]],
-  ['jazzviewmodel_1',['JazzViewModel',['../class_music_player_m_v_v_m_1_1_view_models_1_1_jazz_view_model.html',1,'MusicPlayerMVVM::ViewModels']]]
-];
