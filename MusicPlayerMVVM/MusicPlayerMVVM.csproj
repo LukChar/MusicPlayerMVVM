@@ -298,6 +298,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include=".gitattributes" />
     <None Include=".gitignore" />
     <None Include="connections.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
