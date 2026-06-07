@@ -22,7 +22,7 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" Height="180">
-            <Image Source="/Resources/fototapeten-hip-hop-graffiti-design.jpg.jpg"
+            <Image Source="/Resources/fototapeten-hip-hop-graffiti-design.jpg"
                    Opacity="0.3"
                    Stretch="UniformToFill"/>
 

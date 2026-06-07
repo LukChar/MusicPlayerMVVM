@@ -21,7 +21,7 @@
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" Height="180">
-            <Image Source="../Resources/custom_genre_banner.jpg"
+            <Image Source="/Resources/custom_genre_banner.jpg"
                    Opacity="0.3"
                    Stretch="UniformToFill"/>
 

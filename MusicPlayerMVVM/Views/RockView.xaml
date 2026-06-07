@@ -15,14 +15,18 @@
     </UserControl.Resources>
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="261*"/>
+            <ColumnDefinition Width="239*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" Height="180">
-            <Image Source="../Resources/rock-music-sign-logo-29bc20.png"
+        <Grid Grid.Row="0" Height="180" Grid.ColumnSpan="2">
+            <Image Source="../Resources/rock-music-sign-logo-29bc20"
                    Opacity="0.3"
                    Stretch="UniformToFill"/>
 
@@ -40,7 +44,7 @@
             </StackPanel>
         </Grid>
 
-        <Border Grid.Row="1" Background="#252525" Margin="10" CornerRadius="10">
+        <Border Grid.Row="1" Background="#252525" Margin="10,10,10,10" CornerRadius="10" Grid.ColumnSpan="2">
             <ListView ItemsSource="{Binding Songs}" SelectedItem="{Binding SelectedSong}" 
                       Background="#333333" Foreground="White" Margin="10">
                 <ListView.ItemTemplate>
